@@ -20,11 +20,11 @@ jobs:
       
               
 
-      - name: download DITA dtd
-        run: |
-            cd documentation/xsl
-            wget https://github.com/oxygenxml/oxygen-dita-translation-package-builder-addon/archive/refs/heads/master.zip
-            unzip master.zip  
+     # - name: download DITA dtd
+     #   run: |
+     #       cd documentation/xsl
+     #       wget https://github.com/oxygenxml/oxygen-dita-translation-package-builder-addon/archive/refs/heads/master.zip
+     #       unzip master.zip  
       
       - name: Download and install saxon german
         run: |
