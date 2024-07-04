@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Grundstruktur des Titelblatts</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_mh5_nsj_q5"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a><ul><li><a href="frontAllg.html">Einleitende Buchteile Grundstruktur</a></li><li><a href="titelblatt.html">Titelblatt</a><ul><li class="active"><a href="tbAllg.html">Titelblatt Grundstruktur</a></li><li><a href="haupttitel.html">Haupttitelseite</a></li><li><a href="reihentitel.html">Reihentitel</a></li></ul></li><li><a href="widmung.html">Widmungen</a></li><li><a href="epigraph.html">Epigraphe</a></li><li><a href="inhaltsverzeichnis.html">Inhaltsverzeichnis</a></li></ul></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Grundstruktur des Titelblatts</h1>
+    
+  <div class="body">
+        <p class="p">Auf Titelblätter wird innerhalb von <code class="ph codeph">&lt;front&gt;</code>
+            mit dem Element <code class="ph codeph">&lt;titlePage&gt;</code> hingewiesen. </p>
+        <p class="p">Das Element <code class="ph codeph">&lt;titlePage&gt;</code> kann ein
+            <code class="ph codeph">@type</code>-Attribut enthalten, für welches die folgenden
+            Werte möglich sind: </p>
+        <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
+                    <tr class="row">
+                        <th class="entry colsep-1 rowsep-1" id="topic_mh5_nsj_q5__entry__1"><code class="ph codeph">@type</code>-Wert</th>
+                        <th class="entry rowsep-1" id="topic_mh5_nsj_q5__entry__2">Bedeutung</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__1"><code class="ph codeph">main</code> </td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__2">Haupttitelseite</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__1"><code class="ph codeph">halftitle</code> </td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__2">Schmutztitel</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1" headers="topic_mh5_nsj_q5__entry__1"><code class="ph codeph">series</code> </td>
+                        <td class="entry" headers="topic_mh5_nsj_q5__entry__2">Titelseite einer Reihe</td>
+                    </tr>
+                </tbody></table>
+        
+        <p class="p">Sämtliche Titelblattinformationen werden innerhalb von
+            <code class="ph codeph">&lt;titlePage&gt;</code> realisiert, wobei die Reihenfolge
+            und Vollständigkeit der Angaben den Gegebenheiten der Vorlage folgt.
+            Folgende Elemente können innerhalb von
+            <code class="ph codeph">&lt;titlePage&gt;</code> stehen: </p>
+        <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+                    <tr class="row">
+                        <th class="entry colsep-1 rowsep-1" id="topic_mh5_nsj_q5__entry__9">Element</th>
+                        <th class="entry colsep-1 rowsep-1" id="topic_mh5_nsj_q5__entry__10">Bedeutung</th>
+                        <th class="entry rowsep-1" id="topic_mh5_nsj_q5__entry__11">Bemerkung</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;docTitle&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Titel des Dokuments</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;titlePart&gt;</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Teil des Dokumenttitels (Haupttitel, Untertitel, nähere inhaltliche Informationen zum Werk etc.)</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">innerhalb von <code class="ph codeph">&lt;docTitle&gt;</code> </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;byline&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Einleitung zu den Angaben zur Verantwortlichkeit für das Dokument</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;docAuthor&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Autor des Werks</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">innerhalb von &lt;byline&gt;</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;docImprint&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Angaben zur Publikation</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;pubPlace&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Publikationsort</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">innerhalb von <code class="ph codeph">&lt;docImprint&gt;</code></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;publisher&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Drucker, Herausgeber, Verlag</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">innerhalb von <code class="ph codeph">&lt;docImprint&gt;</code></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;docDate&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Erscheinungsjahr</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">innerhalb von <code class="ph codeph">&lt;docImprint&gt;</code>;
+                            ggf. mit <code class="ph codeph">@when</code> für eine normalisierte Datumsangabe nach 
+                            <a class="xref" href="http://www.w3.org/TR/xmlschema-2/#isoformats" target="_blank" rel="external noopener">ISO 8601</a>
+                            (Level 3)</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;docEdition&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Auflage</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;imprimatur&gt;</code></td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Druckerlaubnis</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">auch
+                            außerhalb von <code class="ph codeph">&lt;titlePage&gt;</code> im
+                            <code class="ph codeph">&lt;front&gt;</code>-Bereich
+                            möglich.</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;figure&gt;</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__10">Abbildung</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__11">auch in anderen Kontexten möglich; s. Kap. 
+                            <a class="xref" href="abbildung.html">Abbildungen</a></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1" headers="topic_mh5_nsj_q5__entry__9"><code class="ph codeph">&lt;epigraph&gt;</code></td>
+                        <td class="entry colsep-1" headers="topic_mh5_nsj_q5__entry__10">Zitat</td>
+                        <td class="entry" headers="topic_mh5_nsj_q5__entry__11">mit:
+                            <code class="ph codeph">&lt;cit&gt;</code>,
+                            <code class="ph codeph">&lt;quote&gt;</code>,
+                            <code class="ph codeph">&lt;bibl&gt;</code>; auch in anderen Kontexten möglich; s. Kap. <a class="xref" href="zitateEpigraphe.html">Zitate und Epigraphe</a> </td>
+                    </tr>
+                </tbody></table>
+        <p class="p">Dem Element <code class="ph codeph">&lt;titlePart&gt;</code> ist ein <code class="ph codeph">@type</code>-Attribut zugeordnet, für welches folgende Werte möglich sind:</p>
+        <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+                    <tr class="row">
+                        <th class="entry colsep-1 rowsep-1" id="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">@type</code>-Wert</th>
+                        <th class="entry colsep-1 rowsep-1" id="topic_mh5_nsj_q5__entry__49">Bedeutung</th>
+                        <th class="entry rowsep-1" id="topic_mh5_nsj_q5__entry__50">Anmerkung</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">main</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">Haupttitel</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">sub</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">Untertitel</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">volume</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">Bandangabe bei mehrbändigen Werken</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50"></td>
+                    </tr>
+                		<tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">series</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">Titel der Reihe</td>
+                				<td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">desc</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">nähere Beschreibungen zur Zusammensetzung bzw. zu den Inhalten des Werkes</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">price</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">Buchpreis</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50">Achtung: Preisangaben außerhalb der Titelseite stehen in <code class="ph codeph">&lt;p&gt;</code> </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">copyright</code> </td>
+                        <td class="entry colsep-1 rowsep-1" headers="topic_mh5_nsj_q5__entry__49">für Hinweise zum Copyright</td>
+                        <td class="entry rowsep-1" headers="topic_mh5_nsj_q5__entry__50">neben <code class="ph codeph">&lt;div type="copyright"&gt;</code>; nur für die Titelseite</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry colsep-1" headers="topic_mh5_nsj_q5__entry__48"><code class="ph codeph">dedication</code> </td>
+                        <td class="entry colsep-1" headers="topic_mh5_nsj_q5__entry__49">Widmung</td>
+                        <td class="entry" headers="topic_mh5_nsj_q5__entry__50">neben <code class="ph codeph">&lt;div type="dedication"&gt;</code>; nur für die Titelseite</td>
+                    </tr>
+                </tbody></table>
+        <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> Zusätzliche
+            mögliche <code class="ph codeph">@type</code>-Werte sind: <code class="ph codeph">series</code>
+            (Reihentitel) und <code class="ph codeph">seriesnumber</code> (Bandnummer
+            innerhalb einer Reihe).</em></div>
+    </div>
+</article></main></body></html>

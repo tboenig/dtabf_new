@@ -1,0 +1,120 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Schwer bzw. nicht entzifferbare Zeichen und Auslassungen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_50"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li class="active"><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Schwer bzw. nicht entzifferbare Zeichen und Auslassungen</h1>
+    
+   <div class="body">
+      <p class="p"><strong class="ph b">Schwer leserliche Zeichen oder Zeichenketten</strong> (z.B. durch
+         physische Mängel der Vorlage, schwachen Druck) werden mit dem Tag
+            <code class="ph codeph">&lt;supplied&gt;</code> umschlossen:</p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>supplied</span><span class="ph token punctuation">&gt;</span></span>[Zeichen oder Zeichenkette]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>supplied</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      <p class="p">Ist die Lesung für die ergänzte Zeichenkette unsicher, so kann mit
+         einem <code class="ph codeph">@cert</code>-Attribut im supplied-Element der Grad der Sicherheit für
+         die Ergänzung angezeigt werden. Der Grad der Sicherheit wird dabei wie
+         folgt angezeigt: </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
+               <tr class="row">
+                  <th class="entry" id="topic_50__entry__1" colspan="1">Ausdruck</th>
+                  <th class="entry" id="topic_50__entry__2" colspan="1">Bedeutung</th>
+               </tr>
+            </thead><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry" headers="topic_50__entry__1" colspan="1">
+                     <code class="ph codeph">&lt;supplied&gt;</code>
+                  </td>
+                  <td class="entry" headers="topic_50__entry__2" colspan="1">Gewissheit/sichere Lesart (z.B.
+                     das Zeichen/die Zeichenkette ist noch schwach gedruckt, die Lesung somit
+                     gesichert)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_50__entry__1" colspan="1">
+                     <code class="ph codeph">&lt;supplied cert="high"&gt;</code>
+                  </td>
+                  <td class="entry" headers="topic_50__entry__2" colspan="1">hohe Sicherheit der Ergänzung
+                     (z.B. das Zeichen/die Zeichenkette ist nicht mehr erkennbar, aber die Lesung
+                     ergibt sich aus dem Kontext und ist somit gesichert)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_50__entry__1" colspan="1">
+                     <code class="ph codeph">&lt;supplied cert="low"&gt;</code>
+                  </td>
+                  <td class="entry" headers="topic_50__entry__2" colspan="1">niedrige Sicherheit der
+                     Ergänzung/unsichere Lesart (z.B. das Zeichen/die Zeichenkette ist nicht mehr
+                     erkennbar und wurde rekonstruiert; andere Rekonstruktionen sind daneben
+                     denkbar)</td>
+               </tr>
+            </tbody></table>
+      <p class="p"><strong class="ph b">Lassen sich die Zeichen nicht erkennen und nicht mehr
+            rekonstruieren</strong>, wird das Tag <code class="ph codeph">&lt;gap/&gt;</code>
+         gesetzt, um die Lücke anzuzeigen. Innerhalb des
+            <code class="ph codeph">&lt;gap&gt;</code>-Tags kann mittels der Attribute
+            <code class="ph codeph">@unit</code>, <code class="ph codeph">@quantity</code> und
+            <code class="ph codeph">@reason</code> der Bezug angezeigt werden, wie viele
+         Zeichen die Lücke umfasst, sowie der Grund der Fehlstelle:</p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>gap</span> <span class="ph token attr-name">unit</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>chars<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">quantity</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Anzahl der Zeichen, die fehlen]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">reason</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Grund für die Fehlstelle]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+      <p class="p">Folgende Werte kann das <code class="ph codeph">@unit</code>-Attribut annehmen:</p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">chars</code>
+                  </td>
+                  <td class="entry" colspan="1">Zeichen</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">lines</code>
+                  </td>
+                  <td class="entry" colspan="1">Zeilen</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">pages</code>
+                  </td>
+                  <td class="entry" colspan="1">Seiten</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">words</code>
+                  </td>
+                  <td class="entry" colspan="1">Wörter</td>
+               </tr>
+            </tbody></table>
+      <p class="p">Folgende Werte kann das <code class="ph codeph">@reason</code>-Attribut annehmen: </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">lost</code>
+                  </td>
+                  <td class="entry" colspan="1">Zerstörung</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">illegible</code>
+                  </td>
+                  <td class="entry" colspan="1">unleserlich</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">fm</code>
+                  </td>
+                  <td class="entry" colspan="1">fremdsprachlicher Text (foreign language material)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" colspan="1">
+                     <code class="ph codeph">insignificant</code>
+                  </td>
+                  <td class="entry" colspan="1">als für das Korpus unwichtig eingestufter Text</td>
+               </tr>
+            </tbody></table>
+      <div class="example"><h2 class="title sectiontitle">Umgang mit Auslassungen/Lücken</h2>
+         <figure class="fig fignone">
+            <img class="image" src="img/BttIlQRtWe.png">
+            <pre class="pre codeblock language-xml"><code>He<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>gap</span> <span class="ph token attr-name">reason</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>lost<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">unit</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>chars<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">quantity</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>rde</code></pre>
+            <p class="p"><em class="ph i">Quelle: 
+               <a class="xref" href="http://www.deutschestextarchiv.de/anthus_esskunst_1838/53" target="_blank" rel="external noopener">Antonius Anthus [i. e. Blumröder, Gustav]: Vorlesungen über Esskunst. Leipzig, 1838. [Faksimile 53]</a>
+            </em></p>
+         </figure></div>
+   </div>
+</article></main></body></html>

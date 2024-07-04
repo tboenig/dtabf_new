@@ -1,0 +1,30 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Verantwortlichkeiten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_a3v_jcq_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a><ul><li class="active"><a href="msEditorResp.html">Verantwortlichkeiten</a></li><li><a href="msEditorCert.html">Unsichere Lesarten</a></li></ul></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Verantwortlichkeiten</h1>
+  <div class="body">
+    
+      <p class="p">Editorische Entscheidungen können mittels eines
+            <code class="ph codeph">@resp</code>-Attributs einem Editor zugewiesen werden. Der
+            Wert des <code class="ph codeph">@resp</code>-Attributs ist dabei ein Identifier
+            als Verweis, welcher im <code class="ph codeph">&lt;teiHeader&gt;</code> aufgelöst
+            wird. </p>
+      <p class="p">Das Attribut <code class="ph codeph">@resp</code> kann dabei in den Elementen
+            <code class="ph codeph">&lt;persName&gt;</code>,
+            <code class="ph codeph">&lt;placeName&gt;</code>,
+            <code class="ph codeph">&lt;orgName&gt;</code>, <code class="ph codeph">&lt;name&gt;</code>,
+            <code class="ph codeph">&lt;unclear&gt;</code>, <code class="ph codeph">&lt;supplied&gt;</code>,
+            <code class="ph codeph">&lt;reg&gt;</code>, <code class="ph codeph">&lt;corr&gt;</code>,
+            <code class="ph codeph">&lt;expan&gt;</code> verwendet werden. </p>
+      <p class="p"><strong class="ph b">Beispiele:</strong></p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sic</span><span class="ph token punctuation">&gt;</span></span>[originale, fehlerhafte Schreibweise]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sic</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corr</span> <span class="ph token attr-name">resp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Bearbeiter-ID]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[korrigierte Schreibweise]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corr</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>supplied</span> <span class="ph token attr-name">resp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Bearbeiter-ID]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[gegenüber der Vorlage ergänzte Zeichenkette]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>supplied</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+ 
+    
+  </div>
+</article></main></body></html>

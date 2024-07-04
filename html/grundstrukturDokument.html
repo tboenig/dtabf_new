@@ -1,0 +1,28 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Grundstruktur jedes TEI-Dokuments</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_zsv_kxd_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a><ul><li><a href="ziel.html">Zielsetzung</a></li><li><a href="steuerungsgruppe.html">Weiterentwicklung des Formats</a></li><li><a href="leitlinien.html">Leitlinien</a></li><li><a href="schema.html">Schema und Dokumentation</a></li><li><a href="publikationen.html">Publikationen</a></li><li><a href="howto.html">How to</a><ul><li><a href="benutzungDTABfSchema.html">Nutzung des DTA-Basisformat-Schemas</a></li><li><a href="zurDokumentation.html">Nutzung der DTABf-Dokumentation</a></li><li><a href="hilfreicheTools.html">Hilfreiche Tools und Anwendungen</a></li><li class="active"><a href="grundstrukturDokument.html">Grundstruktur jedes TEI-Dokuments</a></li></ul></li><li><a href="introduction_en.html">Introduction (English)</a></li></ul></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Grundstruktur jedes TEI-Dokuments</h1>
+  <div class="body">
+    <p class="p">Das Wurzelelement jedes TEI-Dokuments im DTA bildet das <code class="ph codeph">&lt;TEI&gt;</code>-Element, 
+      dessen <code class="ph codeph">@xmlns</code>-Attribut den TEI-Namensraum (namespace) spezifizieren, 
+      der für das jeweilige Dokument gilt:
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>TEI</span> <span class="ph token attr-name">xmlns</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://www.tei-c.org/ns/1.0<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>...<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>TEI</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">Jedes TEI-Dokument im DTA besteht aus einem Header, der Metadaten zum
+      publizierten Text umfasst, und einem Textbereich, der alle Transkriptionen
+      mit den zugehörigen Annotationen enthält. Dieser Volltext umfasst dabei nicht
+      allein den eigentlichen Buchtext, sondern alle Textbestandteile, so auch
+      Titelseite und Vorwort sowie in der Regel die Register, Beigaben und Anhänge.
+    </p>
+    <p class="p">Die folgende Struktur wird in jedem TEI-Dokument eingehalten:
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>[Metadaten]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>text</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>front</span><span class="ph token punctuation">&gt;</span></span>[Elemente vor Beginn des Buchtextes]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>front</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>body</span><span class="ph token punctuation">&gt;</span></span>[Textkörper]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>body</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>back</span><span class="ph token punctuation">&gt;</span></span>[Elemente nach Abschluss des Buchtextes]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>back</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>text</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

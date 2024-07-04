@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Seitenzahlen und Bildnummern</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_azs_v4j_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a><ul><li class="active"><a href="seitenFacsNr.html">Seitenzahlen und Bildnummern</a></li><li><a href="orientierungshilfen.html">Orientierungshilfen im Buchblock</a></li></ul></li><li><a href="erschBildText.html">Erscheinungsbild Text</a></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Seitenzahlen und Bildnummern</h1>
+  <div class="body">
+    <p class="p">Seitenzahlen der Vorlage und die fortlaufenden Nummern der zugehörigen Digitalisate werden
+      wie folgt wiedergegeben:</p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f[Bildnummer]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Seitenzahl]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+    <p class="p">Die Seitenzahlen werden jeweils zu Beginn einer Seite eingefügt, auch wenn die Seitenzahl
+      unter dem Text steht. Fehlt die Seitenzahl im Original (z.B. unpaginierte Abbildungsseiten
+      oder vor neuen Kapiteln), wird entsprechend der Zählung im Buch die Seitenzahl in eckigen
+      Klammern ergänzt:</p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f[Bildnummer]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[[Seitenzahl]]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+    <p class="p">Ist eine Seitenzahl falsch gedruckt, wird die falsche Seitenzahl abgetippt. Die korrigierte
+      Seitenzahl steht mit im @n-Attribut in eckigen Klammern. Die korrekte Ordnung der Seiten im
+      Band wird durch die Bildnummern vermittelt, die fehlerfrei fortlaufend angegeben werden.</p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f[Bildnummer]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[fehlerhafte Seitenzahl [korrigierte Seitenzahl]]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+    <p class="p">Besonderheiten bei Seitenzahlen wie etwa Verzierungen oder Einklammerungen werden nicht
+      wiedergegeben.</p>
+    <div class="example"><h2 class="title sectiontitle">Seitenzahl</h2>
+      
+      <figure class="fig fignone">
+        <img class="image" src="img/atgLm3hoFa.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f0188<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>180<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+        <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/humboldt_aequinoktial04_1859/188" target="_blank" rel="external noopener">Humboldt, Alexander von: Reise in die
+              Aequinoktial-Gegenden des neuen Kontinents. Bd. 4. Übers. v. Hermann Hauff. Stuttgart,
+              1860, facs. 188.</a></em></p>
+      </figure>
+    </div>
+    <div class="example"><h2 class="title sectiontitle">Seitenzahl mit Verzierung</h2>
+      
+      <figure class="fig fignone">
+        <img class="image" src="img/bNimbug0NC.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f0014<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>8<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+        <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/campe_robinson02_1780/14" target="_blank" rel="external noopener">Campe, Joachim Heinrich: Robinson der Jüngere. Bd. 2.
+              Hamburg, 1780, facs. 14.</a></em></p>
+      </figure>
+    </div>
+
+    <p class="p">Um eine im DTA herausgegebene Textseite mit einem externen Äquivalent zu verknüpfen
+      (z.B. mit der entsprechenden Seite der Quelle in einer anderen digitalen Edition) wird das
+        <code class="ph codeph">@corresp</code>-Attribut innerhalb des <code class="ph codeph">&lt;pb&gt;</code>-Elements
+      verwendet. Als Wert in <code class="ph codeph">@corresp</code> steht eine eindeutige URI, welche zu dem
+      verlinkten Dokument führt. </p>
+    <div class="example"><h2 class="title sectiontitle">Seitenzahl extern</h2>
+      
+      <figure class="fig fignone">
+        <img class="image" src="img/cn4pfRfHOR.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>front</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://brema.suub.uni-bremen.de/grenzboten/periodical/pageview/179388<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f0005<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePage</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>main<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> 
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePart</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>main<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> 
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#b<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#g<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Die<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>Grenzboten<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> 
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePart</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePage</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>front</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/grenzboten_179382_282158/5" target="_blank" rel="external noopener">Die Grenzboten. Erster Jahrgang. Leipzig, 1841.
+              [Faksimile 5]</a></em></p>
+      </figure>
+    </div>
+    <p class="p">Der Ort, an welchem die Seitenzahl auf der Seite platziert ist, sowie die Art der
+      Ausschmückung der Seitenangabe wird in der Regel nicht mit dokumentiert. Soll diese
+      Information jedoch in der Transkription berücksichtigt werden (Level 3), so wird hierfür der
+      folgende Ausdruck verwendet: </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fw</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>pageNum<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>top<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Seitenzahl oben]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>fw</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fw</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>pageNum<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>bottom<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Seitenzahl unten]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>fw</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

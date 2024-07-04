@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Der Titelkopf</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="jHeading"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a><ul><li><a href="jAllg.html">Zeitungen Grundregeln</a></li><li><a href="jFront.html">Einleitende Textstücke</a><ul><li class="active"><a href="jHeading.html">Titelkopf</a></li><li><a href="jIntroMaterial.html">Einführende Informationen</a></li></ul></li><li><a href="jBody.html">Textkörper</a></li><li><a href="jBack.html">Abschließende Textstücke</a></li><li><a href="jBeilagen.html">Beilagen</a></li></ul></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Der Titelkopf</h1>
+    
+  <div class="body">
+    <p class="p">
+  Der Titelkopf der jeweiligen Ausgabe steht im <code class="ph codeph">&lt;front&gt;</code>-Bereich des
+  TEI-Dokuments. Er wird mit dem Element <code class="ph codeph">&lt;titlePage&gt;</code> umschlossen, welches das 
+  Attribut-Wert-Paar <span class="ph tt" style="font-family: monospace">@type="heading"</span> erhält, um anzuzeigen, dass der Titel- bzw. Zeitungskopf 
+  nicht wie gewöhnlich eine gesamte Titelseite umfasst.
+</p>
+<p class="p">  
+  Der Titel der Zeitungs- bzw. Zeitschriftenausgabe wird innerhalb <code class="ph codeph">von &lt;titlePage&gt;</code> mit dem Element 
+  <code class="ph codeph">&lt;docTitle&gt;</code> umschlossen. Die einzelnen Teile des Titels stehen innerhalb
+  von <code class="ph codeph">&lt;docTitle&gt;</code> in einzelnen <code class="ph codeph">&lt;titlePart&gt;</code>-Elementen.
+  Dabei erhält <code class="ph codeph">&lt;titlePart&gt;</code> das Attribut <span class="ph tt" style="font-family: monospace">@type</span> mit den 
+  möglichen Werten <span class="ph tt" style="font-family: monospace">"main"</span> (Haupttitel) und <span class="ph tt" style="font-family: monospace">"sub"</span> (Untertitel).
+</p>
+<p class="p">
+  Eine Druckerlaubnis zu Beginn der Titelei wird innerhalb des <code class="ph codeph">&lt;docTitle&gt;</code>-Elements im Element
+  <code class="ph codeph">&lt;titlePart&gt;</code> wiedergegeben, welches das für Zeitungen/Zeitschriften spezifische Attribut-Wert-Paar
+  <span class="ph tt" style="font-family: monospace">@type="jImprimatur"</span> erhält. Steht die Druckerlaubnis am Schluss der Titelei oder am Schluss
+  der Ausgabe, so wird sie mit dem Element <code class="ph codeph">&lt;div type="imprimatur"&gt;</code> umschlossen.
+</p>
+<p class="p">
+  Hinweise zum Druck werden im Element <code class="ph codeph">&lt;docImprint&gt;</code> wiedergegeben. 
+  Dabei steht das Datum der Ausgabe im Unterelement <code class="ph codeph">&lt;docDate&gt;</code>, der 
+  Publikationsort im Unterelement <code class="ph codeph">&lt;pubPlace&gt;</code> und die mögliche 
+  Angabe der Druckerei (Impressum) im Unterelement <code class="ph codeph">&lt;publisher&gt;</code>. (Vgl. 
+  <a class="xref" href="titelblatt.html">Kapitel: Titelblatt</a>.)
+</p>
+<div class="note attention note_attention"><span class="note__title">Achtung:</span> 
+  Steht das Impressum nicht am Beginn, sondern am Schluss der Ausgabe, so
+  wird dieses an der Stelle seines Vorkommens mit dem Element <code class="ph codeph">&lt;div type="imprint"&gt;</code>
+  kodiert. (Vgl. <a class="xref" href="anhAllg.html">Kapitel: Anhang</a>.)
+</div>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>front</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePage</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>heading<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>docTitle</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePart</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jImprimatur<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Druckerlaubnis]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePart</span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- gegebenenfalls --&gt;</span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePart</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>main<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Haupttitel der Ausgabe]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePart</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePart</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>sub<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Untertitel der Ausgabe]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePart</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>docTitle</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>docImprint</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>docDate</span><span class="ph token punctuation">&gt;</span></span>[Datum der Ausgabe]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>docDate</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pubPlace</span><span class="ph token punctuation">&gt;</span></span>[Erscheinungsort]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>pubPlace</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>publisher</span><span class="ph token punctuation">&gt;</span></span>[Druckerei-/Verlagsangabe]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>publisher</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>docImprint</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePage</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>front</span><span class="ph token punctuation">&gt;</span></span>
+</code></pre>
+  </div>
+</article></main></body></html>

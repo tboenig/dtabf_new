@@ -1,0 +1,32 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Anmerkungen des Autors oder späterer Bearbeiter</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_zxp_h3p_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li class="active"><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Anmerkungen des Autors oder späterer Bearbeiter</h1>
+    
+  <div class="body">
+      <p class="p">
+        Anmerkungen des Autors oder späterer Bearbeiter zum Text werden im 
+        <code class="ph codeph">&lt;note&gt;</code>-Element wiedergeben. Der Ort, an dem die Anmerkung 
+        eingetragen ist, wird im <span class="ph tt" style="font-family: monospace">@place</span>-Attribut spezifiziert. Das 
+        <span class="ph tt" style="font-family: monospace">@place</span>-Attribut kann dabei die folgenden Werte annehmen:
+      </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead"><tr class="row">
+          <th class="entry" id="topic_zxp_h3p_yw__entry__1"><span class="ph tt" style="font-family: monospace">@place</span>-Wert</th>
+          <th class="entry" id="topic_zxp_h3p_yw__entry__2">Bedeutung</th>
+        </tr></thead><tbody class="tbody"><tr class="row">
+          <td class="entry" headers="topic_zxp_h3p_yw__entry__1"><span class="ph tt" style="font-family: monospace">mTop</span></td>
+          <td class="entry" headers="topic_zxp_h3p_yw__entry__2">Anmerkung am oberen Rand</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_zxp_h3p_yw__entry__1"><span class="ph tt" style="font-family: monospace">mBottom</span></td>
+          <td class="entry" headers="topic_zxp_h3p_yw__entry__2">Anmerkung am unteren Rand</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_zxp_h3p_yw__entry__1"><span class="ph tt" style="font-family: monospace">inline</span></td>
+          <td class="entry" headers="topic_zxp_h3p_yw__entry__2">Anmerkung innerhalb der Zeile</td>
+        </tr></tbody></table>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>mTop<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Anmerkung am oberen Rand]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

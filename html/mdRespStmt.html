@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Umgang mit externen Quellen für die DTA-Textgrundlage (//respStmt)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_hf4_rj2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a><ul><li><a href="mdTitleStmtAllg.html">Title Statement Grundstruktur</a></li><li><a href="mdAuthorEditor.html">Author und Editor</a></li><li><a href="mdPersName.html">Personal Name</a></li><li class="active"><a href="mdRespStmt.html">Responsibility Statement</a></li></ul></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Umgang mit externen Quellen für die DTA-Textgrundlage <code class="ph codeph">(//respStmt)</code></h1>
+    
+  <div class="body">
+    <p class="p">Externe Textressourcen, die im Rahmen von <a class="xref" href="http://www.deutschestextarchiv.de/dtae" target="_blank" rel="external noopener">DTAE</a> in die 
+      DTA-Korpora aufgenommen werden, erhalten ein <em class="ph i">Responsibility Statement</em>, in welchem deren Urheber und 
+      ggf. Bearbeiter genannt und deren Beteiligung an der Textherstellung bzw. Texterschließung beschrieben werden.
+    </p>
+    <p class="p">Je nachdem, ob Einzelpersonen oder Institutionen/Organisationen/Projektgruppen für die Textressource verantwortlich 
+      sind, werden diese im Element <code class="ph codeph">&lt;persName&gt;</code> oder <code class="ph codeph">&lt;orgName&gt;</code> wiedergegeben.
+    </p>
+    <p class="p">Das Element <code class="ph codeph">&lt;orgName&gt;</code> kann ein <code class="ph codeph">@ref</code>-Attribut zur Angabe einer Ressource erhalten
+      (mittels URL), das auf zusätzliche Angaben zu der genannten Organisation verweist, etwa auf den entsprechenden Datensatz 
+      in der <a class="xref" href="http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html" target="_blank" rel="external noopener">Gemeinsamen Normdatei (GND)</a>.
+    </p>
+    <p class="p">Zur weiteren Unterstrukturierung des Elements <code class="ph codeph">&lt;persName&gt;</code> s. <a class="xref" href="mdPersName.html">das entsprechende Kapitel</a>. 
+    </p>
+    <p class="p">Weitere Angaben zur Verantwortlichkeit werden im <code class="ph codeph">&lt;resp&gt;</code>-Element des <em class="ph i">Responsibility Statements</em>
+      vorgenommen. Dieses kann verschiedene Unterelemente erhalten:
+    </p>
+    <ul class="ul">
+      
+      <li class="li">
+        <code class="ph codeph">&lt;note type="remarkResponsibility"&gt;</code>: Angabe der Art der Verantwortlichkeit.</li> 
+      
+      <li class="li">
+        <code class="ph codeph">&lt;note type="remarkRevisionDTA"&gt;</code>: Hinweis darauf, dass im Rahmen der Integration in das DTA sowie der 
+        DTA-Qualitätssicherung die externen Textressourcen weiter bearbeitet und aufbereitet werden (z.&nbsp;B. durch Konvertierung 
+        der Annotation in das DTA-Basisformat, durch das Beheben von Transkriptions- und Druckfehlern oder durch die weitere 
+        linguistische Aufbereitung); wird nur angegeben, falls das <code class="ph codeph">&lt;respStmt&gt;</code> einen der DTA-Ausgabe zugrundeliegenden 
+        Volltext behandelt.</li>
+      
+      <li class="li">
+        <code class="ph codeph">&lt;date type="importDTA"&gt;</code>: Zeitpunkt, zu welchem die externe Ressource in ihrem gegebenen Bearbeitungsstand 
+        in das DTA integriert wurde. Das Datum sollte das folgende Format haben: yyyy-mm-dd"T"hh:mm:ss"Z", z.B.: 2014-04-08T13:09:00Z.</li>
+      
+      <li class="li">
+        <code class="ph codeph">&lt;ref target="[URL]"/&gt;</code>: Verweis auf den Ursprungsort der integrierten Ressource (als URL). Dieses Element
+        bleibt leer.</li>
+      
+    </ul>
+    <p class="p">Wird in einem <em class="ph i">Responsibility Statement</em> eine der DTA-Publikation zugrundeliegende Transkription des Werkes näher beschrieben, 
+      so erhält das <code class="ph codeph">&lt;respStmt&gt;</code>-Element eine eindeutige <code class="ph codeph">@xml:id</code>. Über ein <code class="ph codeph">@corresp</code>-Attribut wird es 
+      mit einem <code class="ph codeph">&lt;availability&gt;</code>-Element innerhalb des <em class="ph i">Publication Statements</em> der <em class="ph i">File Description</em> 
+      verknüpft, welches die Lizenz der zugrundeliegenden Transkription angibt. Ist keine Lizenz bekannt, so wird dies im 
+      <code class="ph codeph">&lt;licence&gt;</code>-Element des <code class="ph codeph">&lt;availability&gt;</code>-Elements entsprechend vermerkt 
+      (siehe dazu Kap. <a class="xref" href="mdLicense.html">Lizenzangaben</a>). Eine Verknüpfung zu dem entsprechenden <code class="ph codeph">&lt;respStmt&gt;</code> wird 
+      dennoch hergestellt.
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>respStmt</span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- ggf. mit @xml:id="[ID]" und @corresp="[ID der zugehörigen Lizenzangabe]" --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>persName</span> <span class="ph token attr-name">ref</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[URL, z.B. Link zum GND-Datensatz]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Urheber des zugrundeliegenden Volltextes (Person)]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>persName</span><span class="ph token punctuation">&gt;</span></span> &lt;!-- ggf. mehrfach zu verwenden; 
+    zur weiteren Unterstrukturierung siehe <a class="xref" href="mdPersName.html">oben</a> --&gt;
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>orgName</span> <span class="ph token attr-name">ref</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[URL, z.B. Link zum GND-Datensatz]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Anbieter des zugrundeliegenden Volltextes (Organisation/Institution/Projektgruppe)]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>orgName</span><span class="ph token punctuation">&gt;</span></span> 
+  <span class="ph token comment">&lt;!-- Angabe von @ref fakultativ--&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>resp</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>remarkResponsibility<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Art der Verantwortlichkeit]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>remarkRevisionDTA<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Hinweise auf mögliche Änderungen am Volltext im DTA]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>ref</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[URL einer externen Quelle]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span> <span class="ph token comment">&lt;!-- ggf. mehrfach zu verwenden --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>date</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>importDTA<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Datum der Integration der zugrundeliegenden Quelle in das DTA]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>date</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>resp</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>respStmt</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">Wird das betreffende Werk am CLARIN-D-Zentrum Berlin-Brandenburgische Akademie der Wissenschaften archiviert 
+      und somit im Rahmen des Verbundprojekts CLARIN-D langfristig zur Verfügung gestellt, so wird dies in einem 
+      eigenen <code class="ph codeph">&lt;respStmt&gt;</code>-Element dokumentiert, welches die folgenden Angaben enthält: 
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>respStmt</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>orgName</span><span class="ph token punctuation">&gt;</span></span>CLARIN-D<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>orgName</span><span class="ph token punctuation">&gt;</span></span> 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>resp</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>remarkResponsibility<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Langfristige Bereitstellung der DTA-Ausgabe<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>ref</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://fedora.dwds.de<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>resp</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>respStmt</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

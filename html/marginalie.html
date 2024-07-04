@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Randbemerkungen (Marginalien)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_24"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a><ul><li><a href="bodyAllg.html">Textkörper Grundstruktur</a></li><li><a href="diskontTextpassagen.html">Interne Textbezüge</a></li><li><a href="fussnote.html">Fußnoten</a></li><li><a href="endnote.html">Endnoten</a></li><li class="active"><a href="marginalie.html">Marginalien</a></li><li><a href="teaser.html">Inhaltszusammenfassung</a></li><li><a href="bibliographie.html">Bibliographie</a></li><li><a href="nachsatz.html">Nachsatz</a></li><li><a href="zitateEpigraphe.html">Zitate und Epigraphe</a></li><li><a href="gedichte.html">Gedichte und gebundene Sprache</a></li><li><a href="drama.html">Dramen</a></li><li><a href="brief.html">Briefe</a></li></ul></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Randbemerkungen (Marginalien)</h1>
+    
+    <div class="body">
+        <p class="p">Für die Auszeichnung von Marginalien wird ebenso wie für Fuß- und
+            Endnoten das Element <code class="ph codeph">&lt;note&gt;</code> verwendet. Das
+            Attribut <code class="ph codeph">@place</code> kann die Werte
+            <code class="ph codeph">right</code> und <code class="ph codeph">left</code> annehmen, welche
+            die Position der Marginalie in Bezug auf den Textbereich
+            spezifizieren. </p>
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>right<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[rechts vom Text stehende Marginalien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>left<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[links vom Text stehende Marginalien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <p class="p">Rechts vom Text (<code class="ph codeph">@place="right"</code>) stehende
+            Marginalien werden unmittelbar nach der Zeile, auf deren Höhe sie
+            beginnen, transkribiert, links vom Text
+            (<code class="ph codeph">@place="left"</code>) stehende Marginalien unmittelbar
+            vor der Zeile, auf deren Höhe sie beginnen. </p>
+        <div class="example"><h2 class="title sectiontitle">Kodierung von Marginalien am linken Rand</h2>  <figure class="fig fignone">
+            <img class="image" src="img/eOZw1swX4p.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Der folgende Kaiser, 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#k<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Yuṅ-tšin<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>, vertrieb bei seiner Thron-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>left<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      1723.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span>
+  besteigung 1723 alle Missionare als Ruhestörer. Einige hielten sich<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/36" target="_blank" rel="external noopener">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
+                36]</a></em></p>
+            </figure> </div>
+        <div class="example"><h2 class="title sectiontitle">Kodierung von Marginalien am rechten Rand</h2>  <figure class="fig fignone">
+            <img class="image" src="img/Io0IuZbxlS.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  Die Todtenopfer und andere Gebräuche, welche er als bürgerliche<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  duldete, wurden von den Dominicanern als götzendienerisch ver-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  dammt und allen chinesischen Christen unter Androhung der Höllen-
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>right<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      1644.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  strafen verboten. Papst Innocenz X. bestätigte dieses Urtheil, das
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>right<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      1655.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  Alexander VII. auf Vorstellung der Jesuiten wieder aufhob. Die<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/35" target="_blank" rel="external noopener">[Berg, Albert]: Die preussische
+                Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
+                35]</a></em></p>
+            </figure> </div>
+        <p class="p">Steht eine Marginalie am linken Rand direkt am Beginn eines neuen
+            Paragraphen, so wird sie mit innerhalb des
+            <code class="ph codeph">&lt;p&gt;</code>-Elements wiedergegeben.</p>
+        <div class="example"><h2 class="title sectiontitle">Kodierung von Marginalien am Beginn eines neuen Paragraphen</h2>  <figure class="fig fignone">
+            <img class="image" src="img/DdYcYPlXK1.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>left<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    Vnſer ge-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    rechtig-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    keit iſt auf<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    keine Cre-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    atur ge-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    gru<span class="ph token entity">&amp;#x0364;</span>ndet/<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    ſondern<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    auff Gott.
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span> 5. Vnſere gerechtigkeit kan auff kei-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  nen Engel gebawet werden. Dann es iſt<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+           <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/arndt_christentum02_1610/64" target="_blank" rel="external noopener">Arndt, Johann: Vom wahren
+                Christenthumb. Bd. 2. Magdeburg, 1610. [Faksimile
+                64]</a></em></p> </figure> </div>
+        <p class="p">Ist eine Marginalie in den Text eingewiesen, so besteht die
+            Möglichkeit (Level 3), diesen Verweis analog zum Verfahren bei der
+            <a class="xref" href="endnote.html">Auszeichnung von Endnoten</a> wiederzugeben. Die Marginalie wird
+            dabei wie oben beschrieben transkribiert. Im
+            <code class="ph codeph">&lt;note&gt;</code>-Element, das die Marginalie
+            umschließt, steht ein <code class="ph codeph">@n</code>-Attribut, welches als Wert
+            das Referenzzeichen der Marginalie erhält. Das korrespondierende
+            Referenzzeichen im Text wird mit einem untypisierten
+            <code class="ph codeph">&lt;note&gt;</code>-Element umschlossen. Beide
+            <code class="ph codeph">&lt;note&gt;</code>-Elemente werden mittels
+            <code class="ph codeph">@xml:id</code> und <code class="ph codeph">@corresp</code> miteinander
+            verknüpft (vgl. dazu Kap. <a class="xref" href="parallelePassagen.html">4.2.2</a>). </p>
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  [Text Zeilenbeginn]
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Referenz]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[ID-Referenz]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[ID-Marginalie]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+  [Text Zeilenschluss]
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>right<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Referenz]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[ID-Marginalie]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[ID-Referenz]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Marginalie]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    </div>
+</article></main></body></html>

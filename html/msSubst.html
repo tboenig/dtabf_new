@@ -1,0 +1,22 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Substitutionen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_rjg_php_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a><ul><li><a href="msAddDel.html">Hinzufügungen und Tilgungen</a></li><li class="active"><a href="msSubst.html">Substitutionen</a></li></ul></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Substitutionen</h1>
+  <div class="body">
+      <p class="p">
+        Ersetzt der Bearbeiter eine Tilgung durch die Hinzufügung eines Textstücks, so werden die 
+        Elemente <code class="ph codeph">&lt;add&gt;</code> und <code class="ph codeph">&lt;del&gt;</code> von einem 
+        <code class="ph codeph">&lt;subst&gt;</code>-Element (für Substitution) umschlossen.
+      </p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>subst</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>del</span><span class="ph token punctuation">&gt;</span></span>[Tilgung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>del</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>add</span><span class="ph token punctuation">&gt;</span></span>[Ersetzung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>add</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>subst</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      
+      <div class="note caution note_caution"><span class="note__title">VORSICHT:</span> Das Element <code class="ph codeph">&lt;subst&gt;</code> wird <strong class="ph b">nicht</strong> verwendet,
+        wenn eine ursprüngliche Hinzufügung ihrerseits getilgt wurde.
+      </div>
+  </div>
+</article></main></body></html>

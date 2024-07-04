@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Nutzung des DTA-Basisformat-Schemas</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_drn_5wd_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a><ul><li><a href="ziel.html">Zielsetzung</a></li><li><a href="steuerungsgruppe.html">Weiterentwicklung des Formats</a></li><li><a href="leitlinien.html">Leitlinien</a></li><li><a href="schema.html">Schema und Dokumentation</a></li><li><a href="publikationen.html">Publikationen</a></li><li><a href="howto.html">How to</a><ul><li class="active"><a href="benutzungDTABfSchema.html">Nutzung des DTA-Basisformat-Schemas</a></li><li><a href="zurDokumentation.html">Nutzung der DTABf-Dokumentation</a></li><li><a href="hilfreicheTools.html">Hilfreiche Tools und Anwendungen</a></li><li><a href="grundstrukturDokument.html">Grundstruktur jedes TEI-Dokuments</a></li></ul></li><li><a href="introduction_en.html">Introduction (English)</a></li></ul></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Nutzung des DTA-Basisformat-Schemas</h1>
+  <div class="body">
+    <section class="section"><h2 class="title sectiontitle">Verfügbarkeit des Schemas</h2>
+        
+    <p class="p">Das <strong class="ph b">Relax-NG-Schema</strong> des DTA-Basisformats befindet sich unter der Adresse:
+      <a class="xref" href="basisformat.rng" target="_blank" rel="external noopener">https://deutschestextarchiv.github.io/dtabf/basisformat.rng</a>.
+    </p>
+    <p class="p">Die zugrundeliegende <strong class="ph b">ODD-Datei</strong> befindet sich unter der Adresse:
+      <a class="xref" href="basisformat.odd" target="_blank" rel="external noopener">https://deutschestextarchiv.github.io/dtabf/basisformat.odd</a>.
+    </p>
+    <p class="p">Der zugehörige ergänzende <strong class="ph b">Schematron-Regelsatz</strong> ist zugänglich unter der Adresse:
+      <a class="xref" href="basisformat.sch" target="_blank" rel="external noopener">https://deutschestextarchiv.github.io/dtabf/basisformat.sch</a>.
+    </p>
+    </section>
+      <section class="section"><h2 class="title sectiontitle">Statisches vs. aktuelles Schema</h2>
+          
+    <p class="p">Das DTA-Basisformat ist zwar in seiner Spezifikation weitgehend stabil. Dennoch gibt es immer 
+      wieder Änderungen, die unter Umständen nicht abwärtskompatibel sind, d.h. Dokumente, die 
+      einmal gegen das DTA-Basisformat-Schema unter der Adresse 
+        <a class="xref" href="basisformat.rng" target="_blank" rel="external noopener">https://deutschestextarchiv.github.io/dtabf/basisformat.rng</a>
+      validiert haben, validieren nicht garantiert immer gegen dieses Schema. Deswegen kann es sinnvoll 
+      sein, sich eine lokale Kopie des Schemas zu sichern und diese in den XML-Quellen zu referenzieren.
+    </p>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Spezifikation des DTABf-Schemas in einer XML-Datei</h2>
+          
+    <p class="p">Eine zum DTA-Basisformat kompatible Datei sollte die Spezifikation des DTABf-Schemas sowie der ergänzenden DTABf-Schematron-Regeln 
+      enthalten. Daraus resultiert die folgende Grundstruktur für DTABf-Dateien: 
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token prolog">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="ph token prolog">&lt;?xml-model href="https://deutschestextarchiv.github.io/dtabf/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;</span>
+<span class="ph token prolog">&lt;?xml-model href="https://deutschestextarchiv.github.io/dtabf/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>TEI</span> <span class="ph token attr-name">xmlns</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://www.tei-c.org/ns/1.0<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>[Metadaten]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>text</span><span class="ph token punctuation">&gt;</span></span>[Text]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>text</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>TEI</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">Wenn eine lokale Version des Schemas vorgehalten wird, lautet die Schema-Spezifikation entsprechend:
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token prolog">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="ph token prolog">&lt;?xml-model href="file:/pfad/zur/datei/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?&gt;</span>
+<span class="ph token prolog">&lt;?xml-model href="file:/pfad/zur/datei/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>TEI</span> <span class="ph token attr-name">xmlns</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://www.tei-c.org/ns/1.0<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>[Metadaten]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>text</span><span class="ph token punctuation">&gt;</span></span>[Text]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>text</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>TEI</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">Eine <em class="ph i">Vorlagedatei</em>, die für die Erarbeitung DTA-Basisformat-kompatibler TEI-Dateien zugrunde gelegt werden kann, findet sich unter
+      <a class="xref" href="basisformat_template.xml" target="_blank" rel="external noopener">https://deutschestextarchiv.github.io/dtabf/basisformat_template.xml</a>.
+    </p>
+          <p class="p">Der kommerzielle XML-Editor <strong class="ph b"><a class="xref" href="http://www.oxygenxml.com/" target="_blank" rel="external noopener">oXygen</a></strong> unterstützt die Einbindung eines Schemas in eine XML-Datei mit entsprechenden Oberflächenfunktionen:</p>
+          <figure class="fig fignone"><img class="image" src="img/schemaoxygen.png" height="633" width="908"><p class="p">Einbinden des DTABf-Schemas in ein XML-Dokument im oXygen-XML-Editor</p></figure>
+      </section>
+      <section class="section"><h2 class="title sectiontitle">Validierung von XML-Dokumenten gegen das DTA-Basisformat</h2>
+          
+    <p class="p">Der <a class="xref" href="http://www.oxygenxml.com/" target="_blank" rel="external noopener">oXygen-XML-Editor</a> validiert die Dokumente direkt während der Bearbeitung gegen das jeweils eingebundene Schema und gibt bei Validierungsproblemen entsprechende Fehlermeldungen aus.</p>
+          <p class="p">Darüber hinaus existieren diverse Kommandozeilentools, die XML-Dokumente gegen ein Relax-NG-Schema validieren 
+      können. Einige Beispiele dazu:</p>
+    <pre class="pre codeblock language-xml"><code><a class="xref" href="http://www.thaiopensource.com/relaxng/jing.html" target="_blank" rel="external noopener">jing</a> https://deutschestextarchiv.github.io/dtabf/basisformat.rng quelldatei.xml
+  
+<a class="xref" href="http://xmlstar.sourceforge.net/" target="_blank" rel="external noopener">xmlstarlet</a> val -r https://deutschestextarchiv.github.io/dtabf/basisformat.rng quelldatei.xml</code></pre>
+    <p class="p">Die Validierung gegen das Schematron-Schema kann von der Kommandozeile mit Probatron erfolgen:</p>
+    <pre class="pre codeblock language-xml"><code>java -jar <a class="xref" href="https://github.com/yeyanbo/probatron" target="_blank" rel="external noopener">probatron.jar</a> quelldatei.xml</code></pre>
+      </section>
+      
+  </div>
+</article></main></body></html>

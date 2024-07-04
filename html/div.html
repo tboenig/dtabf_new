@@ -1,0 +1,274 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Texteinteilung auf Kapitelebene</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_3"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li class="active"><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Texteinteilung auf Kapitelebene</h1>
+    
+   <div class="body">
+      <p class="p">Die Texteinteilung (z.B. Kapitel, Abschnitte, Teile ...) eines Buches
+         wird mittels verschachtelter <code class="ph codeph">&lt;div&gt;</code>-Elemente
+         dargestellt. Diese enthalten in der Regel ein Attribut
+            <code class="ph codeph">@n</code>, welches die Strukturebene angibt. </p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Titel Kapitel 1]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token comment">&lt;!-- sofern vorhanden --&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>2<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Titel Unterkapitel 1.1]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token comment">&lt;!-- sofern vorhanden --&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Text]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Text]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+    ...
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      <p class="p">Darüber hinaus kann für Textabschnitte mit besonderer Struktur das
+         Attribut <code class="ph codeph">@type</code> eingesetzt werden, welches diese näher
+         spezifiziert. </p>
+      <p class="p">Folgende Werte kann das <code class="ph codeph">@type</code>-Attribut dabei
+         annehmen: </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">abbreviations</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Abkürzungsverzeichnis</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">act</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Akt im Drama</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">advertisement</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Anzeige</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">appendix</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Anhang</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">bibliography</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Bibliographie</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">chapter</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Kapitel (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">contents</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Inhaltsverzeichnis</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">copyright</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Hinweise zum Copyright</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">corrigenda</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Druckfehlerverzeichnis</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">dedication</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Widmung</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">diaryEntry</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Tagebucheintrag (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">edition</code>
+                 </td>
+                  <td class="entry" rowspan="1" colspan="1">Abdruck einer externen Textquelle (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">figures</code>
+                 </td>
+                  <td class="entry" rowspan="1" colspan="1">Verzeichnis der Abbildungen</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">frontispiece</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Frontispiz</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">imprint</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Impressum</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">imprimatur</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Druckerlaubnis</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">index</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Register</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">letter</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Brief (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">poem</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Gedicht</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">postface</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Schlusswort, Nachwort, Epilog (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">preface</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Geleitwort, Vorwort, Einleitung (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">recipe</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Rezept (Level 3)</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" rowspan="1" colspan="1">
+                     <code class="ph codeph">scene</code>
+                  </td>
+                  <td class="entry" rowspan="1" colspan="1">Szene im Drama</td>
+               </tr>
+            </tbody></table>
+      <p class="p">In der Regel sind Dokumente durch <code class="ph codeph">&lt;div&gt;</code>-Elemente strukturiert. Ausnahmen sind 
+         jedoch möglich. Zum Beispiel können Gedichtbände gänzlich mit <code class="ph codeph">&lt;lg&gt;</code>s strukturiert 
+         werden (s. Kapitel <a class="xref" href="gedichte.html">Gedichte</a>).</p>
+      <p class="p">Die Titel der (Unter-)Kapitel werden mit dem <code class="ph codeph">&lt;head&gt;</code>-Element umschlossen. 
+         Dabei ist es unerheblich, ob der jeweilige Titel als Überschrift auf einer eigenen Zeile steht, 
+         oder am Beginn der ersten Kapitelzeile erscheint. Die Abstände zwischen Überschriften verschiedener 
+         Ebenen, die Ausrichtung der Überschriften (z.B. zentriert) sowie eventueller Frakturwechsel
+         werden nicht gesondert ausgezeichnet. Hingegen werden Zeilenumbrüche, alle typographischen 
+         Besonderheiten (fett, kursiv, gesperrt etc.) sowie ein Wechsel zur Antiqua-Schrift ausgezeichnet.</p>
+      <div class="example"><h2 class="title sectiontitle">Kapitelstrukturierung</h2>
+         
+         <figure class="fig fignone">
+            <img class="image" src="img/FTcrVmt7dM.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>IV.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>Die Brauchbarkeit der Durchschnittszahlen.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>milestone</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#hr<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">unit</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>section<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>2<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>§ 17.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#b<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Gruppierung der Versuchsresultate.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Die erste Frage, welche aus den in der beschriebenen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      Weise angestellten Untersuchungen eine Antwort erwartet,<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      ist nach den Erörterungen von §§ 7 und 8 die nach der<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      Natur der gewonnenen Durchschnittszahlen. Sind die immer-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      hin schwankenden Zeiten, welche erforderlich waren, um<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      Reihen von bestimmter Länge <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#g<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>unter möglichst gleichen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      Umständen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> gerade auswendig zu lernen, so gruppiert, daſs<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      man ihre Mittelwerte mit Wahrscheinlichkeit als Maſszahlen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      im physikalischen Sinne ansehen darf oder nicht?<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/ebbinghaus_gedaechtnis_1885/63" target="_blank" rel="external noopener">Ebbinghaus, Hermann: Über das Gedächtnis. Leipzig, 1885. [Faksimile 63]</a></em></p>
+         </figure>
+      </div>
+      <p class="p">Grundsätzlich erfolgt die <code class="ph codeph">&lt;div&gt;</code>-Strukturierung
+         als Kapiteleinteilung. Werden in der Vorlage zusätzlich weitere
+         Strukturierungsansätze verfolgt, so werden diese der Kapiteleinteilung
+         untergeordnet, jedoch nach Möglichkeit mit abgebildet. </p>
+      <div class="example"><h2 class="title sectiontitle">Verschiedene Strukturierungsansätze auf Kapitelebene</h2>
+         
+         <figure class="fig fignone">
+            <img class="image" src="img/YE7waC5HwX.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>2<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#b<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#aq<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>IV.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> Milch- und Waſſerſuppen.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>3<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>45. Milchſuppe.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Ein Maß Milch, einen Eßlöffel voll Stärke oder Kartoffel-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      mehl, Zitronenſchale oder auch ein Paar friſche Pfirſichblätter,<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+             <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/davidis_kochbuch_1849/82" target="_blank" rel="external noopener">Davidis, Henriette:
+                     Praktisches Kochbuch für die gewöhnliche und feinere Küche.
+                     4. Aufl. Bielefeld, 1849. [Faksimile 82]</a></em></p>
+         </figure>
+      </div>
+      <p class="p">Untergeordnete <code class="ph codeph">&lt;div&gt;</code>-Container enden entweder
+         mit dem Beginn einer neuen <em class="ph i">division</em> gleicher Ebene
+         oder mit dem Ende der übergeordneten <em class="ph i">division</em>.
+         Eingeschobene <code class="ph codeph">&lt;div&gt;</code>-Container, nach deren
+         Abschluss die übergeordnete <em class="ph i">division</em> weitergeführt
+         wird, sind nicht möglich. Es gibt jedoch Fälle, in welchen die
+         Möglichkeit, den Textfluss durch eine <em class="ph i">division</em> zu
+         unterbrechen und am Schluss der eingeschobenen
+            <em class="ph i">division</em> wieder aufzunehmen, notwendig ist. In
+         diesen Fällen wird das Element <code class="ph codeph">&lt;floatingText&gt;</code>
+         eingesetzt, innerhalb dessen die eingeschobende
+            <em class="ph i">division</em> realisiert wird. </p>
+      <div class="example"><h2 class="title sectiontitle">Einschub</h2>
+         
+         <figure class="fig fignone">
+            <img class="image" src="img/9i_izyOAE4.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f0173<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>163<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+   ebenfalls in das Dintenfaß zu ſchauen, um den Grund<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   der Zögerung zu erfahren. Endlich aber iſt Eliſe mit<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   ihren Vorbereitungen fertig und ſchreibt:<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>floatingText</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>body</span><span class="ph token punctuation">&gt;</span></span>
+         <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>opener</span><span class="ph token punctuation">&gt;</span></span>
+               <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>salute</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#et<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Lieber Guſtav!<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>salute</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>opener</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>„Dein Brief iſt glücklich angekommen. Flämm-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „chen hat ihn gebracht. Die alte Martha hat einen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „naſſen Waſchlappen im Fenſter liegen; ſie will Dich<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „tüchtig waſchen, wenn Du kommſt. Den Onkel<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „kann ich nicht feſtbinden, er rennt heute immer in<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „der Stube auf und ab und ſitzt keinen Augenblick<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „ſtill. Du ſollſt erſt Dein Exercitium fertig machen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „und es mit bringen, eher ſoll ich nicht kommen!<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            „Mach’ ſchnell!!! Meine Taſche bringe ich mit!“ —<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>closer</span><span class="ph token punctuation">&gt;</span></span>
+               <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>salute</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#et<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Eliſe.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>salute</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>closer</span><span class="ph token punctuation">&gt;</span></span>
+         <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>body</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>floatingText</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Auch dieſe Botſchaft wird dem Flämmchen umge-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   hängt — die Praxis hat es gelehrig gemacht; zwitſchernd<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   ſchüttelt es das Köpfchen, als wolle es ſagen, nuniſt’s<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+             <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/raabe_sperlingsgasse_1857/173" target="_blank" rel="external noopener">Raabe, Wilhelm: Die Chronik
+                     der Sperlingsgasse. Berlin, 1857. [Faksimile
+                  173]</a></em></p>
+         </figure>
+      </div>
+   </div>
+</article></main></body></html>

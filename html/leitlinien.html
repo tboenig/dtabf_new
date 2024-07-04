@@ -1,0 +1,144 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Leitlinien für die Weiterentwicklung des DTABf</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="unbenannt1"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a><ul><li><a href="ziel.html">Zielsetzung</a></li><li><a href="steuerungsgruppe.html">Weiterentwicklung des Formats</a></li><li class="active"><a href="leitlinien.html">Leitlinien</a></li><li><a href="schema.html">Schema und Dokumentation</a></li><li><a href="publikationen.html">Publikationen</a></li><li><a href="howto.html">How to</a></li><li><a href="introduction_en.html">Introduction (English)</a></li></ul></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Leitlinien für die Weiterentwicklung des DTABf</h1>
+	
+    <div class="body">
+    	<p class="p"><em class="ph i">Herausgegeben von der <a class="xref" href="steuerungsgruppe.html">DTABf-Steuerungsgruppe</a></em></p>
+			<section class="section">
+				<p class="p">Das DTA-Basisformat (DTABf) stellt ein Format für die TEI-konforme
+				Textauszeichnung digitaler Volltexte von historischen Drucken mit einer
+				Erweiterung für Handschriften dar. Mit dem DTABf wollen wir einen
+				Vorschlag für einen Standard zur Volltext-Aufbereitung im Bereich
+				(historischer) Textdaten unterbreiten, der die Grundbedürfnisse der
+				Annotation für verschiedene Disziplinen adressiert. Damit können Texte,
+				die mit dem Basisformat kompatibel sind, sowohl in das Deutsche
+				Textarchiv (DTA) einfließen, als auch in anderen Volltextarchiven und
+				Editionsprojekten leichter nachgenutzt werden.</p><p class="p">Das DTABf folgt den
+				P5-Richtlinien der Text Encoding Initiative (TEI). Da diese Richtlinien
+				jedoch Lösungen für sämtliche Bedürfnisse bei der Textaufbereitung
+				anbieten sollen und daher entsprechend vielfältig und umfangreich sind,
+				bedürfen sie im konkreten Einzelfall einer näheren Spezifizierung. Daher
+				haben wir aus den P5-Richtlinien für die Textstrukturierung im
+				DTA-Korpus eine Auswahl an Elementen getroffen (Tagset), die das DTABf
+				bildet. Dieses Tagset ist mit den P5-Richtlinien der TEI vollständig
+				konform; auf Erweiterungen durch davon abweichende Elemente wurde
+				verzichtet.</p><p class="p">Ziel des DTABf ist es, eine umfassende
+				Textaufbereitung zu ermöglichen und dabei gleichzeitig
+				Variationsspielräume bei der Annotation so einzuschränken, dass die
+				Interoperabilität aller DTABf-Texte untereinander gewährleistet wird.
+				Für dieses Ziel stellt die weite zeitliche Erstreckung des DTA-Korpus
+				einerseits und seine Textsortenvielfalt andererseits eine gute Grundlage
+				dar, resultiert sie doch u. a. in einer strukturellen Variabilität der
+				Vorlagen, der mit dem zur Verfügung stehenden Tagset Genüge getan werden
+				muss. Dennoch werden immer wieder Vorschläge für Weiterentwicklungen des
+				Formats eingebracht, die z. B. in Textsorten und Überlieferungsmedien
+				beobachtet wurden, die bislang nicht im Fokus des DTABf
+				standen.</p><p class="p">Die Weiterentwicklung des DTABf und Ergänzung um fehlende
+				Auszeichnungsmöglichkeiten ist also notwendig. Sie soll allerdings vor
+				dem geschilderten Hintergrund unter Beachtung einiger Leitlinien
+				erfolgen:</p>
+				<ol class="ol">
+					<li class="li"><strong class="ph b">Für Erweiterungen gilt:</strong> So viel wie nötig, so wenig wie möglich.
+						Bei der Erweiterung des Formats um neue Auszeichnungslösungen wird
+						darauf geachtet, dass das Format insgesamt möglichst kompakt und
+						übersichtlich bleibt. Vor diesem Hintergrund wird jeweils geprüft,
+						ob Ergänzungen auf Attributwert-Ebene bereits Abhilfe schaffen. Ist
+						dies nicht der Fall, werden entsprechend die Möglichkeiten auf
+						Attribut-Ebene und schließlich auf Element-Ebene eruiert.</li>
+					<li class="li"><strong class="ph b">Ambiguitäten vermeiden:</strong> Auch weiterhin soll bei Ergänzungen zum
+						DTABf das Ziel verfolgt werden, die Interoperabilität der
+						DTABf-Daten nicht zu gefährden. Dafür wird kritisch untersucht, ob
+						ein ‚neues‛ Phänomen möglicherweise durch das vorhandene Tagset mit
+						abgedeckt werden kann. Werden Ergänzungen notwendig, wird
+						sichergestellt, dass diese nicht zu Unsicherheiten durch alternative
+						Annotationsmöglichkeiten führen. Die Vermeidung von Ambiguitäten
+						betrifft dabei zweierlei Aspekte: Zum einen sollte es für dasselbe
+						Phänomen nur eine mögliche Auszeichnung geben, zum anderen sollte
+						dasselbe Tagging nicht gleichzeitig verschiedene Phänomene
+						repräsentieren können.</li>
+					<li class="li"><strong class="ph b">Bestandsübergreifende Relevanz:</strong> Phänomene, für die neue
+						Auszeichnungsmöglichkeiten notwendig werden, werden auf verbreitetes
+						Vorkommen bzw. projekt- und bestandübergreifende Anwendbarkeit hin
+						geprüft. Anwendungsfälle, Auszeichnungslösungen oder Vokabulare, die
+						sehr spezifisch für ein Projekt oder eine Fragestellung sind, jedoch
+						darüber hinaus voraussichtlich nicht (in der vorgeschlagenen Form)
+						genutzt werden, können nicht unterstützt werden.</li>
+					<li class="li"><strong class="ph b">Allgemeingültigkeit:</strong> Es ist vorgesehen und wird aktiv unterstützt,
+						dass das DTABf auch außerhalb des engeren Kontextes des DTA der
+						Datenannotation zugrunde gelegt und dabei gegebenenfalls auch um
+						projektspezifische bzw. stark fachlich spezialisierte
+						Auszeichnungsmöglichkeiten (z. B. historische Maßangaben, Waren und
+						Preise, Redewiedergabe) erweitert wird. Solche Erweiterungen sollen
+						jedoch nicht in das DTABf zurückfließen. Das DTABf soll hier als
+						Startpunkt gelten mit dem Ziel, die Schnittmenge der
+						Annotationsbedürfnisse für ganz verschiedene Anwendungsszenarien
+						abzubilden.</li>
+					<li class="li"><strong class="ph b">Dokumentation:</strong> Für das DTABf wird eine umfassende Dokumentation
+						angeboten und gepflegt, die unter einer freien Lizenz im DITA-Format
+						zur Nachnutzung bereitgestellt wird. Es ist erwünscht, dass diese
+						Dokumentation eventuellen weiteren Projektdokumentationen in
+						externen Kontexten zugrunde gelegt wird. Darüber hinaus wird
+						nachdrücklich empfohlen, Abweichungen vom DTABf, die sich
+						möglicherweise aus den Notwendigkeiten des jeweiligen Projekts
+						ergeben haben, zu dokumentieren und diese Dokumentation ebenfalls
+						öffentlich zugänglich zu machen.</li>
+					<li class="li">
+					<strong class="ph b">Begrenzung:</strong> Im Fokus des Formats liegen neuzeitliche Drucke und
+						Handschriften aus der Zeit vor der Digitalisierung (ca. 1600 bis
+						1980). Dabei erweitert das DTABf sein Spektrum gegenüber dem
+						ursprünglichen Projektkontext des DTA und DWDS um handschriftliche
+						Textsorten sowie um weitere Verwendungsszenarien, z.B. in
+						editorischen Kontexten. Das Format unterstützt aktuell primär
+						europäische Sprachen- und Schriftsysteme. Eine über diesen
+						abgesteckten Rahmen hinausgehende Nutzung ist möglich und kann sich
+						anbieten, wird allerdings aktuell nicht aktiv unterstützt.
+				</li>
+					<li class="li">
+					<strong class="ph b">Pragmatische Edition:</strong> Mit dem DTABf soll es möglich sein, nicht nur
+						logische (die Semantik betreffende), sondern auch physische (das
+						Layout betreffende) Textstrukturen abzubilden. Dabei wird allerdings
+						die Textedition in Form eines diplomatischen Abdrucks nicht
+						unterstützt, insofern dieser mimetisch die Vorlage wiederzugeben
+						intendiert. So wird z. B. die Auszeichnung von Einrückungen oder
+						vertikal gedruckten Textpassagen unterstützt, nicht jedoch die
+						Angabe der genauen Tiefe der Einrückung oder des Neigungswinkels
+						eines Teiltexts.
+				</li>
+				<li class="li">
+					<strong class="ph b">Verarbeitung:</strong> Bei Ergänzungen am DTABf wird die Verarbeitbarkeit
+						der annotierten Texte besonders berücksichtigt. Eine besondere Rolle
+						spielen dabei allgemein z. B. die Vermeidung von Ambiguitäten (Punkt
+						2), die Beschränkung des Formats gegenüber neuen
+						Auszeichnungsmöglichkeiten (Punkt 3), die Dokumentation und
+						technische Spezifikation aller Facetten des Formats (Punkt 5) sowie
+						bei konkreten Erweiterungen die Vermeidung von Textinhalt aus der
+						Quelle (ausgenommen Nummerierungen) in Attributwerten, entsprechende
+						Auszeichnung editorischer Paratexte, Vermeidung offener Wertelisten,
+						Unterstützung kanonischer Referenzierungen, Bevorzugung von
+						Container- vor Milestone-Elementen etc. Es werden außerdem zusammen
+						mit dem Format Verarbeitungsroutinen und Tools zur Unterstützung der
+						Auszeichnung angeboten.
+				</li>
+				</ol>
+				
+			</section>
+    	<section class="section"><h2 class="title sectiontitle">Procedere von Änderungen am
+				DTA-Basisformat</h2>
+    		
+    		<p class="p">Die Weiterentwicklung des DTABf wird von einer Steuerungsgruppe aus 
+    			derzeit 8 Mitgliedern begleitet (s. <a class="xref" href="http://deutschestextarchiv.de/news/71" target="_blank" rel="external noopener">http://deutschestextarchiv.de/news/71</a>).
+				Anlaufpunkt für Änderungs- und Ergänzungsvorschläge ist das Ticketsystem
+				der DTABf-Instanz (s. <a class="xref" href="https://github.com/deutschestextarchiv/dtabf/issues" target="_blank" rel="external noopener">auf Github</a>). Über
+				Vorschläge wird durch die Steuerungsgruppe beraten und schließlich
+				abgestimmt. Die Annahme eines Änderungsvorschlags
+				erfordert eine einfache Mehrheit in der Steuerungsgruppe. An der
+				Abstimmung müssen mindestens 5 Mitglieder der Gruppe beteiligt sein, um
+				das Quorum zu erreichen. Abgestimmt werden kann mit “Annahme der
+				Änderung”, “Ablehnung der Änderung” oder Enthaltung.</p>
+    	</section>
+    	
+    </div>
+</article></main></body></html>

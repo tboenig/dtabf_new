@@ -1,0 +1,41 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Grundstruktur der Kodierung von Klammerungen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="klammerungAllg"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a></li><li><a href="klammerung.html">Klammerungen</a><ul><li class="active"><a href="klammerungAllg.html">Klammerungen Grundstruktur</a></li><li><a href="klListe.html">Klammerungen in Listen</a></li><li><a href="klText.html">Listenähnliche Klammerungen</a></li><li><a href="klHorizontal.html">Horizontale Klammerungen</a></li><li><a href="klTabelle.html">Klammerungen in Tabellen</a></li></ul></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Grundstruktur der Kodierung von Klammerungen</h1>
+    
+  <div class="body">
+           <p class="p">Es kann vorkommen, dass Textausschnitte durch zeilenübergreifende Klammerung
+            miteinander verbunden sind, wodurch deren Zusammengehörigkeit auf einer bestimmten 
+            Ebene angezeigt wird. In diesem Fall wird die Klammerung je nach Kontext für die 
+            Kollektion der geklammerten Textausschnitte oder für das Ziel der Klammerung angezeigt. 
+            Das betreffende Element erhält ein <code class="ph codeph">@rendition</code>-Attribut, welches folgende Werte 
+            annehmen kann:</p>
+            <ul class="ul">
+            
+               <li class="li">
+                  <code class="ph codeph">"#rightBraced"</code>: Klammerung am rechten Rand des Textes im betreffenden Element</li>
+            
+               <li class="li">
+                  <code class="ph codeph">"#leftBraced"</code>: Klammerung am linken Rand des Textes im betreffenden Element</li>
+            
+               <li class="li">
+                  <code class="ph codeph">"#topBraced"</code>: Klammerung am oberen Rand des Textes im betreffenden Element</li>
+            
+               <li class="li">
+                  <code class="ph codeph">"#bottomBraced"</code>: Klammerung am unteren Rand des Textes im betreffenden Element</li>
+          
+            </ul>
+            <p class="p">Die Richtung, in welche die Klammer jeweils zeigt, wird nicht eigens gekennzeichnet.</p>
+            <p class="p">In der Regel werden Klammerungen durch Listen dargestellt.</p>
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Klammerungswert]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p">Lediglich im Drama und in Tabellen können andere Elemente betroffen sein:</p>
+            <p class="p">Drama:</p>
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>stage</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Klammerungswert]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>speaker</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Klammerungswert]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>roleDesc</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Klammerungswert]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p">Tabelle:</p>
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>cell</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Klammerungswert]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span></code></pre>
+         </div>
+</article></main></body></html>

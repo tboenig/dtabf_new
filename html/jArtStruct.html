@@ -1,0 +1,45 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Strukturierung innerhalb eines Artikels</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="DTABfjArtStruct"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a><ul><li><a href="jAllg.html">Zeitungen Grundregeln</a></li><li><a href="jFront.html">Einleitende Textstücke</a></li><li><a href="jBody.html">Textkörper</a><ul><li><a href="jBodyAllg.html">Textkörper Zeitungen allgemein</a></li><li><a href="jArticleTypes.html">Artikeltypen</a></li><li class="active"><a href="jArtStruct.html">Artikelstruktur</a></li><li><a href="jLinking.html">Verknüpfungen</a></li></ul></li><li><a href="jBack.html">Abschließende Textstücke</a></li><li><a href="jBeilagen.html">Beilagen</a></li></ul></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Strukturierung innerhalb eines Artikels</h1>
+    
+  <div class="body">
+    <p class="p">
+  <strong class="ph b">Titel von Artikeln oder Artikelgruppen</strong> werden jeweils im <code class="ph codeph">&lt;head&gt;</code>-Element 
+  des <code class="ph codeph">&lt;div&gt;</code>-Elements wiedergegeben. 
+  (Vgl. <a class="xref" href="div.html">Kapitel: Texteinteilung auf Kapitelebene</a>.)
+</p>
+<p class="p">
+  <strong class="ph b">Angaben zum Autor, Ort und Datum zu Beginn eines Artikels</strong> werden als Titel des Artikels behandelt und im
+  Element <code class="ph codeph">&lt;head&gt;</code> wiedergegeben. Die Autorangabe bzw. dessen Korrespondenzzeichen 
+  steht im Element <code class="ph codeph">&lt;bibl&gt;</code>, welches das Unterelement <code class="ph codeph">&lt;author&gt;</code>
+  erhält. Die Orts- und Datumsangabe erfolgt im Element <code class="ph codeph">&lt;dateline&gt;</code>.
+</p>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bibl</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>author</span><span class="ph token punctuation">&gt;</span></span>[Autorname oder Korrespondenzzeichen]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>author</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bibl</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>dateline</span><span class="ph token punctuation">&gt;</span></span>[Ort, Datum]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>dateline</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+<p class="p">
+  Stehen die <strong class="ph b">Angaben zum Autor, Ort und Datum am Artikelende</strong>, so werden sie am Ort
+ihres Auftretens mittels &lt;bibl&gt;/&lt;author&gt; bzw. &lt;dateline&gt; wiedergegeben. 
+</p>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Artikeltext]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bibl</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>author</span><span class="ph token punctuation">&gt;</span></span>[Autorname oder Korrespondenzzeichen]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>author</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bibl</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>dateline</span><span class="ph token punctuation">&gt;</span></span>[Ort, Datum]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>dateline</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+<p class="p">
+  Die <strong class="ph b">Texterfassung</strong> erfolgt seitenweise, wobei der Text einer Seite von der linken oberen Ecke aus 
+  artikelweise erfasst wird. Jeder Artikel erhält ein Attribut <code class="ph codeph">@xml:id</code>, über welches jeweils
+  eine eindeutige ID zugeordnet wird.
+</p>
+  </div>
+</article></main></body></html>

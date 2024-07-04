@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Umgang mit unvollständigen Angaben</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_wzt_1h2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a><ul><li><a href="mdVorlagentreue.html">Vorlagentreue</a></li><li><a href="mdNormalisierungen.html">Normalisierungen</a><ul><li><a href="mdTypographHervorhebungen.html">Umgang mit typographischen Hervorhebungen</a></li><li><a href="mdDiakritika.html">Umgang mit Diakritika</a></li><li><a href="mdAbkuerzungen.html">Umgang mit Abkürzungen</a></li><li class="active"><a href="mdUnvollstAngaben.html">Umgang mit unvollständigen Angaben</a></li><li><a href="mdVerfaelschteAngaben.html">Umgang mit verfälschten/verschleierten Angaben</a></li><li><a href="mdDruckfehler.html">Umgang mit Druckfehlern und ungewöhnlichen Schreibungen</a></li></ul></li><li><a href="mdBesonderheitenErfassung.html">Besonderheiten der Metadatenerfassung</a></li></ul></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Umgang mit unvollständigen Angaben</h1>
+    <div class="body">
+     <section class="section" id="topic_wzt_1h2_qs__rekAng"><h2 class="title sectiontitle">Rekonstruierbare Angaben</h2>   
+    <p class="p">Notwendige Angaben, die auf den Titelblättern der Vorlage fehlen, z.B. der
+      Erscheinungsort, das Erscheinungsjahr, die Verlagsangabe, der Autor, werden
+      möglichst rekonstruiert.
+    </p>
+    <p class="p">Die rekonstruierten Angaben erscheinen im Kurztitel in eckigen Klammern.
+    </p></section>
+    <div class="example"><h2 class="title sectiontitle">Rekonstruierte Angaben im Kurztitel</h2>
+       
+      <div class="p"><pre class="pre">[Calvi, François de]: Beutelschneider, oder newe warhaffte
+        vnd eigentliche Beschreibung der Diebs Historien. [Bd. 1]. Frankfurt (Main), 1627.</pre></div>
+        <p class="p"><a class="xref" href="http://www.deutschestextarchiv.de/calvi_beutelschneider01_1627" target="_blank" rel="external noopener">http://www.deutschestextarchiv.de/calvi_beutelschneider01_1627</a></p>
+    </div>
+            
+    <p class="p space">In den sonstigen dafür vorgesehenen Feldern werden diese Angaben ohne weitere
+      Hinweise auf deren Rekonstruktion eingetragen.
+    </p>
+    <div class="example"><h2 class="title sectiontitle">Rekonstruierte Angaben außerhalb des Kurztitels</h2>
+       
+      <p class="p"><em class="ph i">Siehe:</em>
+      <a class="xref" href="http://www.deutschestextarchiv.de/calvi_beutelschneider01_1627" target="_blank" rel="external noopener">http://www.deutschestextarchiv.de/calvi_beutelschneider01_1627</a>
+      </p>
+    </div>
+    <p class="p space">Eine Ausnahme bildet die Verlagsangabe, die nicht im Kurztitel erscheint. Ist diese 
+      rekonstruiert, so wird dies im <code class="ph codeph">&lt;notesStmt&gt;</code> der <code class="ph codeph">&lt;sourceDesc&gt;</code>
+      entsprechend vermerkt.
+    </p>
+   <div class="example"><h2 class="title sectiontitle">Rekonstruierte Angabe des Verlags</h2>
+      
+       <p class="p"><em class="ph i">Siehe:</em>
+      <a class="xref" href="http://www.deutschestextarchiv.de/api/tei_header/hellwig_haussverwalter_1712" target="_blank" rel="external noopener">http://www.deutschestextarchiv.de/api/tei_header/hellwig_haussverwalter_1712</a>
+           </p>
+      </div>
+        <section class="section" id="topic_wzt_1h2_qs__nRekAng"><h2 class="title sectiontitle">Nicht-rekonstruierbare Angaben</h2>
+    <p class="p">Lässt sich eine Angabe nicht rekonstruieren, so wird gemäß der folgenden Tabelle darauf hingewiesen.
+    </p>
+        <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+                    <tr class="row">
+                        <th class="entry" id="topic_wzt_1h2_qs__nRekAng__entry__1">Rekonstruierte Angabe</th>
+                        <th class="entry" id="topic_wzt_1h2_qs__nRekAng__entry__2">Schreibweise</th>
+                        <th class="entry" id="topic_wzt_1h2_qs__nRekAng__entry__3">Hinweise</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr class="row">
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__1">Autor</td>
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__2"><code class="ph codeph">N. N.</code></td>
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__3">(Nomen nescio.) Ausnahmen sind Zeitungen, Lexika oder von offizieller Seite herausgegebene Werke, die auf ein nicht 
+      näher spezifizierbares Autorenkollektiv zurückgehen (z. B. Gesetzeswerke, Urkunden, Edikte); 
+      hier bleibt die Autorangabe leer.</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__1">Erscheinungsort</td>
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__2"><code class="ph codeph">s. l.</code></td>
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__3">(sine loco) Ausnahme: Manuskripte; hier wird auf eine Ortsangabe verzichtet.</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__1">Verlag</td>
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__2"><code class="ph codeph">s. e.</code></td>
+                        <td class="entry" headers="topic_wzt_1h2_qs__nRekAng__entry__3">(sine editore) Ausnahme: Manuskripte; hier wird auf eine Verlagsangabe verzichtet.</td>
+                    </tr>
+                </tbody></table>
+            <p class="p">Im Kurztitel werden diese Angaben durch eckige Klammern umschlossen, um anzuzeigen, dass es sich
+      dabei um editorische Ergänzungen handelt. In den vollständigen Titelangaben steht die jeweilige Angabe ohne 
+      Umklammerung.
+    </p></section>
+   <div class="example"><h2 class="title sectiontitle">Hinweise auf Unbekanntes im Kurztitel</h2>
+      
+      
+      <div class="p"><pre class="pre">Naumann, Bernhard: Der aufrichtige Leipziger Roßarzt. [s. l.], 1780.</pre></div>
+      
+      <div class="p"><pre class="pre">[N. N.]: Ein Koch- Und Artzney-Buch. 2. Aufl. Grätz, 1688.</pre></div>
+      
+    </div>
+  </div>
+</article></main></body></html>

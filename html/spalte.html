@@ -1,0 +1,36 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Spalten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_d23_ntj_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li class="active"><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Spalten</h1>
+  <div class="body">
+    <p class="p">Spaltenumbrüche werden mittels <code class="ph codeph">&lt;cb/&gt;</code> ausgezeichnet. Dabei markiert
+      das <code class="ph codeph">&lt;cb&gt;</code>-Element jeweils den Beginn einer neuen Spalte.
+      Spaltenzählung wird durch ein <code class="ph codeph">@n</code>-Attribut innerhalb von
+      <code class="ph codeph">&lt;cb&gt;</code> wiedergegeben. </p>
+    <p class="p">Verschiedene Erscheinungsformen von Spalten sind möglich:</p>
+    <p class="p">a) Der Text eines Bandes ist gänzlich in Spalten organisiert: In diesen Fällen ist in
+      der Vorlage die Seitennummerierung in der Regel durch Spaltenzählung ersetzt. Die
+      jeweilige Spaltennummer wird in der Transkription innerhalb des
+      <code class="ph codeph">&lt;cb&gt;</code>-Elements als Wert des <code class="ph codeph">@n</code>-Attributs wiedergegeben. Die
+      Seitenzählung wird daneben im <code class="ph codeph">@n</code>-Attribut innerhalb des
+      <code class="ph codeph">&lt;pb&gt;</code>-Elements rekonstruiert. Wechseln sich im Band gezählte und
+      ungezählte Spalten ab, so werden die fehlenden Spaltennummern nicht rekonstruiert. Es
+      wird jedoch fortlaufend eine (ggf. rekonstruierte) Seitenzählung beibehalten.</p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f[Bildnummer]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[[rekonstruierte Seitenzahl]]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>cb</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Spaltenzahl]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+    <p class="p">oder:</p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pb</span> <span class="ph token attr-name">facs</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#f[Bildnummer]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[[rekonstruierte Seitenzahl]]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>cb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+    <p class="p phase2">b) Der Text eines Bandes ist seitenweise organisiert, wird jedoch gelegentlich durch
+      Spaltendruck unterbrochen. In diesem Fall wird der Beginn des Spaltensatzes mittels <code class="ph codeph">&lt;cb type="start"/&gt;</code>, 
+      das Ende des Spaltensatzes analog mittels <code class="ph codeph">&lt;cb type="end"/&gt;</code> gekennzeichnet. Spaltenumbrüche innerhalb des Spaltensatzes werden 
+      mittels des leeren <code class="ph codeph">&lt;cb&gt;</code>-Elements wiedergegeben.</p>
+      <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> b) Der Text eines Bandes ist seitenweise organisiert, wird jedoch gelegentlich durch
+      Spaltendruck unterbrochen. In diesem Fall steht ein leeres <code class="ph codeph">&lt;cb&gt;</code>-Element am Beginn jeder Spalte.</em></div>
+    <p class="p phase2">c) Fußnoten- oder Endnotentext, Register und Verzeichnisse sind in Spalten gesetzt. Auch hier wird der Beginn des Spaltensatzes mittels <code class="ph codeph">&lt;cb type="start"/&gt;</code>, 
+      das Ende des Spaltensatzes analog mittels <code class="ph codeph">&lt;cb type="end"/&gt;</code> gekennzeichnet. Spaltenumbrüche innerhalb des Spaltensatzes werden 
+      wiederum mittels des leeren <code class="ph codeph">&lt;cb&gt;</code>-Elements wiedergegeben.</p>
+      <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> c) Fußnoten- oder Endnotentext, Register und Verzeichnisse sind in Spalten gesetzt. In diesem Fall markiert ebenfalls ein leeres 
+      <code class="ph codeph">&lt;cb&gt;</code>-Element den jeweiligen Spaltenbeginn.</em></div>
+  </div>
+</article></main></body></html>

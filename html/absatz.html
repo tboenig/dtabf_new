@@ -1,0 +1,62 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Absätze</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_ry3_ptj_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li class="active"><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Absätze</h1>
+  <div class="body">
+    <p class="p">Die Absatzstruktur wird aus der Vorlage übernommen. Die jeweiligen Absätze werden
+      mittels <code class="ph codeph">&lt;p&gt;</code>-Elementen gekennzeichnet.</p>
+    <div class="example"><h2 class="title sectiontitle">Absatz</h2>
+      
+      <figure class="fig fignone">
+        <img class="image" src="img/XHqxBBsaJ4.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>„Das wird ja ordentlich intereſſant,“ bemerkte Max<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  Werner und ſtand auf, „da könnte ich am Ende noch hier<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  für Fenia gegen irgend einen ſibiriſchen Drachen zu Felde<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  ziehen?“
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Aber der Onkel teilte die heitere Stimmung nicht;<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  ſeine Miene blieb ſo feierlich und beſorgt wie zuvor.
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+        </code></pre>
+        <p class="p"><em class="ph i">Quelle: 
+          <a class="xref" href="http://www.deutschestextarchiv.de/andreas_fenitschka_1898/48" target="_blank" rel="external noopener">Andreas-Salome, Lou: Fenitschka. Eine Ausschweifung. Stuttgart, 1898. [Faksimile 48]</a>
+        </em></p>
+      </figure></div>
+    <p class="p phase2">Einrückungen der ersten Zeile eines Absatzes bleiben
+            unberücksichtigt. </p>
+    <p class="p phase2">Größere Abstände zwischen Absätzen werden nur dann
+            ausgezeichnet, wenn diesbezüglich innerhalb eines Buches eine
+            Varianz festzustellen ist. In diesem Fall wird in der betreffenden
+            Zeile mittels <code class="ph codeph">&lt;space dim="vertical"/&gt;</code> auf den
+            signifikanten Abstand hingewiesen (s. auch Kap. <a class="xref" href="leerraum.html">Leerraum</a>).</p>
+      <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> Einrückungen der ersten Zeile eines Absatzes sowie größere Abstände
+      zwischen Absätzen bleiben unberücksichtigt. </em></div>
+<div class="example"><h2 class="title sectiontitle">(Sinntragender) Abstand zwischen Absätzen</h2>
+  <figure class="fig fignone">
+    <img class="image" src="img/dvhEgTfOad.png">
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  Mu<span class="ph token entity">&amp;#x0364;</span>nzpreis, und demnach ein vollkommneres Pfund Ster-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  ling hervor gebracht.
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  Wo alſo u<span class="ph token entity">&amp;#x0364;</span>berhaupt gemu<span class="ph token entity">&amp;#x0364;</span>nzt wird, da muß es einen feſten<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  [...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  und iſt die unumga<span class="ph token entity">&amp;#x0364;</span>ngliche Bedingung der Mo<span class="ph token entity">&amp;#x0364;</span>glichkeit einer<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  Mu<span class="ph token entity">&amp;#x0364;</span>nze.
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>space</span> <span class="ph token attr-name">dim</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>vertical<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  Mu<span class="ph token entity">&amp;#x0364;</span>nzen heißt den ſchwankenden Werth der edeln Metalle<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  befeſtigen; was ko<span class="ph token entity">&amp;#x0364;</span>nnte ihn befeſtigen als eine Sache von<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      <p class="p"><em class="ph i">Quelle: 
+      <a class="xref" href="http://www.deutschestextarchiv.de/mueller_geld_1816/233" target="_blank" rel="external noopener">Müller,
+        Adam Heinrich: Versuche einer neuen Theorie des Geldes mit besonderer 
+        Rücksicht auf Großbritannien. Leipzig u. a., 1816. [Faksimile 233]</a>
+    </em></p>
+  </figure></div>
+  </div>
+</article></main></body></html>

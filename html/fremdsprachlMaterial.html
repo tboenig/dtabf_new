@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Fremdsprachliches Material</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_62"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a><ul><li class="active"><a href="fremdsprachlMaterial.html">Fremdsprachliches Material</a></li><li><a href="eigenname.html">Eigennamen</a></li><li><a href="datum.html">Datumsangaben</a></li></ul></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Fremdsprachliches Material</h1>
+    <div class="body">
+        <p class="p">Fremdsprachliche Passagen werden grundsätzlich mit erfasst, müssen
+            jedoch nicht gesondert als solche gekennzeichnet werden (DTABf –
+            Level 2). </p>
+        <p class="p">Soll eine Kennzeichnung fremdsprachlichen Materials als solches
+            erfolgen (DTABf – Level 3), so ist dies im Element
+            <code class="ph codeph">&lt;foreign&gt;</code> möglich. Die Angabe der
+            betreffenden Sprache ist obligatorisch und erfolgt im Attribut
+            <code class="ph codeph">@xml:lang</code> als dreibuchstabiger Code entsprechend
+            der <a class="xref" href="http://www-01.sil.org/iso639-3/codes.asp" target="_blank" rel="external noopener">ISO-Norm 639-3</a>. </p>
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>foreign</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>lang</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[ISO 639-3 Code]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[fremdsprachliche Textpassage]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>foreign</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <p class="p">Ist die Sprache einer fremdsprachlichen Textpassage nicht
+            definierbar, so steht in <code class="ph codeph">@xml:lang</code> der Wert "und"
+            (i.e. "undefiniert"). </p>
+        <p class="p">In <code class="ph codeph">@xml:lang</code> wird grundsätzlich genau eine Sprache
+            angegeben. Die Verschachtelung von
+            <code class="ph codeph">&lt;foreign&gt;</code>-Elementen zur Kennzeichnung
+            mehrerer Sprachen für eine fremdsprachliche Passage ist zu
+            vermeiden. Gelten für eine fremdsprachliche Passage mehrere
+            Sprachen, so wird dies mit dem Wert <code class="ph codeph">"mul"</code>
+            ausgedrückt. Eine nähere Spezifikation der Sprachen erfolgt nicht in
+            <code class="ph codeph">@xml:lang</code>. (Raum für diese Angabe bietet jedoch der
+            editorische Kommentar; vgl. Kap. <a class="xref" href="editorEingriff.html">Editorischer Sachkommentar</a>.) </p>
+        <div class="example"><h2 class="title sectiontitle">Kodierung von fremdsprachlichem Material</h2>  <figure class="fig fignone">
+            <img class="image" src="img/laLcGRzsUZ.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[...] sanskr. iran. griech. umbr. osk. 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#i<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>foreign</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>lang</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>mul<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>an<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>foreign</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> , aber lat. 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#i<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>foreign</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>lang</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>lat<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>in<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>foreign</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> , deutsch 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#i<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>un<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> .<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>[...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+             <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/curtius_sprachforschung_1885/101" target="_blank" rel="external noopener">Curtius, Georg: Zur Kritik der
+                neuesten Sprachforschung. Leipzig, 1885. [Faksimile
+                101]</a></em></p>
+            </figure> </div>
+        <p class="p">Besteht der gesamte Inhalt eines strukturierenden Elements aus
+            fremdsprachlichem Material, so kann dies innerhalb des jeweiligen
+            strukturierenden Elements durch das Attribut
+            <code class="ph codeph">@xml:lang</code> angezeigt werden. </p>
+        <div class="example"><h2 class="title sectiontitle">Umgang mit gänzlich fremdsprachlichem Elementinhalt</h2>  <figure class="fig fignone">
+            <img class="image" src="img/zJwO_722Nd.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePage</span><span class="ph token punctuation">&gt;</span></span>
+  [...] 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>epigraph</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>cit</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>quote</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>lang</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>fra<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#aq<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Tel eſt l'effet de la vérité: on la repouſſe; mais<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+        en la repouſſant on la voit, &amp; elle pénètre.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>quote</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bibl</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#et #aq<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#i<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Garat le jeune<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bibl</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>cit</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>epigraph</span><span class="ph token punctuation">&gt;</span></span>[...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePage</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/jacobi_allwill_1792/9" target="_blank" rel="external noopener">Jacobi, Friedrich Heinrich:
+                Eduard Allwills Briefsammlung. Mit einer Zugabe von eigenen
+                Briefen. Königsberg, 1792. [Faksimile 9]</a></em></p>
+            </figure> </div>
+        <p class="p">Fremdsprachliches Textmaterial, das nicht entzifferbar ist oder aus
+            anderen Gründen (zunächst) nicht transkribiert wird, wird mittels
+            des oben beschriebenen <code class="ph codeph">&lt;foreign&gt;</code>-Elements
+            angedeutet. Auf die fehlende Transkription weist ein
+            <code class="ph codeph">&lt;gap/&gt;</code>-Element mit dem Hinweis
+            <code class="ph codeph">@reason="fm"</code> hin (siehe auch Kap. <a class="xref" href="gapSupplied.html">Unleserliche bzw.
+            schwer entzifferbare Zeichen</a>). </p>
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>foreign</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>lang</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[ISO 639-3 Code]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>gap</span> <span class="ph token attr-name">reason</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>fm<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>foreign</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <div class="example"><h2 class="title sectiontitle">Umgang mit nicht entzifferbarem fremdsprachlichem Material</h2>  <figure class="fig fignone">
+            <img class="image" src="img/GgVFes0JvV.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span> [...] Plagen/ 
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>foreign</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>lang</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>ell<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>gap</span> <span class="ph token attr-name">reason</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>fm<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>foreign</span><span class="ph token punctuation">&gt;</span></span> 
+  Gesetzt aber/ [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/breymann_vertreibung_1727/11" target="_blank" rel="external noopener">Breymann, Conrad Andreas: Die
+                Vertreibung der Bitterkeit des Todes/ Welche bey dem
+                Hochansehnlichen Leich-Begängniß/ So auf Hohe Verordnung Sr.
+                Hoch-Fürstl. Durchl. ... Dem ... Herrn Eberhard Finen/ ... Als
+                Derselbe Den 12ten Apr. des 1726ten Jahrs ... entschlafen/ ...
+                vorgestellet ... Blanckenburg, 1727. [Faksimile
+                11]</a></em></p>
+            </figure> </div>
+    </div>
+</article></main></body></html>

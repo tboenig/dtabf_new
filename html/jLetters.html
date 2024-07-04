@@ -1,0 +1,55 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Leserbriefe</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="jLetters"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a><ul><li><a href="jAllg.html">Zeitungen Grundregeln</a></li><li><a href="jFront.html">Einleitende Textstücke</a></li><li><a href="jBody.html">Textkörper</a><ul><li><a href="jBodyAllg.html">Textkörper Zeitungen allgemein</a></li><li><a href="jArticleTypes.html">Artikeltypen</a><ul><li><a href="jArticle.html">Berichte/Nachrichten</a></li><li><a href="jFeuilleton.html">Feuilleton</a></li><li><a href="jAnnouncements.html">Anzeigen</a></li><li class="active"><a href="jLetters.html">Leserbriefe</a></li><li><a href="jArtOther.html">Sonstige Artikel</a></li></ul></li><li><a href="jArtStruct.html">Artikelstruktur</a></li><li><a href="jLinking.html">Verknüpfungen</a></li></ul></li><li><a href="jBack.html">Abschließende Textstücke</a></li><li><a href="jBeilagen.html">Beilagen</a></li></ul></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Leserbriefe</h1>
+  <div class="body">
+    <p class="p">
+    Leserbriefe werden durch <code class="ph codeph">&lt;div&gt;</code>-Elemente erster Ebene umschlossen, welche das 
+    Attribut-Wert-Paar <code class="ph codeph">@type="jReadersLetters"</code> erhalten. Der jeweilige Brief wird durch ein 
+    <code class="ph codeph">&lt;div&gt;</code>-Element tieferer Ebene umschlossen, welches den <code class="ph codeph">@type</code>-Wert 
+    <code class="ph codeph">"letter"</code> erhält.
+  </p>
+  <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+              <tr class="row">
+                  <th class="entry" id="jLetters__entry__1">Kategorie</th>
+                  <th class="entry" id="jLetters__entry__2"><code class="ph codeph">@type</code>-Wert</th>
+                  <th class="entry" id="jLetters__entry__3">Hierarchie-Ebene (empfohlen)</th>
+              </tr>
+          </thead><tbody class="tbody">
+              <tr class="row">
+                  <td class="entry" headers="jLetters__entry__1">Leserbriefe</td>
+                  <td class="entry" headers="jLetters__entry__2"><code class="ph codeph">jReadersLetters</code></td>
+                  <td class="entry" headers="jLetters__entry__3">1</td>
+              </tr>
+              <tr class="row">
+                  <td class="entry" headers="jLetters__entry__1">Brief</td>
+                  <td class="entry" headers="jLetters__entry__2"><code class="ph codeph">letter</code></td>
+                  <td class="entry" headers="jLetters__entry__3">2 | 3 | ...</td>
+              </tr>
+              
+          </tbody></table>
+  
+  <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jReadersLetters<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Brief]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weiterer Brief]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+
+  <p class="p">
+    Sind innerhalb der Rubrik "Leserbriefe" einzelne Leserbriefe wiederum gruppiert, so 
+    können mehrere <code class="ph codeph">&lt;div type="jReadersLetters"&gt;</code>-Elemente 
+    ineinander geschachtelt werden.
+  </p>
+  <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jReadersLetters<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- Rubrik Leserbriefe --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jReadersLetters<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- erste Gruppe von Leserbriefen --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Leserbriefl]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weiterer Leserbrief]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jReadersLetters<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- zweite Gruppe von Leserbriefen --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Leserbrief]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>letter<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weiterer Leserbrief]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

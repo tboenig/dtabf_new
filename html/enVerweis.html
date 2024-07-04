@@ -1,0 +1,33 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Verweise auf Endnoten im Text</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_22"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a><ul><li><a href="bodyAllg.html">Textkörper Grundstruktur</a></li><li><a href="diskontTextpassagen.html">Interne Textbezüge</a></li><li><a href="fussnote.html">Fußnoten</a></li><li><a href="endnote.html">Endnoten</a><ul><li class="active"><a href="enVerweis.html">Verweise auf Endnoten im Text</a></li><li><a href="enKodierung.html">Wiedergabe der Endnoten</a></li></ul></li><li><a href="marginalie.html">Marginalien</a></li><li><a href="teaser.html">Inhaltszusammenfassung</a></li><li><a href="bibliographie.html">Bibliographie</a></li><li><a href="nachsatz.html">Nachsatz</a></li><li><a href="zitateEpigraphe.html">Zitate und Epigraphe</a></li><li><a href="gedichte.html">Gedichte und gebundene Sprache</a></li><li><a href="drama.html">Dramen</a></li><li><a href="brief.html">Briefe</a></li></ul></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Verweise auf Endnoten im Text</h1>
+  <div class="body">
+    <p class="p">Der Verweis auf eine Endnote im Text wird mit
+      dem <code class="ph codeph">&lt;note&gt;</code>-Element ausgezeichnet, das eine
+      <code class="ph codeph">@xml:id</code> und einen Verweis auf das zugehörige
+      Endnotenzeichen mittels <code class="ph codeph">@next</code> enthält: </p>
+    <pre class="pre codeblock"><code>&lt;note place="end" n="[Endnotenreferenz]" xml:id="[ID 01]" next="#[ID 02]"/&gt;</code></pre>
+    <p class="p">Das referenzierende Zeichen wird textgetreu
+      wiedergegeben; besondere Formatierungen des Endnotenzeichens
+      (Hoch-/Tiefstellung, gesperrter Druck …) bleiben dabei
+      unberücksichtigt. </p>
+    <div class="example"><h2 class="title sectiontitle">Wiedergabe der Endnotenreferenz im Text</h2>  <figure class="fig fignone">
+            <img class="image" src="img/UwY7n5VZAN.png">
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[...] wegen gewarnt; wir gebrauchten die Vorsicht, die rauhe Haut zu<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  entfernen, assen aber das weisse Fleisch 
+  ohne allen Nachtheil.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>end<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>78)<span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>a01<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">next</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#a02<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/berg_ostasienzoologie01_1876/342" target="_blank" rel="external noopener">Martens, Eduard von: Die
+                preussische Expedition nach Ost-Asien. Nach amtlichen Quellen.
+                Zoologischer Teil. Erster Band. Berlin, 1876. [Faksimile
+                342]</a></em></p>
+            </figure> </div>
+    <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> Der Verweis auf eine
+      Endnote im Text wird nicht gesondert als solcher ausgezeichnet.
+      Typographische Besonderheiten des Endnotenzeichens werden jedoch wie
+      gewohnt berücksichtigt.</em> </div>
+  </div>
+</article></main></body></html>

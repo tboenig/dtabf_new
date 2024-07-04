@@ -1,0 +1,32 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Editorische Richtlinien (//encodingDesc)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_k15_1lj_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a></li><li class="active"><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Editorische Richtlinien <code class="ph codeph">(//encodingDesc)</code></h1>
+    
+  <div class="body">
+    <p class="p">Hinweise zu den editorischen Richtlinien, die der DTA-Textausgabe zugrunde liegen, werden in der 
+      <em class="ph i">Encoding Description</em> (<code class="ph codeph">&lt;encodingDesc&gt;</code>) festgehalten.</p>
+    <p class="p">Dabei beinhaltet das 
+      Unterelement <em class="ph i">Editorial Description</em> Angaben zur Erfassungsart für den jeweiligen Text sowie 
+      zum Grad der Konformität des Textes mit den DTA-Richtlinien (<a class="xref" href="http://www.deutschestextarchiv.de/doku/richtlinien" target="_blank" rel="external noopener">DTA-Transkriptionsrichtlinien</a> und 
+      <a class="xref" href="http://www.deutschestextarchiv.de/doku/basisformat" target="_blank" rel="external noopener">DTA-Basisformat</a>).
+    </p>
+    <p class="p">
+      Das Unterelement <em class="ph i">Tags Declaration</em> enthält in mehreren <code class="ph codeph">&lt;rendition&gt;</code>-Elementen 
+      die Angabe, wie die <code class="ph codeph">@rendition</code>-Werte des TEI-Textes beim Rendering in CSS aufgelöst 
+      werden sollen.
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>encodingDesc</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>editorialDecl</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Angaben zu den Transkriptions- und Annotationsrichtlinien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[weitere Angaben zu den Transkriptions- und Annotationsrichtlinien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>editorialDecl</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>rendition</span> <span class="ph token attr-name">scheme</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>css<span class="ph token punctuation">"</span></span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[@rendition-Wert]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[CSS-Entsprechung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>rendition</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>encodingDesc</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <div class="note attention note_attention"><span class="note__title">Achtung:</span> Die CSS-Entsprechungen, die im DTA für die jeweiligen <code class="ph codeph">@rendition</code>-Werte genutzt wurden,
+    sind im Kapitel <a class="xref" href="typogrAllg.html">Typographische Besonderheiten - Richtlinien der Kodierung</a> 
+    dokumentiert.</div>
+  </div>
+</article></main></body></html>

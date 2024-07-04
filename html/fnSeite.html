@@ -1,0 +1,41 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Auf eine Seite begrenzte Fußnoten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_18"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a><ul><li><a href="bodyAllg.html">Textkörper Grundstruktur</a></li><li><a href="diskontTextpassagen.html">Interne Textbezüge</a></li><li><a href="fussnote.html">Fußnoten</a><ul><li class="active"><a href="fnSeite.html">Seitenweise Fußnoten</a></li><li><a href="fnFortlaufend.html">Fortlaufende Fußnoten</a></li><li><a href="fnMehrfachReferenziert.html">Mehrfach referenzierte Fußnoten</a></li></ul></li><li><a href="endnote.html">Endnoten</a></li><li><a href="marginalie.html">Marginalien</a></li><li><a href="teaser.html">Inhaltszusammenfassung</a></li><li><a href="bibliographie.html">Bibliographie</a></li><li><a href="nachsatz.html">Nachsatz</a></li><li><a href="zitateEpigraphe.html">Zitate und Epigraphe</a></li><li><a href="gedichte.html">Gedichte und gebundene Sprache</a></li><li><a href="drama.html">Dramen</a></li><li><a href="brief.html">Briefe</a></li></ul></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Auf eine Seite begrenzte Fußnoten</h1>
+    
+  <div class="body">
+    <p class="p">Fußnoten werden direkt an die Stelle im laufenden
+      Text gesetzt, von der aus sie referenziert
+      werden. Sie werden ausgezeichnet mittels: </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>foot<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Fußnotenreferenz]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Fußnotentext]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">Das referenzierende Zeichen wird textgetreu
+      wiedergegeben; besondere Formatierungen
+      (Hoch-/Tiefstellung, gesperrter Druck …)
+      bleiben dabei unberücksichtigt. </p>
+    <p class="p">Innerhalb des Fußnotentextes werden Formatierungen,
+      Spalten- und Zeilenumbrüche wie im Haupttext
+      gehandhabt. </p>
+    <div class="example"><h2 class="title sectiontitle">Kodierung von Fußnoten</h2>
+      
+      <figure class="fig fignone">
+        <img class="image" src="img/KnjT6kNMou.png">
+      <img class="image" src="img/aGyUjtR_RE.png">
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  — Nestorianische Gemeinden scheinen damals über weite Strecken<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  des nord-östlichen Asien verbreitet gewesen zu sein 
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>note</span> <span class="ph token attr-name">place</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>foot<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>2)<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      Nach einer Inschrift in syrischer Sprache, welche Jesuiten-Missionare 1625 in<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      einer der grössten Städte der Provinz <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#k<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Šen-si<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> fanden, 
+        wäre die Einwanderung nesto-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+      rianischer Christen in das Jahr 635 zu setzen.
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>note</span><span class="ph token punctuation">&gt;</span></span>. Der Mönch<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+        <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/berg_ostasien03_1873/27" target="_blank" rel="external noopener">[Berg, Albert]: Die preussische Expedition nach
+                  Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile 27]</a></em></p>
+      </figure>
+    </div>
+  </div>
+</article></main></body></html>

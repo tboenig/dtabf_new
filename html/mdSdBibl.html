@@ -1,0 +1,109 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Die Kurztitelangabe (//fileDesc/sourceDesc/bibl)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_fhx_kk2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a><ul><li><a href="mdSourceDescAllg.html">Source Description Grundstruktur</a></li><li class="active"><a href="mdSdBibl.html">(Short) Bibliographic Citation</a></li><li><a href="mdSdBiblFull.html">Full Bibliographic Citation</a></li><li><a href="mdSdPublicationStmt.html">Publication Statement (Source)</a></li><li><a href="mdSdSeriesStmt.html">Series Statement (Source)</a></li><li><a href="mdSdNotesStmt.html">Notes Statement (Source)</a></li><li><a href="mdSdMsDesc.html">Manuscript Description (Source)</a></li></ul></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Die Kurztitelangabe (//fileDesc/sourceDesc/bibl)</h1>
+    
+  <div class="body">
+    <p class="p">Das <code class="ph codeph">&lt;bibl&gt;</code>-Element der <code class="ph codeph">&lt;sourceDesc&gt;</code> enthält einen verkürzten bibliographischen Nachweis 
+      zu der zugrundeliegenden Quelle.</p>
+    <p class="p">Der jeweilige Publikationstyp wird im <code class="ph codeph">@type</code>-Attribut des <code class="ph codeph">&lt;bibl&gt;</code>-Elements angegeben. Folgende 
+      <code class="ph codeph">@type</code>-Werte sind dabei möglich:
+    </p>
+    <table class="table"><caption></caption><colgroup><col><col><col></colgroup><tbody class="tbody">
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"M"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">monograph</td>
+            
+            <td class="entry" rowspan="1" colspan="1">Monographie</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"MM"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">volume within multi-volumed monograph</td>
+            
+            <td class="entry" rowspan="1" colspan="1">Teil einer mehrbändigen Monographie</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"DM"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">dependent part of monograph</td>
+            
+            <td class="entry" rowspan="1" colspan="1">unselbständiger Teil einer Monographie, z.B. Beitrag in einem Sammelband; Buchkapitel</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"DS"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">dependent publication of a volume, which is part of a series</td>
+            
+            <td class="entry" rowspan="1" colspan="1">unselbständige Schrift in einem Band, der Teil einer Reihe ist</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"MS"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">monographic title within series</td>
+            
+            <td class="entry" rowspan="1" colspan="1">selbständiger Band einer Reihe</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"MMS"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">volume of a multi-volumed publication, which itself is part of a series</td>
+            
+            <td class="entry" rowspan="1" colspan="1">Teil einer mehrbändigen Monographie, die ihrerseits Teil einer Reihe ist</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"JA"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">journal article</td>
+            
+            <td class="entry" rowspan="1" colspan="1">Artikel einer Zeitschrift/Zeitung</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" rowspan="1" colspan="1">
+              <code class="ph codeph">"J"</code>
+            </td>
+            
+            <td class="entry" rowspan="1" colspan="1">journal</td>
+            
+            <td class="entry" rowspan="1" colspan="1">Zeitschrift/Zeitung</td>
+            
+          </tr>
+        </tbody></table>
+    <p class="p">Zum Aufbau der bibliographischen Angabe innerhalb von <code class="ph codeph">&lt;bibl&gt;</code> 
+      s. Kap. <a class="xref" href="mdKtAufnahme.html">Transkription der Kurztitelaufnahme</a>
+      
+    </p>
+  </div>
+</article></main></body></html>

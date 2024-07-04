@@ -1,0 +1,38 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Platzhalter des Autors</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_zhn_t3p_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li class="active"><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Platzhalter des Autors</h1>
+    
+  <div class="body">
+    
+      <p class="p">
+        Ein Leerraum im Fließtext, der vom Autor für spätere Hinzufügungen gelassen worden ist, 
+        wird mit dem <code class="ph codeph">&lt;space&gt;</code>-Element wiedergegeben. Zur Angabe des genauen Umfangs, den 
+        der Leerraum einnimmt, stehen die Attribute <code class="ph codeph">@unit</code> (Einheit, in welcher der 
+        Umfang angegeben wird) und <code class="ph codeph">@quantity</code> (Umfang des Leerraums) zur Verfügung. 
+        Folgende Werte kann das Attribut <code class="ph codeph">@unit</code> dabei annehmen: 
+      </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead"><tr class="row">
+          <th class="entry" id="topic_zhn_t3p_yw__entry__1"><code class="ph codeph">@unit</code>-Wert</th>
+          <th class="entry" id="topic_zhn_t3p_yw__entry__2">Bedeutung</th>
+        </tr></thead><tbody class="tbody"><tr class="row">
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__1"><code class="ph codeph">chars</code></td>
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__2">Zeichen</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__1"><code class="ph codeph">words</code></td>
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__2">Wörter, i. e. Tokens</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__1"><code class="ph codeph">lines</code></td>
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__2">Zeilen</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__1"><code class="ph codeph">pages</code></td>
+          <td class="entry" headers="topic_zhn_t3p_yw__entry__2">Seiten</td>
+        </tr></tbody></table>
+      <p class="p">Der Inhalt des <code class="ph codeph">@quantity</code>-Attributs ist stets eine Zahl.</p>
+  </div>
+</article></main></body></html>

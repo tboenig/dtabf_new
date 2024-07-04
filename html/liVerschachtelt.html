@@ -1,0 +1,43 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Verschachtelte Listen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_vli"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a><ul><li><a href="liAllg.html">Listen Grundstruktur</a></li><li class="active"><a href="liVerschachtelt.html">Verschachtelte Listen</a></li></ul></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Verschachtelte Listen</h1>
+  <div class="body">
+    <p class="p">Listenelemente können verschachtelt werden:</p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Titel der Liste]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span><span class="ph token comment">&lt;!-- sofern vorhanden --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[ggf. Inhalt eines übergeordneten Listenpunkts]
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[Inhalt eines Listenpunkts]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[Inhalt eines Listenpunkts]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <div class="example"><h2 class="title sectiontitle">Kodierung verschachtelter Listen</h2>
+      <figure class="fig fignone">
+        <img class="image" src="img/i5oVj5kLXH.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+ <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>c) In dem Bergamtsrevier Naila:<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+ <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>
+   1. Der Dorschenhammer oder das obere Schauensteiner Hammer-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   werk an der Selbitz war ein Stabfeuer, das sein Roheisen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   von dem Hochofen zu Thiemitz, an dem es zur Hälfte be-<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   teiligt war, erhielt.
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>
+    2. Der Kleinschmiedhammer oder untere Schauensteinerhammer<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    an der Selbitz erhielt sein Roheisen von dem Klingsporner<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    Werk.
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+ <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span>
+ <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+       <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/beck_eisen03_1897/841" target="_blank" rel="external noopener">Beck, Ludwig: Die Geschichte des Eisens. Bd. 3: Das
+              XVIII. Jahrhundert. Braunschweig, 1897. [Faksimile 841]</a>
+          </em></p>
+      </figure></div>
+  </div>
+</article></main></body></html>

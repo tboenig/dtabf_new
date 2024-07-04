@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Die Unterstrukturierung des Elements //persName</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_f5g_pj2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a><ul><li><a href="mdTitleStmtAllg.html">Title Statement Grundstruktur</a></li><li><a href="mdAuthorEditor.html">Author und Editor</a></li><li class="active"><a href="mdPersName.html">Personal Name</a></li><li><a href="mdRespStmt.html">Responsibility Statement</a></li></ul></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Die Unterstrukturierung des Elements <code class="ph codeph">//persName</code></h1>
+    
+  <div class="body">
+    <p class="p">Der Name einer Person wird in einem <code class="ph codeph">&lt;persName&gt;</code>-Element festgehalten. Das <code class="ph codeph">@ref</code>-Attribut 
+      in <code class="ph codeph">&lt;persName&gt;</code> ermöglicht den Verweis (qua URL) auf eine Ressource, die zusätzliche Angaben zu 
+      der betreffenden Person enthält, etwa auf den Datensatz zu dieser Person in der 
+      <a class="xref" href="http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html" target="_blank" rel="external noopener">Gemeinsamen Normdatei (GND)</a>. Konnte ein Name 
+      in der GND nicht nachgewiesen werden, so erhält das <code class="ph codeph">@ref</code>-Attribut des <code class="ph codeph">&lt;persName&gt;</code>-Elements 
+        den Wert <code class="ph codeph">"nognd"</code>. 
+    </p>
+    <p class="p">Folgende Unterelemente des Elements <code class="ph codeph">&lt;persName&gt;</code> sind möglich:
+    </p>
+    <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
+          <tr class="row">
+            <th class="entry" id="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">Element</th>
+            <th class="entry" id="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">Funktion</th>
+          </tr>
+        </thead><tbody class="tbody">
+          <tr class="row">
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">surname</code>
+            </td>
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">Familienname</td>
+          </tr>
+          <tr class="row">
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">forename</code>
+            </td>
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">Vorname</td>
+          </tr>
+          <tr class="row">
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">nameLink</code>
+            </td>
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">Namenszusatz, z.B. Adelsprädikat</td>
+          </tr>
+          <tr class="row">
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">genName</code>
+            </td>
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">Generation</td>
+          </tr>
+          <tr class="row">
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">addName</code>
+            </td>
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">ggf. Pseudonym oder sonstiger zusätzlicher Name</td>
+          </tr>
+          <tr class="row">
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">roleName</code>
+            </td>
+            <td class="entry" headers="topic_f5g_pj2_qs__entry__2" rowspan="1" colspan="1">staatstragende Funktion/offizieller Titel der Person</td>
+          </tr>
+        </tbody></table>
+      <div class="note attention note_attention"><span class="note__title">Achtung:</span> Das Element <code class="ph codeph">&lt;roleName&gt;</code> enthält nur staatstragende Funktionen oder offizielle Titel; 
+       Berufsbezeichnungen und sonstige Funktionen werden hier <em class="ph i">nicht</em> angegeben.</div>
+    <div class="example"><h2 class="title sectiontitle">Friedrich II., König von Preußen
+    </h2>
+    
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>persName</span> <span class="ph token attr-name">ref</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://d-nb.info/gnd/118535749<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>forename</span><span class="ph token punctuation">&gt;</span></span>Friedrich<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>forename</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>genName</span><span class="ph token punctuation">&gt;</span></span>II.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>genName</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>roleName</span><span class="ph token punctuation">&gt;</span></span>König von Preußen<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>roleName</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>persName</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        </div>
+    <div class="example"><h2 class="title sectiontitle">Novalis</h2>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>persName</span> <span class="ph token attr-name">ref</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://d-nb.info/gnd/118588893<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>surname</span><span class="ph token punctuation">&gt;</span></span>Hardenberg<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>surname</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>forename</span><span class="ph token punctuation">&gt;</span></span>Georg Philipp Friedrich<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>forename</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>nameLink</span><span class="ph token punctuation">&gt;</span></span>von<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>nameLink</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>addName</span><span class="ph token punctuation">&gt;</span></span>Novalis<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>addName</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>persName</span><span class="ph token punctuation">&gt;</span></span></code></pre></div>
+    <div class="example"><h2 class="title sectiontitle">Karl von Moor</h2>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>persName</span> <span class="ph token attr-name">ref</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>nognd<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>surname</span><span class="ph token punctuation">&gt;</span></span>Moor<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>surname</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>forename</span><span class="ph token punctuation">&gt;</span></span>Karl<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>forename</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>nameLink</span><span class="ph token punctuation">&gt;</span></span>von<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>nameLink</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>persName</span><span class="ph token punctuation">&gt;</span></span></code></pre></div>
+  </div>
+</article></main></body></html>

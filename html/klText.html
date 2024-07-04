@@ -1,0 +1,52 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Listenähnliche Klammerungen zusammengehöriger Textpassagen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_klt"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a></li><li><a href="klammerung.html">Klammerungen</a><ul><li><a href="klammerungAllg.html">Klammerungen Grundstruktur</a></li><li><a href="klListe.html">Klammerungen in Listen</a></li><li class="active"><a href="klText.html">Listenähnliche Klammerungen</a></li><li><a href="klHorizontal.html">Horizontale Klammerungen</a></li><li><a href="klTabelle.html">Klammerungen in Tabellen</a></li></ul></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Listenähnliche Klammerungen zusammengehöriger Textpassagen</h1>
+    
+  <div class="body">
+    <p class="p">Klammerungen können in Textstrukturen auftreten, die nicht genuin Listen
+      darstellen. Dennoch weisen die zusammengefassten Textstücke selbst eine
+      listenähnliche Struktur auf. Sie werden daher innerhalb der übergeordneten
+      Struktur ebenfalls als Listen behandelt.</p>
+    <div class="example"><h2 class="title sectiontitle">Kodierung listenähnlicher Klammerungen im Text (1)</h2>
+      <figure class="fig fignone">
+        <img class="image" src="img/SUT3ZPohM2.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Es zerfällt dann die Gleichung (2.) in die folgenden beiden:<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>(3.) 
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#leftBraced<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>
+     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>formula</span> <span class="ph token attr-name">notation</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>TeX<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>0 = 4\pi q' + k^2\Psi' + \frac{d^2\Psi'}{dx^2} + \frac{d^2\Psi'}{dy^2} + \frac{d^2\Psi'}{dz^2}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>formula</span><span class="ph token punctuation">&gt;</span></span>,
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>
+     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>formula</span> <span class="ph token attr-name">notation</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>TeX<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>0 = 4\pi q'' + k^2\Psi'' + \frac{d^2\Psi''}{dx^2} + \frac{d^2\Psi''}{dy^2} + \frac{d^2\Psi''}{dz^2}<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>formula</span><span class="ph token punctuation">&gt;</span></span>,
+     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+     <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span>
+[...]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/helmholtz_luftschwingungen_1860/24" target="_blank" rel="external noopener">Helmholtz, Hermann
+          von: Theorie der Luftschwingungen in Röhren mit
+          offenen Enden. In: Journal für die reine und
+          angewandte Mathematik 57 (1860), Heft 1, S. 1-72.
+          [Faksimile 24]</a>
+        </em></p>
+      </figure></div>
+    <div class="example"><h2 class="title sectiontitle">Kodierung listenähnlicher Klammerungen im Text (2)</h2>
+      <figure class="fig fignone">
+        <img class="image" src="img/Nw3JRMfa_4.png">
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>l</span><span class="ph token punctuation">&gt;</span></span>Dir ſey 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#leftBraced #rightBraced<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>Lob<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>Danck<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span> 
+geſungen/<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>l</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+        <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/canitz_gedichte_1700/16" target="_blank" rel="external noopener">[Canitz, Friedrich
+          Rudolph Ludwig von]: Neben-Stunden Unterschiedener
+          Gedichte. [Hrsg. v. Joachim Lange]. Berlin, 1700.
+          [Faksimile 16]</a>
+        </em></p>
+      </figure></div>
+  </div>
+</article></main></body></html>

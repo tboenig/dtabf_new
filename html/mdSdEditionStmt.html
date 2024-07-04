@@ -1,0 +1,35 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Die Angabe zur Art der zugrundeliegenden Textausgabe (//fileDesc/sourceDesc/biblFull/editionStmt)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_m3y_nk2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a><ul><li><a href="mdSourceDescAllg.html">Source Description Grundstruktur</a></li><li><a href="mdSdBibl.html">(Short) Bibliographic Citation</a></li><li><a href="mdSdBiblFull.html">Full Bibliographic Citation</a><ul><li><a href="mdSdBiblFullAllg.html">Full Bibliographic Citation Grundstruktur</a></li><li><a href="mdSdTitleStmt.html">Title Statement (Source)</a></li><li class="active"><a href="mdSdEditionStmt.html">Edition Statement (Source)</a></li><li><a href="mdSdExtent.html">Extent (Source)</a></li></ul></li><li><a href="mdSdPublicationStmt.html">Publication Statement (Source)</a></li><li><a href="mdSdSeriesStmt.html">Series Statement (Source)</a></li><li><a href="mdSdNotesStmt.html">Notes Statement (Source)</a></li><li><a href="mdSdMsDesc.html">Manuscript Description (Source)</a></li></ul></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Die Angabe zur Art der zugrundeliegenden Textausgabe <code class="ph codeph">(//fileDesc/sourceDesc/biblFull/editionStmt)</code></h1>
+    
+  <div class="body">
+    <p class="p">Die Hinweise zur Nummer und Art der Auflage, welche der DTA-Ausgabe zugrunde liegt 
+      (z.B. Erstausgabe, zweite verbesserte Neuauflage u.ä.) werden im 
+      <code class="ph codeph">&lt;editionStmt&gt;</code> innerhalb des <code class="ph codeph">&lt;biblFull&gt;</code>-Elements der 
+      <em class="ph i">Source Description</em> angegeben. Das <code class="ph codeph">&lt;editionStmt&gt;</code> erhält hierfür 
+      das Unterelement <code class="ph codeph">&lt;edition&gt;</code>.
+    </p>
+    <p class="p">
+      Im <code class="ph codeph">@n</code>-Attribut des <code class="ph codeph">&lt;edition&gt;</code>-Elements steht die 
+      normalisierte Auflagennummer, z.B. <code class="ph codeph">"2"</code> für <code class="ph codeph">"zweite, vermehrte Auflage"</code>. 
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>editionStmt</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>edition</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Auflagennummer]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Art der zugrundeliegenden Textausgabe]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>edition</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>editionStmt</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">
+      Das <code class="ph codeph">&lt;edition&gt;</code>-Element bleibt leer, wenn die Vorlage keine expliziten 
+      Hinweise zur Auflage enthält. Im <code class="ph codeph">@n</code>-Attribut steht dann die rekonstruierte Auflagennummer. 
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>editionStmt</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>edition</span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Auflagennummer]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>editionStmt</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">
+      Das <code class="ph codeph">@n</code>-Attribut des <code class="ph codeph">&lt;edition&gt;</code>-Element ist obligatorisch. Kann die Auflagennummer 
+      weder der Vorlage entnommen noch rekonstruiert werden, steht <code class="ph codeph">"k.A."</code> (keine Angabe) im 
+      <code class="ph codeph">@n</code>-Attribut.
+    </p>
+  </div>
+</article></main></body></html>

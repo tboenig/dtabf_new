@@ -1,0 +1,87 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Druckfehler</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_66"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a><ul><li><a href="eeAllg.html">Editorische Eingriffe Grundstruktur</a></li><li class="active"><a href="eeDruckfehler.html">Druckfehler</a></li><li><a href="abkuerzung.html">Abkürzungen</a></li><li><a href="normalisierung.html">Normalisierungen</a></li><li><a href="sachkommentar.html">Sachkommentar</a></li></ul></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Druckfehler</h1>
+    <div class="body">
+        <p class="p">Die Texte werden vorlagengetreu abgeschrieben. Sofern jedoch im
+            Erschließungsprozess Druckfehler zuverlässig erkannt werden, können
+            diese verbessert werden. Hierfür wird das
+            <code class="ph codeph">&lt;choice&gt;</code>-Element verwendet. Es enthält ein
+            Element <code class="ph codeph">&lt;sic&gt;</code>, das die fehlerhafte Form
+            dokumentiert und ein Element <code class="ph codeph">&lt;corr&gt;</code>,
+            innerhalb dessen die Berichtigung erfolgt. </p>
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sic</span><span class="ph token punctuation">&gt;</span></span>[fehlerhafte Form]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sic</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corr</span><span class="ph token punctuation">&gt;</span></span>[verbesserte Form]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corr</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <p class="p">Einer als fehlerhaft markierten Form muss immer eine Korrektur
+            beigegeben werden, d.h. das Element <code class="ph codeph">&lt;sic&gt;</code>
+            kann nie ohne zugehöriges <code class="ph codeph">&lt;choice&gt;</code> und
+            <code class="ph codeph">&lt;corr&gt;</code> stehen. </p>
+        <div class="example"><h2 class="title sectiontitle">Korrektur von Druckfehlern I</h2>  <figure class="fig fignone">
+            <img class="image" src="img/J7kQzhfMI3.png">
+            <pre class="pre codeblock language-xml"><code>Er fuhr <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sic</span><span class="ph token punctuation">&gt;</span></span>unn<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sic</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corr</span><span class="ph token punctuation">&gt;</span></span>nun<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corr</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span> fort:</code></pre>
+             <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/kerner_besessene_1834/106" target="_blank" rel="external noopener">Kerner, Justinus: Geschichten
+                Besessener neuerer Zeit. Karlsruhe, 1834. [Faksimile
+                106]</a></em></p>
+            </figure> </div>
+        <div class="example"><h2 class="title sectiontitle">Korrektur von Druckfehlern II</h2>  <figure class="fig fignone">
+            <img class="image" src="img/ofEixtGxVX.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sic</span><span class="ph token punctuation">&gt;</span></span>mittlerr<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sic</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corr</span><span class="ph token punctuation">&gt;</span></span>mittlern<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corr</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+             <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/roessig_oekonomie01_1781/30" target="_blank" rel="external noopener">Rössig, Carl Gottlob: Versuch
+                einer pragmatischen Geschichte der Ökonomie- Polizey- und
+                Cameralwissenschaften. Deutschland. Bd. 1. Leipzig, 1781.
+                [Faksimile 30]</a></em></p>
+            </figure> </div>
+        <p class="p">Um zu beschreiben, auf welche Quelle die Klassifizierung einer
+            Schreibung als Druckfehler zurückgeht, kann dem Element
+            <code class="ph codeph">&lt;corr&gt;</code> ein Attribut <code class="ph codeph">@type</code>
+            beigegeben werden, welches die folgenden Werte annehmen kann:</p>
+        <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+                    <tr class="row">
+                        <td class="entry" rowspan="1" colspan="1">
+                            <code class="ph codeph">"addenda"</code> </td>
+                        <td class="entry" rowspan="1" colspan="1">in den
+                            Addenda des betreffenden Werkes verzeichnete
+                            Fehlstelle</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry" rowspan="1" colspan="1">
+                            <code class="ph codeph">"corrigenda"</code> </td>
+                        <td class="entry" rowspan="1" colspan="1">im
+                            Verzeichnis der Corrigenda des betreffenden Werkes
+                            vermerkter Druckfehler</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="entry" rowspan="1" colspan="1">
+                            <code class="ph codeph">"editorial"</code> </td>
+                        <td class="entry" rowspan="1" colspan="1">durch
+                            den Bearbeiter/Editor ermittelter
+                            Druckfehler</td>
+                    </tr>
+                </tbody></table>
+        <p class="p">Diese Angabe, um welche Art der Korrektur es sich handelt, ist
+            fakultativ (Level 3). </p>
+        <p class="p">Infolge von Druckfehlern können neue Zeichen entstehen, die keine
+            Entsprechung im zugehörigen Alphabet haben (z.B. umgedrehtes "e").
+            Diese Zeichen werden, auch wenn ein entsprechendes oder ähnliches
+            Zeichen im Unicode-Zeichensatz vorhanden ist, nicht wiedergegeben.
+            Statt dessen steht die Unicode-Entität U+FFFC (<em class="ph i">placeholder in
+            text for an otherwise unspecified object</em>). Auf diese Weise wird
+            das Vorhandensein des Druckfehlers dokumentiert, wobei dieser jedoch
+            nicht mit ggf. abweichender Semantik (z.B. e-Schwa für umgedrehtes
+            e) reproduziert wird. </p>
+       <div class="example"><h2 class="title sectiontitle">Korrektur von Druckfehlern III</h2>
+    
+    <figure class="fig fignone"><img class="image" src="img/knR6AisjCf.png">
+    <pre class="pre codeblock language-xml"><code>Glauben zu <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sic</span><span class="ph token punctuation">&gt;</span></span>find<span class="ph token entity">&amp;#xfffc;</span>n<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sic</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>corr</span><span class="ph token punctuation">&gt;</span></span>finden<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>corr</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span>, wenn</code></pre>
+    <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/forster_reise01_1778/464" target="_blank" rel="external noopener">Forster, Georg: Johann Reinhold Forster's [...] Reise um die Welt. Bd. 1. Berlin, 1778. [Faksimile 464]</a></em></p>
+    </figure>
+  </div>
+    </div>
+</article></main></body></html>

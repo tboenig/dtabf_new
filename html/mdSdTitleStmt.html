@@ -1,0 +1,51 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Die ausführlichen Titelangaben der Source Description (//fileDesc/sourceDesc/biblFull/titleStmt)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_sx1_nk2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a><ul><li><a href="mdSourceDescAllg.html">Source Description Grundstruktur</a></li><li><a href="mdSdBibl.html">(Short) Bibliographic Citation</a></li><li><a href="mdSdBiblFull.html">Full Bibliographic Citation</a><ul><li><a href="mdSdBiblFullAllg.html">Full Bibliographic Citation Grundstruktur</a></li><li class="active"><a href="mdSdTitleStmt.html">Title Statement (Source)</a></li><li><a href="mdSdEditionStmt.html">Edition Statement (Source)</a></li><li><a href="mdSdExtent.html">Extent (Source)</a></li></ul></li><li><a href="mdSdPublicationStmt.html">Publication Statement (Source)</a></li><li><a href="mdSdSeriesStmt.html">Series Statement (Source)</a></li><li><a href="mdSdNotesStmt.html">Notes Statement (Source)</a></li><li><a href="mdSdMsDesc.html">Manuscript Description (Source)</a></li></ul></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Die ausführlichen Titelangaben der <em class="ph i">Source Description</em> <code class="ph codeph">(//fileDesc/sourceDesc/biblFull/titleStmt)</code></h1>
+    
+  <div class="body">
+    <p class="p">Das <code class="ph codeph">&lt;title&gt;</code>-Element im <em class="ph i">Title Statement</em> der <em class="ph i">Source Description</em>
+      enthält die Attribute <code class="ph codeph">@level</code> und <code class="ph codeph">@type</code>.
+      Mögliche Werte des <code class="ph codeph">@level</code>-Attributs sind dabei:
+    </p>
+    <ul class="ul">
+      
+      <li class="li">
+        <code class="ph codeph">m</code>: monographic title (Titel einer selbständigen Publikation/Monographie)</li>
+      
+      <li class="li">
+        <code class="ph codeph">a</code>: analytic title (Titel einer nicht-selbständigen Publikation)</li>
+      
+    </ul>
+    <p class="p">Mögliche Werte des <code class="ph codeph">@type</code>-Attributs innerhalb von <code class="ph codeph">&lt;title&gt;</code> sind:
+    </p>
+    <ul class="ul">
+      
+      <li class="li">
+        <code class="ph codeph">main</code>: Haupttitel</li>
+      
+      <li class="li">
+        <code class="ph codeph">sub</code>: Untertitel</li>
+      
+      <li class="li">
+        <code class="ph codeph">volume</code>: Bandangabe/Bandtitel</li>
+      
+      <li class="li">
+        <code class="ph codeph">part</code>: Titel des Teils bei mehrteiligen nicht-selbständigen Publikationen</li>
+      
+    </ul>
+    <p class="p">Im Falle einer Bandangabe erhält das <code class="ph codeph">&lt;title&gt;</code>-Element zudem ein <code class="ph codeph">@n</code>-
+      Attribut, welches die Nummer des Bandes angibt: 
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>title</span> <span class="ph token attr-name">level</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>m<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>volume<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">n</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[Bandnummer]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Bandtitel]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>title</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">Das <code class="ph codeph">&lt;author&gt;</code>-Element gibt den Autor des Werkes an. Ein möglicher Herausgeber der zugrundeliegenden 
+      Textquelle wird im <code class="ph codeph">&lt;editor&gt;</code>-Element wiedergegeben. Handelt es sich bei der betreffenden Textausgabe 
+      um eine Übersetzung, wird auf den Übersetzer mittels <code class="ph codeph">&lt;editor role="translator"&gt;</code>-Element verwiesen.
+      Zur tieferen Strukturierung des <code class="ph codeph">&lt;author&gt;</code>- und <code class="ph codeph">&lt;editor&gt;</code>-Elements siehe 
+      Kap. <a class="xref" href="mdAuthorEditor.html">Unterstrukturierung der Elemente <code class="ph codeph">&lt;author&gt;</code> und <code class="ph codeph">&lt;editor&gt;</code>
+      </a>.
+    </p>
+  </div>
+</article></main></body></html>

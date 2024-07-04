@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Unsichere Lesarten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_jhp_lcq_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a><ul><li><a href="msEditorResp.html">Verantwortlichkeiten</a></li><li class="active"><a href="msEditorCert.html">Unsichere Lesarten</a></li></ul></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Unsichere Lesarten</h1>
+  <div class="body">
+    
+      <p class="p">Ist die Leserlichkeit der Quelle eingeschränkt, sodass der Text rekonstruiert werden 
+        muss bzw. die Lesung des Editors nicht gesichert ist, kann dies durch die Elemente
+        <code class="ph codeph">&lt;unclear&gt;</code> und <code class="ph codeph">&lt;supplied&gt;</code> wiedergegeben werden.
+      </p>
+      <p class="p">Dabei wird <code class="ph codeph">&lt;unclear&gt;</code> verwendet, wenn in der
+            Quelle vorhandenes Material nur undeutlich lesbar ist. Der Grund für
+            die Verwendung des <code class="ph codeph">&lt;unclear&gt;</code>-Elements wird
+            mit dem <code class="ph codeph">@reason</code>-Attribut, der Grad der Sicherheit
+            der Lesung kann im <code class="ph codeph">@cert</code>-Attribut wiedergegeben
+            werden. Folgende Werte sind dabei möglich: </p>
+      <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row">
+          <th class="entry" id="topic_jhp_lcq_yw__entry__1">Element</th>
+          <th class="entry" id="topic_jhp_lcq_yw__entry__2">Attribut</th>
+          <th class="entry" id="topic_jhp_lcq_yw__entry__3">Wert</th>
+          <th class="entry" id="topic_jhp_lcq_yw__entry__4">Bedeutung</th>
+        </tr></thead><tbody class="tbody"><tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__1" rowspan="4"><code class="ph codeph">&lt;unclear&gt;</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__2" rowspan="2"><code class="ph codeph">@reason</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__3"><code class="ph codeph">illegible</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__4">unleserlich</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__3"><code class="ph codeph">covered</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__4">durch Überschreibung/Überzeichnung schwer leserlich</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__2" rowspan="2"><code class="ph codeph">@cert</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__3"><code class="ph codeph">high</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__4">hohe Sicherheit der Lesart</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__3"><code class="ph codeph">low</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__4">geringe Sicherheit der Lesart</td>
+        </tr></tbody></table>
+      <p class="p">Die Verwendung des Attributs <code class="ph codeph">@reason</code> in
+            <code class="ph codeph">&lt;unclear&gt;</code> ist dabei obligatorisch, die
+            Verwendung von <code class="ph codeph">@cert</code> ist fakultativ. </p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>unclear</span> <span class="ph token attr-name">reason</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>covered<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">cert</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>low<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[unsichere Lesung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>unclear</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      <p class="p">Wenn in der Quelle wahrscheinlich oder möglicherweise vorhandenes
+            Material rekonstruiert wird, so ist dies mit dem Element
+            <code class="ph codeph">&lt;supplied&gt;</code> wiederzugeben. Der Grund für die
+            Unleserlichkeit wird im <code class="ph codeph">@reason</code>-Attribut
+            wiedergegeben, die Sicherheit der Rekonstruktion steht im
+            <code class="ph codeph">@cert</code>-Attribut. Folgende Werte können die Attribute
+            <code class="ph codeph">@reason</code> und <code class="ph codeph">@cert</code> dabei annehmen: </p>
+      <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><thead class="thead"><tr class="row">
+          <th class="entry" id="topic_jhp_lcq_yw__entry__16">Element</th>
+          <th class="entry" id="topic_jhp_lcq_yw__entry__17">Attribut</th>
+          <th class="entry" id="topic_jhp_lcq_yw__entry__18">Wert</th>
+          <th class="entry" id="topic_jhp_lcq_yw__entry__19">Bedeutung</th>
+        </tr></thead><tbody class="tbody"><tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__16" rowspan="4"><code class="ph codeph">&lt;supplied&gt;</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__17" rowspan="2"><code class="ph codeph">@reason</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__18"><code class="ph codeph">damage</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__19">durch Schäden am Original verloren</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__18"><code class="ph codeph">covered</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__19">durch Überschreibung/Überzeichnung unleserlich</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__17" rowspan="2"><code class="ph codeph">@cert</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__18"><code class="ph codeph">high</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__19">hohe Sicherheit der Lesart</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__18"><code class="ph codeph">low</code></td>
+          <td class="entry" headers="topic_jhp_lcq_yw__entry__19">geringe Sicherheit der Lesart</td>
+        </tr></tbody></table>
+   
+  </div>
+</article></main></body></html>

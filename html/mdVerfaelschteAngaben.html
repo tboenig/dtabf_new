@@ -1,0 +1,46 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Umgang mit verfälschten/verschleierten Angaben</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_wmp_ch2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a><ul><li><a href="mdVorlagentreue.html">Vorlagentreue</a></li><li><a href="mdNormalisierungen.html">Normalisierungen</a><ul><li><a href="mdTypographHervorhebungen.html">Umgang mit typographischen Hervorhebungen</a></li><li><a href="mdDiakritika.html">Umgang mit Diakritika</a></li><li><a href="mdAbkuerzungen.html">Umgang mit Abkürzungen</a></li><li><a href="mdUnvollstAngaben.html">Umgang mit unvollständigen Angaben</a></li><li class="active"><a href="mdVerfaelschteAngaben.html">Umgang mit verfälschten/verschleierten Angaben</a></li><li><a href="mdDruckfehler.html">Umgang mit Druckfehlern und ungewöhnlichen Schreibungen</a></li></ul></li><li><a href="mdBesonderheitenErfassung.html">Besonderheiten der Metadatenerfassung</a></li></ul></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Umgang mit verfälschten/verschleierten Angaben</h1>
+  <div class="body">
+    <p class="p">In der Quelle verfälschte Angaben zur Publikation (z.B. das Werk erschien unter 
+      einem Pseudonym oder Erscheinungsort/Verlag etc. sind fiktiv) werden in ihrer 
+      ursprünglichen, in der Quelle erscheinenden Form im Kurztitel wiedergegeben. 
+      Dabei steht im Falle eines Pseudonyms der vollständige Name so weit bekannt
+      ohne spezifische Unterteilung (z. B. richtig: <code class="ph codeph">Vorname Adelstitel Nachname</code>; 
+      falsch: <code class="ph codeph">Nachname, Vorname Adelstitel</code>). Die korrekte Angabe wird recherchiert 
+      und im Anschluss an die ursprüngliche Form in eckigen Klammern, eingeleitet durch 
+      <code class="ph codeph">i.e.</code> im Kurztitel wiedergegeben.
+    </p>
+    <div class="example"><h2 class="title sectiontitle">Rekonstruktion des Autornamens im Kurztitel</h2>
+        
+      <p class="p">German Schleifheim von Sulsfort [i. e. Grimmelshausen, Hans Jakob Christoffel von]: 
+        Der Abentheurliche Simplicissimus Teutsch. Monpelgart [i. e. Nürnberg], 1669.</p>
+    </div>
+    <p class="p">In den ausführlichen Titelangaben steht im Falle eines Pseudonyms zunächst der bürgerliche 
+      Name, aufgeteilt in <code class="ph codeph">&lt;surname&gt;</code> (Nachname) und <code class="ph codeph">&lt;forename&gt;</code> 
+      (Vorname) ohne weitere Hinweise auf deren Rekonstruktion. Sodann folgt das Pseudonym im Element 
+      <code class="ph codeph">&lt;addName&gt;</code>, wobei auch hier der vollständige Name so weit bekannt ohne 
+      spezifische Unterteilung (z. B. richtig: <code class="ph codeph">Vorname Adelstitel Nachname</code>; 
+      falsch: <code class="ph codeph">Nachname, Vorname Adelstitel</code>) angegeben wird.
+    </p>
+    <div class="note attention note_attention"><span class="note__title">Achtung:</span> Das Pseudonym wird nur dann angegeben, wenn ein Werk unter diesem Pseudonym
+      erschienen ist. Ist ein Werk unter dem bürgerlichen Namen eines Autors erschienen, so wird
+      allein der bürgerliche Name angegeben, auch wenn es ein Pseudonym für den betreffenden Autor
+      gibt. Dass ein Werk unter einem Pseudonym erschienen ist, lässt sich somit entsprechend der 
+      vorliegenden Richtlinie daran erkennen, dass ein <code class="ph codeph">&lt;addName&gt;</code>-Element im 
+      Metadatensatz vorhanden und befüllt ist.</div>
+    
+    <p class="p">Im Falle eines fiktiven Erscheinungsorts oder Verlags steht in den ausführlichen Titelangaben 
+      die rekonstruierte Angabe zunächst ohne weitere Hinweise auf deren Rekonstruktion. Beim 
+      Erscheinungsort wird im Kurztitel verdeutlicht, dass es sich um eine rekonstruierte Angabe handelt (s. oben). 
+      Bei der Verlagsangabe, die nicht im Kurztitel erscheint, wird im <code class="ph codeph">&lt;notesStmt&gt;</code> 
+      der <code class="ph codeph">&lt;sourceDesc&gt;</code> ein natürlichsprachlicher Hinweis auf die Rekonstruktion gegeben. 
+    </p>
+    <div class="example"><h2 class="title sectiontitle">Korrektur verfälschter Verlags-/Orts- und Autorangaben in den Metadaten:</h2>
+      <p class="p"><em class="ph i">Siehe: </em><a class="xref" href="http://www.deutschestextarchiv.de/api/tei_header/grimmelshausen_simplicissimus_1669" target="_blank" rel="external noopener">http://www.deutschestextarchiv.de/api/tei_header/grimmelshausen_simplicissimus_1669</a></p>
+    </div>
+  </div>
+</article></main></body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Berichte/Nachrichten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="jArticle"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a><ul><li><a href="jAllg.html">Zeitungen Grundregeln</a></li><li><a href="jFront.html">Einleitende Textstücke</a></li><li><a href="jBody.html">Textkörper</a><ul><li><a href="jBodyAllg.html">Textkörper Zeitungen allgemein</a></li><li><a href="jArticleTypes.html">Artikeltypen</a><ul><li class="active"><a href="jArticle.html">Berichte/Nachrichten</a></li><li><a href="jFeuilleton.html">Feuilleton</a></li><li><a href="jAnnouncements.html">Anzeigen</a></li><li><a href="jLetters.html">Leserbriefe</a></li><li><a href="jArtOther.html">Sonstige Artikel</a></li></ul></li><li><a href="jArtStruct.html">Artikelstruktur</a></li><li><a href="jLinking.html">Verknüpfungen</a></li></ul></li><li><a href="jBack.html">Abschließende Textstücke</a></li><li><a href="jBeilagen.html">Beilagen</a></li></ul></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Berichte/Nachrichten</h1>
+  <div class="body">
+    <p class="p">
+    Berichte und Nachrichten verschiedener Art, die in der Quelle unter einem thematischen Aspekt
+    gruppiert wurden (i.d.R. Politische Nachrichten, Wirtschaftsnachrichten, Wetterberichte), 
+    werden in entsprechend typisierten <code class="ph codeph">&lt;div&gt;</code>-Elementen der obersten Ebene 
+    zusammengefasst. 
+  </p>
+  <p class="p">
+    Die einzelnen Artikel innerhalb dieser Rubriken werden jeweils wiederum durch 
+    <code class="ph codeph">&lt;div&gt;</code>-Elemente tieferer Ebene umschlossen, welche das Attribut-Wert-Paar 
+    <code class="ph codeph">@type="jArticle"</code> erhalten. 
+  </p>
+      <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+                  <tr class="row">
+                      <th class="entry" id="jArticle__entry__1">Kategorie</th>
+                      <th class="entry" id="jArticle__entry__2"><code class="ph codeph">@type</code>-Wert</th>
+                      <th class="entry" id="jArticle__entry__3">Hierarchie-Ebene (empfohlen)</th>
+                  </tr>
+              </thead><tbody class="tbody">
+                  <tr class="row">
+                      <td class="entry" headers="jArticle__entry__1">Politische Nachrichten inkl. telegraphischer Berichte</td>
+                      <td class="entry" headers="jArticle__entry__2"><code class="ph codeph">jPoliticalNews</code></td>
+                      <td class="entry" headers="jArticle__entry__3">1</td>
+                  </tr>
+                  <tr class="row">
+                      <td class="entry" headers="jArticle__entry__1">Wirtschafts- und Finanznachrichten</td>
+                      <td class="entry" headers="jArticle__entry__2"><code class="ph codeph">jFinancialNews</code></td>
+                      <td class="entry" headers="jArticle__entry__3">1</td>
+                  </tr>
+                  <tr class="row">
+                      <td class="entry" headers="jArticle__entry__1">Wetternachrichten</td>
+                      <td class="entry" headers="jArticle__entry__2"><code class="ph codeph">jWeatherReports</code></td>
+                      <td class="entry" headers="jArticle__entry__3">1</td>
+                  </tr>
+                  <tr class="row">
+                      <td class="entry" headers="jArticle__entry__1">Artikel/Nachricht</td>
+                      <td class="entry" headers="jArticle__entry__2"><code class="ph codeph">jArticle</code></td>
+                      <td class="entry" headers="jArticle__entry__3">2 | 3 | ...</td>
+                  </tr>
+                  
+              </tbody></table>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>body</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jPoliticalNews<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Politische Nachricht]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weitere politische Nachricht]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jFinancialNews<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Wirtschaftsnachricht]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weitere Wirtschaftsnachricht]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jWeatherReports<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Wetternachricht]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weitere Wetternachricht]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>body</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+
+<p class="p">
+  Sind die Artikel innerhalb einer Rubrik wiederum gruppiert (z.B. Gruppierung der Artikel nach
+  Nationalstaaten innerhalb der Politischen Nachrichten, i.e. "Deutschland", "Frankreich", etc.),
+  so können die Rubriken (<code class="ph codeph">"jPoliticalNews"</code>, <code class="ph codeph">"jFinancialNews"</code>, etc.) 
+  in sich geschachtelt werden. 
+</p>
+
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jPoliticalNews<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- Rubrik politische Nachrichten --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jPoliticalNews<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- Spezialgruppe politischer Nachrichten, z.B. "Deutschland" --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Subtitel, z.B. "Deutschland"]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Politische Nachricht aus Deutschland]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weitere politische Nachricht aus Deutschland]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jPoliticalNews<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- Spezialgruppe politischer Nachrichten, z.B. "Frankreich" --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Subtitel, z.B. "Frankreich"]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Politische Nachricht aus Frankreich]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>jArticle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Weitere politische Nachricht aus Frankreich]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+
+  </div>
+</article></main></body></html>

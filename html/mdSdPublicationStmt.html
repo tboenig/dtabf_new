@@ -1,0 +1,77 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Die Umstände der Textausgabe des zugrundeliegenden Bandes (//fileDesc/sourceDesc/biblFull/publicationStmt)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_ogp_qk2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a><ul><li><a href="mdSourceDescAllg.html">Source Description Grundstruktur</a></li><li><a href="mdSdBibl.html">(Short) Bibliographic Citation</a></li><li><a href="mdSdBiblFull.html">Full Bibliographic Citation</a></li><li class="active"><a href="mdSdPublicationStmt.html">Publication Statement (Source)</a></li><li><a href="mdSdSeriesStmt.html">Series Statement (Source)</a></li><li><a href="mdSdNotesStmt.html">Notes Statement (Source)</a></li><li><a href="mdSdMsDesc.html">Manuscript Description (Source)</a></li></ul></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Die Umstände der Textausgabe des zugrundeliegenden Bandes <code class="ph codeph">(//fileDesc/sourceDesc/biblFull/publicationStmt)</code></h1>
+    
+  <div class="body">
+    <p class="p">Die näheren Angaben zu den Umständen der Textausgabe, welche als Vorlage für den DTA-Volltext diente, werden im
+      <em class="ph i">Publication Statement</em> (<code class="ph codeph">&lt;publicationStmt&gt;</code>) innerhalb des <code class="ph codeph">&lt;biblFull&gt;</code>-Elements 
+      der <em class="ph i">Source Description</em> wiedergegeben.
+    </p>
+    <p class="p">Dabei werden der Verlag bzw. die Druckerei, welche für die zugrundeliegende Textausgabe
+      verantwortlich zeichnen, im <code class="ph codeph">&lt;publisher&gt;</code>-Element des 
+      <code class="ph codeph">&lt;publicationStmt&gt;</code>s angegeben. Das <code class="ph codeph">&lt;publisher&gt;</code>-Element 
+      bzw. die <code class="ph codeph">&lt;publisher&gt;</code>-Elemente stehen immer an erster Stelle im 
+      <code class="ph codeph">&lt;publicationStmt&gt;</code>-Element, d.h. vor den Angaben zu Erscheinungsort 
+      und Erscheinungsdatum der Quelle. Falls mehrere Angaben zu Verlag bzw. Druckerei notwendig 
+      sind, so steht jede Angabe in einem separaten <code class="ph codeph">&lt;publisher&gt;</code>-Element.
+    </p>
+    <p class="p">Der Erscheinungsort wird im <code class="ph codeph">&lt;pubPlace&gt;</code>-Element des <code class="ph codeph">&lt;publicationStmt&gt;</code>s
+      angegeben. Im Falle mehrerer Erscheinungsorte steht jeder einzelne Erscheinungsort ebenfalls in einem separaten 
+      <code class="ph codeph">&lt;pubPlace&gt;</code>-Element.
+    </p>
+    <p class="p">Die Datierung steht jeweils in einem Unterelement <code class="ph codeph">&lt;date&gt;</code>. Über ein <code class="ph codeph">@type</code>-Attribut 
+      wird die Art der Datierung spezifiziert. Folgende Werte kann <code class="ph codeph">@type</code> dabei annehmen: 
+    </p>
+    <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
+          <tr class="row">
+            
+            <th class="entry" id="topic_ogp_qk2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">@type</code>-Wert</th>
+            
+            <th class="entry" id="topic_ogp_qk2_qs__entry__2" rowspan="1" colspan="1">Bedeutung</th>
+            
+          </tr>
+        </thead><tbody class="tbody">
+          <tr class="row">
+            
+            <td class="entry" headers="topic_ogp_qk2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">publication</code>
+            </td>
+            
+            <td class="entry" headers="topic_ogp_qk2_qs__entry__2" rowspan="1" colspan="1">Erscheinungsjahr der vorliegenden Quelle (obligatorisch)</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" headers="topic_ogp_qk2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">firstPublication</code>
+            </td>
+            
+            <td class="entry" headers="topic_ogp_qk2_qs__entry__2" rowspan="1" colspan="1">Erscheinungsjahr der Erstausgabe, falls abweichend vom Erscheinungsjahr der Quelle</td>
+            
+          </tr>
+          <tr class="row">
+            
+            <td class="entry" headers="topic_ogp_qk2_qs__entry__1" rowspan="1" colspan="1">
+              <code class="ph codeph">creation</code>
+            </td>
+            
+            <td class="entry" headers="topic_ogp_qk2_qs__entry__2" rowspan="1" colspan="1">Entstehungsjahr, falls abweichend vom Erscheinungsjahr der Quelle und vom Erscheinungsjahr der Erstausgabe</td>
+            
+          </tr>
+        </tbody></table>
+      
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>publicationStmt</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>publisher</span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- an erster Stelle; ggf. mehrfach zu verwenden --&gt;</span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>name</span><span class="ph token punctuation">&gt;</span></span>[Verlag/Druckerei]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>name</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>publisher</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>pubPlace</span><span class="ph token punctuation">&gt;</span></span>[Erscheinungsort]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>pubPlace</span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- ggf. mehrfach zu verwenden --&gt;</span>  
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>date</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>publication<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Erscheinungsjahr]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>date</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>date</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>firstPublication<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Erscheinungsjahr der Erstausgabe]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>date</span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- gegebenenfalls --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>date</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>creation<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Entstehungsjahr des Textes]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>date</span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- gegebenenfalls --&gt;</span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>publicationStmt</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

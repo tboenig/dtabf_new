@@ -1,0 +1,27 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Besonderheiten bei den Metadaten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_ly5_rdq_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li class="active"><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Besonderheiten bei den Metadaten</h1>
+    
+  <div class="body">
+   
+      <p class="p">
+        Die Metadaten erhalten zusätzlich zu den 
+        <a class="xref" href="metadaten.html" title="Erfassung (Transkription) und Auszeichnung von Metadaten">DTA-Metadaten-Richtlinien</a> 
+        weitere Manuskript-spezifische Elemente.
+      </p>
+      <p class="p">
+        Das Element <a class="xref" href="mdSdBibl.html"><code class="ph codeph">&lt;bibl&gt;</code> 
+          der Source Description</a> erhält den <code class="ph codeph">@type</code>-Wert <code class="ph codeph">"MAN"</code> für Manuskripte.
+      </p>
+      <p class="p">
+        Die Manuscript Description enthält bei Manuskripten das Element <code class="ph codeph">&lt;handDesc&gt;</code>,
+        welches die Hände des Manuskripts in jeweils einem <code class="ph codeph">&lt;handNote&gt;</code>-Element beschreibt. 
+        Das Element <code class="ph codeph">&lt;handNote&gt;</code> erhält dabei eine <span class="ph tt" style="font-family: monospace">@xml:id</span>, in welcher die jeweilige 
+        Hand eindeutig identifiziert wird. Auf diesen Identifier kann im Text mittels des <span class="ph tt" style="font-family: monospace">@hand</span>-Attributs 
+        verwiesen werden.
+      </p>
+  </div>
+</article></main></body></html>

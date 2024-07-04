@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Eingerückter Text</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_et"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a><ul><li><a href="typogrAllg.html">Richtlinien der Kodierung</a></li><li><a href="typogrBspe.html">Beispiele und Spezifika der Kodierung</a><ul><li><a href="fettdruck.html">Fettdruck</a></li><li><a href="sperrdruck.html">Sperrdruck</a></li><li><a href="kapitaelchen.html">Kapitälchen</a></li><li><a href="initiale.html">Initialen</a></li><li><a href="uebergeschrieben.html">Übergeschriebenes</a></li><li><a href="einfaerbung.html">Einfärbungen</a></li><li><a href="tiefstellung.html">Tiefstellung</a></li><li><a href="hochstellung.html">Hochstellung</a></li><li class="active"><a href="einrueckung.html">Eingerückter Text</a></li><li><a href="typogrSatzzeichen.html">Typographie Satzzeichen</a></li><li><a href="schriftart.html">Schriftartwechsel</a></li></ul></li></ul></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Eingerückter Text</h1>
+   <div class="body">
+      <p class="p phase2">Eingerückter Text wird ebenfalls mit dem
+         <code class="ph codeph">@rendition</code>-Attribut gekennzeichnet, welches in das
+            <code class="ph codeph">&lt;hi&gt;</code>-Element oder ein Blockelement der DTA-Elementauswahl
+         eingebettet ist. Die Position des Textes wird als Wert des
+         <code class="ph codeph">@rendition</code>-Attributs übermittelt: </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
+               <tr class="row">
+                  <th class="entry" id="topic_et__entry__1" rowspan="1" colspan="1">Attribut-Wert-Paar</th>
+                  <th class="entry" id="topic_et__entry__2" rowspan="1" colspan="1">Bedeutung</th>
+               </tr>
+            </thead><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry" headers="topic_et__entry__1" rowspan="1" colspan="1">
+                     <code class="ph codeph">rendition="#et"</code>
+                  </td>
+                  <td class="entry" headers="topic_et__entry__2" rowspan="1" colspan="1">eingerückter Text</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_et__entry__1" rowspan="1" colspan="1">
+                     <code class="ph codeph">rendition="#c"</code>
+                  </td>
+                  <td class="entry" headers="topic_et__entry__2" rowspan="1" colspan="1">zentriert</td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_et__entry__1" rowspan="1" colspan="1">
+                     <code class="ph codeph">rendition="#right"</code>
+                  </td>
+                  <td class="entry" headers="topic_et__entry__2" rowspan="1" colspan="1">rechtsbündig</td>
+               </tr>
+            </tbody></table>
+       <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> Eingerückter Text wird mit dem <code class="ph codeph">&lt;hi&gt;</code>-Element
+         ausgezeichnet. Die Position des Textes wird im 
+         <code class="ph codeph">@rendition</code>-Attribut in Form eines der oben genannten Werte übermittelt.</em></div>
+      <p class="p">Einrückungen und Zentrierungen in Überschriften, Listen und Tabellen werden im DTA-Korpus
+         in der Regel nicht gesondert ausgezeichnet. Eine Ausnahme bilden die mittels OCR erfassten
+         Texte. </p>
+      <div class="note attention note_attention"><span class="note__title">Achtung:</span> Im nachfolgenden Beispiel finden sich neben eingerücktem Text verschiedene weitere Formatierungen 
+          (i.e. gesperrt, fett, rechtsbündig).</div>
+      <div class="example"><h2 class="title sectiontitle">Einrückung</h2>
+         <figure class="fig fignone">
+            <img class="image" src="img/LsJVxtnwNz.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#et<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#g<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>Heidelberg,<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span> den 15. Juli 1892.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#right #b<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>E. Kraepelin.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lb</span><span class="ph token punctuation">/&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/kraepelin_arzneimittel_1892/14" target="_blank" rel="external noopener">Kraepelin, Emil: Ueber die Beeinflussung
+               einfacher psychischer Vorgänge durch einige Arzneimittel. Jena, 1892.
+               [Faksimile 14]</a>
+            </em></p>
+         </figure></div>
+   </div>
+</article></main></body></html>

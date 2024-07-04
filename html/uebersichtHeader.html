@@ -1,0 +1,740 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Übersicht über die Elemente im Header-Bereich</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="Unbenannt14"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a><ul><li class="active"><a href="uebersichtHeader.html">Elemente im Header-Bereich</a></li><li><a href="uebersichtText.html">Elemente im Text-Bereich</a></li><li><a href="legende.html">Legende</a></li></ul></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Übersicht über die Elemente im Header-Bereich</h1>
+    
+  <div class="body">
+    <p class="p">
+      Die folgende Tabelle bietet einen Überblick über alle Elemente, die das DTA-Basisformat für den
+      <code class="ph codeph">&lt;teiHeader&gt;</code>-Bereich vorsieht. Jedem Element sind die jeweils laut
+      DTA-Basisformat möglichen Attribute und (falls invariabel) Werte zugeordnet. Den Elementen
+      sind funktionale Kategorien zugeordnet, welche über deren Verwendungskontexte informieren.
+      Beschreibungen zu diesen funktionalen Kategorien finden sich in der 
+      <a class="xref" href="legende.html#legende__hb-fk">Legende zu den Übersichten</a>.
+      Die Attribute des DTA-Basisformats, die in den meisten der DTA-Elemente verwendet werden können
+      (Universalattribute), sind ebenfalls in der 
+      <a class="xref" href="legende.html#legende__hb-ga">Legende zu den Übersichten</a> dokumentiert.
+    </p>
+    <div class="p">
+<table class="table"><caption></caption><colgroup><col><col><col><col><col></colgroup><thead class="thead">
+      <tr class="row">
+          <th class="entry" id="Unbenannt14__entry__1">Element</th>
+          <th class="entry" id="Unbenannt14__entry__2">Beschreibung</th>
+          <th class="entry" id="Unbenannt14__entry__3" colspan="2">Attribute/Anmerkungen</th>
+          <th class="entry" id="Unbenannt14__entry__4">Funktionale Kategorie</th>
+      </tr>
+    </thead><tbody class="tbody">
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1"><code class="ph codeph">addName</code>
+              <p class="p sg">Doku: <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html" target="_blank" rel="external noopener">TEI</a>,
+                <a class="xref" href="mdPersName.html">DTABf</a></p></td>
+          <td class="entry" headers="Unbenannt14__entry__2">zusätzlicher Name, z.B. Pseudonym</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">address</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-address.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Adresse</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">addrLine</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addrLine.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Postanschrift</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">author</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdAuthorEditor.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Autor</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1" rowspan="2">
+              <code class="ph codeph">availability</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdLicense.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2" rowspan="2">Angaben zur Nachnutzbarkeit</td>
+          <td class="entry" headers="Unbenannt14__entry__3">
+              <code class="ph codeph">@corresp</code>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__3">ID des korrespondierenden <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html" target="_blank" rel="external noopener"><code class="ph codeph">availability</code></a>- oder <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-msDesc.html" target="_blank" rel="external noopener">
+              <code class="ph codeph">msDesc</code></a>-Elements</td>
+          <td class="entry" headers="Unbenannt14__entry__4" rowspan="2"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@xml:id</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">eindeutige ID</td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">bibl</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-bibl.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdBibl.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Zitiertitel</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@type</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">[<code class="ph codeph">"DM"</code>, <code class="ph codeph">"DS"</code>, <code class="ph codeph">"J"</code>, <code class="ph codeph">"JA"</code>, <code class="ph codeph">"M"</code>,
+           <code class="ph codeph">"MAN"</code>, <code class="ph codeph">"MM"</code>, <code class="ph codeph">"MMS"</code>, <code class="ph codeph">"MS"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">biblFull</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-biblFull.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdBiblFull.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">ausführliche Titelangaben</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">biblScope</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-biblScope.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdSeriesStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Position des Textes innerhalb einer
+              übergeordneten Publikation</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@unit</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Kontext der Einordnung [<code class="ph codeph">"issue"</code>, <code class="ph codeph">"pages"</code>, <code class="ph codeph">"volume"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh07">sources</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">classCode</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-classCode.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdProfileDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Textsorte</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@scheme</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Klassifikationsschema (URL)</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh03">classification</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">date</code>
+              <p class="p sg">Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html" target="_blank" rel="external noopener">TEI</a>,
+<a class="xref" href="mdSdPublicationStmt.html">DTABf</a>,
+<a class="xref" href="mdPubStmtAllg.html">DTABf2</a></p></td>
+          <td class="entry" headers="Unbenannt14__entry__2">Erscheinungsdatum/Datum des Zugriffs auf externe
+              Ressource</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@type</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">[<code class="ph codeph">"creation"</code>, <code class="ph codeph">"firstPublication"</code>, <code class="ph codeph">"importDTA"</code>, <code class="ph codeph">"publication"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a>,
+<a class="xref" href="legende.html#legende__fkh06">responsibility</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">edition</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-edition.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdEditionStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Art der Edition</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@n</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Nummer der Auflage normiert (Ziffer)</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">editionStmt</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editionStmt.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdEditionStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Angaben zur Edition</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1" rowspan="2">
+              <code class="ph codeph">editor</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editor.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdAuthorEditor.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2" rowspan="2">Editor/Herausgeber</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@corresp</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">ID des korrespondierenden <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publisher.html" target="_blank" rel="external noopener">
+             <code class="ph codeph">publisher</code></a>-Elements.</td>
+          <td class="entry" headers="Unbenannt14__entry__4" rowspan="2"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a>,
+            <a class="xref" href="legende.html#legende__fkh06">responsibility</a></td>
+      </tr><tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@role</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Übersetzer [<code class="ph codeph">"translator"</code>]</td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">editorialDecl</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-editorialDecl.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdEncodingDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Angaben zu den Transkriptions- und Annotationsrichtlinien</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">email</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-email.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">E-Mail-Adresse</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">encodingDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-encodingDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdEncodingDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Hinweise zu den Transkriptions- und Annotationsrichtlinien</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">extent</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-extent.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdExtent.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Umfang des Volltextes/der Quelle</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">fileDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdBiblAngaben.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">ausführliche bibliographische Angaben</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">forename</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-forename.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPersName.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Vorname</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">genName</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-genName.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPersName.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Generationenangabe</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">idno</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-idno.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Identifikationscode</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@type</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Art der ID [<code class="ph codeph">"DTADirName"</code>, <code class="ph codeph">"DTAID"</code>, <code class="ph codeph">"shelfmark"</code>, <code class="ph codeph">"URLCAB"</code>,
+           <code class="ph codeph">"URLCatalogue"</code>, <code class="ph codeph">"URLHTML"</code>, <code class="ph codeph">"URLImages"</code>, <code class="ph codeph">"URLTCF"</code>,
+           <code class="ph codeph">"URLText"</code>, <code class="ph codeph">"URLWeb"</code>, <code class="ph codeph">"URLXML"</code>, <code class="ph codeph">"URN"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh07">sources</a>,
+            <a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">language</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-language.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdProfileDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Sprache</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@ident</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Sprachcode nach ISO 639-3</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">langUsage</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-langUsage.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdProfileDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Angaben zur Sprache des Textes</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">licence</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-licence.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdLicense.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Lizenz</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@target</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Verweis zu Informationen zur Lizenz (URL)</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">measure</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-measure.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdExtent.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Umfangsangabe</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@type</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Maßeinheiten [<code class="ph codeph">"characters"</code>, <code class="ph codeph">"images"</code>, <code class="ph codeph">"pages"</code>, <code class="ph codeph">"tokens"</code>, <code class="ph codeph">"types"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1" rowspan="2">
+              <code class="ph codeph">msDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-msDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdMsDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2" rowspan="2">Angaben zum zugrundeliegenden Druck</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@corresp</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">ID des korrespondierenden <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html" target="_blank" rel="external noopener">
+              <code class="ph codeph">availability</code></a>-Elements</td>
+          <td class="entry" headers="Unbenannt14__entry__4" rowspan="2"><a class="xref" href="legende.html#legende__fkh07">sources</a></td>
+      </tr>
+      <tr class="row">
+       <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@xml:id</code></td>
+        <td class="entry" headers="Unbenannt14__entry__3">eindeutige ID</td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">msIdentifier</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-msIdentifier.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdMsDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Angaben zum Aufbewahrungsort</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh07">sources</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">name</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-name.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdPublicationStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Name des Verlages/der Druckerei</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">nameLink</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-nameLink.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPersName.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Adelstitel</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">note</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdNotesStmt.html">DTABf</a>, 
+                  <a class="xref" href="mdSdNotesStmt.html">DTABf2</a>, 
+                  <a class="xref" href="mdRespStmt.html">DTABf3</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Anmerkung zur Verantwortlichkeit</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@type</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">[<code class="ph codeph">"remarkDocument"</code>, <code class="ph codeph">"remarkResponsibility"</code>, <code class="ph codeph">"remarkRevisionDTA"</code>, <code class="ph codeph">"remarkSource"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh06">responsibility</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">orgName</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orgName.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf</a>, 
+                  <a class="xref" href="mdRespStmt.html">DTABf2</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Name einer Organisation</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@ref</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Referenz zu weiteren Informationen zu der Organisation (URL)</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">p</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdLicense.html">DTABf</a>, 
+                  <a class="xref" href="mdSdMsDesc.html">DTABf2</a>, 
+                  <a class="xref" href="mdEncodingDesc.html">DTABf3</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Paragraph</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh08">text</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">persName</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-persName.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPersName.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Name einer Person (Autor, Herausgeber/Editor, Übersetzer, anderweitig verantwortliche Person)</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@ref</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Referenz zu weiteren Informationen zu der Person (URL)</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">physDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-physDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdMsDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Erscheinungsbild der Textvorlage</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">profileDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdProfileDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Einordnung des Textes</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh03">classification</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">publicationStmt</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdPublicationStmt.html">DTABf</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf2</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Gegebenheiten der Publikation</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">publisher</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publisher.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdPublicationStmt.html">DTABf</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf2</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Verlag/Druckerei/Herausgeber der Publikation</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@xml:id</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">eindeutige ID</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">pubPlace</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pubPlace.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdPublicationStmt.html">DTABf</a>, 
+                  <a class="xref" href="mdPubStmtAllg.html">DTABf2</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Erscheinungsort</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">ref</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-ref.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdRespStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Verweis auf eine externe (Text-/Bild-)Ressource</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@target</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Verweisziel (URL)</td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh06">responsibility</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">repository</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-repository.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdMsDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">besitzende Bibliothek</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh07">sources</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">resp</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-resp.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdRespStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Art der Verantwortlichkeit</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh06">responsibility</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1" rowspan="2">
+              <code class="ph codeph">respStmt</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-respStmt.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdRespStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2" rowspan="2">Angaben zu Verantwortlichkeiten</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@corresp</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">ID des korrespondierenden <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-availability.html" target="_blank" rel="external noopener">
+            <code class="ph codeph">availability</code></a>-Elements</td>
+          <td class="entry" headers="Unbenannt14__entry__4" rowspan="2"><a class="xref" href="legende.html#legende__fkh06">responsibility</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@xml:id</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">eindeutige ID</td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">roleName</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-roleName.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPersName.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Funktion, welche die genannte Person ausübt(e)</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">seriesStmt</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdSeriesStmt.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Angaben zur übergeordneten Reihe/Zeitschrift</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh05">publication</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">sourceDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSourceDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Angaben zur zugrundeliegenden Quelle</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh07">sources</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">surname</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-surname.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdPersName.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Nachname</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh04">names</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">textClass</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-textClass.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdProfileDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">inhaltliche Einordnung des Textes</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh03">classification</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1" rowspan="3">
+              <code class="ph codeph">title</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdTitleStmt.html">DTABf</a>,
+                  <a class="xref" href="mdSdTitleStmt.html">DTABf2</a>, 
+                  <a class="xref" href="mdSdSeriesStmt.html">DTABf3</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2" rowspan="3">Titelangabe(n)</td>
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@level</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Art der Publikation (Monographie, Zeitungsartikel, ...) [<code class="ph codeph">"a"</code>, <code class="ph codeph">"j"</code>, <code class="ph codeph">"m"</code>, <code class="ph codeph">"s"</code>]</td>
+          <td class="entry" headers="Unbenannt14__entry__4" rowspan="3"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a></td>
+      </tr><tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@n</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Nummer des Bandes/Teils</td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__3"><code class="ph codeph">@type</code></td>
+          <td class="entry" headers="Unbenannt14__entry__3">Skopus des Titels (Haupttitel, Bandtitel, ...) [<code class="ph codeph">"main"</code>, <code class="ph codeph">"part"</code>, <code class="ph codeph">"sub"</code>, <code class="ph codeph">"volume"</code>]</td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">titleStmt</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdTitleStmt.html">DTABf</a>, 
+                  <a class="xref" href="mdSdTitleStmt.html">DTABf2</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">bibliographische Angaben (Titel, Verantwortlichkeiten)</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh02">authorTitle</a></td>
+      </tr>
+      <tr class="row">
+          <td class="entry" headers="Unbenannt14__entry__1">
+              <code class="ph codeph">typeDesc</code>
+              <p class="p sg">
+                  Doku: 
+                  <a class="xref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-typeDesc.html" target="_blank" rel="external noopener">TEI</a>, 
+                  <a class="xref" href="mdSdMsDesc.html">DTABf</a>
+              </p>
+          </td>
+          <td class="entry" headers="Unbenannt14__entry__2">Schriftart</td>
+          <td class="entry" headers="Unbenannt14__entry__3" colspan="2"></td>
+          <td class="entry" headers="Unbenannt14__entry__4"><a class="xref" href="legende.html#legende__fkh01">appearance</a></td>
+      </tr>
+    </tbody></table></div>
+    </div>
+</article></main></body></html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Richtlinien zur Kodierung typographischer Besonderheiten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_ktb"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a><ul><li class="active"><a href="typogrAllg.html">Richtlinien der Kodierung</a></li><li><a href="typogrBspe.html">Beispiele und Spezifika der Kodierung</a></li></ul></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Richtlinien zur Kodierung typographischer Besonderheiten</h1>
+    
+   <div class="body">
+      <p class="p">In den Vorlagen wird die semantische Struktur einer Passage in der Regel durch
+         typographische Hervorhebungen verdeutlicht. Die Annotation des Volltextes folgt in erster
+         Linie semantischen Kriterien, so dass dem transkribierten Text jeweils die betreffende
+         semantische Kategorie zugeordnet wird.</p>
+      <p class="p">Das typographische Erscheinungsbild der Vorlage wird daneben ebenfalls
+         möglichst genau dokumentiert, insbesondere aber dann, wenn die semantische Struktur einer 
+         Passage nicht auf den ersten Blick erkennbar ist.</p>      
+      <div class="p">Typographische Besonderheiten der Vorlage werden mittels der
+         Universalattribute <code class="ph codeph">@rendition</code> und <code class="ph codeph">@rend</code> wiedergegeben,
+         welche folgenden Elementen des Basisformats zugeordnet werden können:
+         <code class="ph codeph language-xml"><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>byline</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>cell</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>dateline</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span><span class="ph token punctuation">&gt;</span></span>, 
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>figure</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>floatingText</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>formula</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fw</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span><span class="ph token punctuation">&gt;</span></span>, 
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>l</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>lg</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>milestone</span><span class="ph token punctuation">&gt;</span></span>, <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span></code>
+      <div class="note notice note_notice"><span class="note__title">HINWEIS:</span> <em class="ph i"><strong class="ph b">Abweichende Regelung Phase 1:</strong> Für die Auszeichnung typographischer Besonderheiten wird das Element
+         <code class="ph codeph">&lt;hi&gt;</code> eingesetzt, welches das Attribut <code class="ph codeph">@rendition</code>
+         enthält.</em></div></div>
+      <p class="p phase2">Das Element <code class="ph codeph">&lt;hi&gt;</code> wird speziell für die
+         Auszeichnung typographischer Besonderheiten auf Zeichenebene eingesetzt. </p>
+      <p class="p">Typographische Auszeichnungen können über einen Seiten- bzw. Spaltenumbruch hinwegreichen. </p>
+      <p class="p">Die Attribute <code class="ph codeph">@rendition</code> und <code class="ph codeph">@rend</code> schließen einander
+         aus. Das Attribut <code class="ph codeph">@rendition</code> enthält eine feste Liste möglicher Werte für
+         die Auszeichnung gängiger typographischer Besonderheiten (s. unten) und sollte daher dem
+         Attribut <code class="ph codeph">@rend</code> vorgezogen werden. Darüber hinaus gehende typographische
+         Besonderheiten, die sich nicht mit den unten genannten Werten abbilden lassen, können im
+         Attribut <code class="ph codeph">@rend</code> wiedergegeben werden. In <code class="ph codeph">@rend</code> sind
+         natürlichsprachliche Angaben zur typographischen Realisierung der jeweils ausgezeichneten
+         Textpassagen möglich. </p>
+      
+      <p class="p">Folgende Werte kann <code class="ph codeph">@rendition</code> annehmen: </p>
+      <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+               <tr class="row">
+                  <th class="entry" id="topic_ktb__entry__1">Attribut-Wert-Paar</th>
+                  <th class="entry" id="topic_ktb__entry__2">Bedeutung</th>
+                  <th class="entry" id="topic_ktb__entry__3">CSS-Umsetzung im DTA</th>
+               </tr>
+            </thead><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#aq"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Wechsel zur Antiqua-Schrift in
+                     Fraktur-Werken</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-family:sans-serif</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#b"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Fettdruck</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-weight:bold</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#blue"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">blaue Schrift</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">color:blue</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#c"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">zentrierter Text</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">display:block; text-align:center</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#et"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">eingerückter Text</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">display:block; margin-left:2em;
+              text-indent:0</code> </td>
+               </tr>
+              <tr class="row">
+                <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#f"</code></td>
+                <td class="entry" headers="topic_ktb__entry__2">Wechsel zur Frakturschrift in Antiqua-Werken</td>
+                <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">border:1px dotted silver</code> </td>
+              </tr>
+              <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#fr"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Frakturwechsel</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">border:1px dotted silver</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#g"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Sperrdruck</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">letter-spacing:0.125em</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#i"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Kursivdruck</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-style:italic</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#in"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Initiale, Schmuckinitiale</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-size:150%</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#k"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Kapitälchen</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-variant:small-caps</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#red"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">roter Druck</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">color:red</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#right"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Rechtsbündigkeit</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">display:block; text-align:right</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#sub"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Tiefstellung</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">vertical-align:sub; font-size:.7em</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#sup"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">Hochstellung</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">vertical-align:super; font-size:.7em</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#u"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">gedruckte Unterstreichung</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">text-decoration:underline</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#uu"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">doppelte Unterstreichung</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">border-bottom:double 3px #000</code> </td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#v"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">vertikal gedruckter Text</td>
+                  <td class="entry" headers="topic_ktb__entry__3"></td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#s"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">durchgestrichener Text</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">text-decoration:line-through</code></td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#et2"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">(Level 3:) zweifach eingerückter
+                     Text</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">display:block; margin-left:4em; text-indent:0</code></td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#et3"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">(Level 3:) dreifach eingerückter
+                     Text</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">display:block; margin-left:6em; text-indent:0</code></td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#smaller"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">(Level 3:) gegenüber dem
+                     Grundtext verkleinerte Schrift</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-size:smaller</code></td>
+               </tr>
+               <tr class="row">
+                  <td class="entry" headers="topic_ktb__entry__1"><code class="ph codeph">rendition="#larger"</code> </td>
+                  <td class="entry" headers="topic_ktb__entry__2">(Level 3:) gegenüber dem
+                     Grundtext vergrößerte Schrift</td>
+                  <td class="entry" headers="topic_ktb__entry__3"><code class="ph codeph">font-size:larger</code></td>
+               </tr>
+            </tbody></table>
+   </div>
+</article></main></body></html>

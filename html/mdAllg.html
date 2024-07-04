@@ -1,0 +1,31 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Grundstruktur der Kodierung von Metadaten</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_ifv_gg2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li class="active"><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Grundstruktur der Kodierung von Metadaten</h1>
+    
+  <div class="body">
+      <p class="p">Die Metadaten werden im Element <code class="ph codeph">&lt;teiHeader&gt;</code> erfasst. Dabei umfassen die Metadaten im TEI-Header folgende Angaben:</p>
+    <ul class="ul">
+      
+      <li class="li">die Titel- und Quellenangaben zur vorliegenden Textausgabe (innerhalb
+                von <code class="ph codeph">&lt;fileDesc&gt;</code>; siehe dazu Kap. <a class="xref" href="mdBiblAngaben.html">Bibliographische
+                Angaben</a>), </li>
+      
+      <li class="li">Angaben zu den editorischen Richtlinien, welche der Ausgabe zugrunde
+                liegen (innerhalb von <code class="ph codeph">&lt;encodingDesc&gt;</code>;
+                siehe dazu Kap. <a class="xref" href="mdEncodingDesc.html">Editorische Richtlinien</a>) sowie </li>
+      
+      <li class="li">erste inhaltliche Angaben zum Text (innerhalb von <code class="ph codeph">&lt;profileDesc&gt;</code>; 
+        siehe dazu Kap. <a class="xref" href="mdProfileDesc.html">Dokumentklassifikationen</a>).
+      </li>
+      
+    </ul>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fileDesc</span><span class="ph token punctuation">&gt;</span></span>[Bibliographische Angaben]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>fileDesc</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>encodingDesc</span><span class="ph token punctuation">&gt;</span></span>[Editorische Richtlinien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>encodingDesc</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>profileDesc</span><span class="ph token punctuation">&gt;</span></span>[Dokumentklassifikationen]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>profileDesc</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Grundstruktur der Kodierung einleitender Buchteile</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_5"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a><ul><li class="active"><a href="frontAllg.html">Einleitende Buchteile Grundstruktur</a></li><li><a href="titelblatt.html">Titelblatt</a></li><li><a href="widmung.html">Widmungen</a></li><li><a href="epigraph.html">Epigraphe</a></li><li><a href="inhaltsverzeichnis.html">Inhaltsverzeichnis</a></li></ul></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Grundstruktur der Kodierung einleitender Buchteile</h1>
+    
+   <div class="body">
+      <p class="p">Die einleitenden Teile eines Buches (die Titelei mit Schmutztitel,
+         Frontispiz, Titelblatt, Impressum etc., das Inhaltsverzeichnis, das
+         Vorwort, Widmungen) werden mit dem
+         <code class="ph codeph">&lt;front&gt;</code>-Element umschlossen. Folgende Elemente
+         können im <code class="ph codeph">&lt;front&gt;</code>-Element enthalten sein: </p>
+      <ul class="ul">
+         <li class="li">
+            <code class="ph codeph">&lt;div&gt;</code> (Textpassage einer bestimmten
+            Textsorte): innerhalb von <code class="ph codeph">&lt;front&gt;</code> mit den
+            möglichen <code class="ph codeph">@type</code>-Werten <ul class="ul">
+               <li class="li">
+                  <code class="ph codeph">dedication</code> (Widmung),</li>
+               <li class="li">
+                  <code class="ph codeph">frontispiece</code> (Frontispiz),</li>
+               <li class="li">
+                  <code class="ph codeph">copyright</code> (Hinweise zum Copyright),</li>
+               <li class="li">
+                  <code class="ph codeph">contents</code> (Inhaltsverzeichnis),</li>
+               <li class="li">
+                  <code class="ph codeph">imprimatur</code> (Druckerlaubnis),</li>
+               <li class="li">
+                  <code class="ph codeph">imprint</code> (Angaben zur Publikation),</li>
+               <li class="li">
+                  <code class="ph codeph">preface</code> (Geleitwort, Vorwort,
+                  Einleitung)</li>
+            </ul>
+         </li>
+         <li class="li">
+            <code class="ph codeph">&lt;titlePage&gt;</code> (Titelseite)</li>
+         <li class="li">
+            <code class="ph codeph">&lt;epigraph&gt;</code> (Zitat): auch in anderen Kontexten
+            möglich; s. dazu Kap. <a class="xref" href="zitateEpigraphe.html">Zitate und Epigraphe</a>
+         </li>
+         <li class="li">
+            <code class="ph codeph">&lt;figure&gt;</code> (Abbildung): auch in anderen
+            Kontexten möglich; s. dazu Kap. <a class="xref" href="abbildung.html">Abbildungen</a>
+         </li>
+         <li class="li">
+            <code class="ph codeph">&lt;advertisement&gt;</code> (Anzeige): auch in anderen
+            Kontexten möglich; s. dazu Kap. <a class="xref" href="anhang.html">Anhang</a>
+         </li>
+
+      </ul>
+      <div class="note note note_note"><span class="note__title">Anmerkung:</span> Sowohl für das Geleitwort als auch für das Vorwort und die
+         Einleitung eines Buches wird <code class="ph codeph">@type="preface"</code> als
+         Spezifikation des <code class="ph codeph">&lt;div&gt;</code>-Elements gesetzt. Somit
+         erfolgt im Tagging keine Unterscheidung zwischen diesen Textsorten bzw.
+         den (möglicherweise unterschiedlichen) Autoren derselben. </div>
+      <p class="p">Beispielhafte Strukturierung der einleitenden Teile eines Buchs:</p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>front</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>figure</span><span class="ph token punctuation">/&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePage</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>halftitle<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Inhalte Schmutztitelblatt]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePage</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titlePage</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>main<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Inhalte Titelblatt]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titlePage</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>imprimatur<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Druckerlaubnis]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>contents<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Inhaltsverzeichnis]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>dedication<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Widmung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>preface<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Einleitung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>front</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+   </div>
+</article></main></body></html>

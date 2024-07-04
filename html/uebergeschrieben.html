@@ -1,0 +1,33 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Übergeschriebenes</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_ueb"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a><ul><li><a href="erschBildBand.html">Erscheinungsbild Band</a></li><li><a href="erschBildText.html">Erscheinungsbild Text</a><ul><li><a href="spalte.html">Spalten</a></li><li><a href="absatz.html">Absätze</a></li><li><a href="zeilenumbruch.html">Zeilenumbrüche</a></li><li><a href="horizontaleLinie.html">Horizontale Trennlinien</a></li><li><a href="liste.html">Listen</a></li><li><a href="tabelle.html">Tabellen</a></li><li><a href="abbildung.html">Abbildungen</a></li><li><a href="formeln.html">Formeln</a></li><li><a href="typographie.html">Typographische Besonderheiten</a><ul><li><a href="typogrAllg.html">Richtlinien der Kodierung</a></li><li><a href="typogrBspe.html">Beispiele und Spezifika der Kodierung</a><ul><li><a href="fettdruck.html">Fettdruck</a></li><li><a href="sperrdruck.html">Sperrdruck</a></li><li><a href="kapitaelchen.html">Kapitälchen</a></li><li><a href="initiale.html">Initialen</a></li><li class="active"><a href="uebergeschrieben.html">Übergeschriebenes</a></li><li><a href="einfaerbung.html">Einfärbungen</a></li><li><a href="tiefstellung.html">Tiefstellung</a></li><li><a href="hochstellung.html">Hochstellung</a></li><li><a href="einrueckung.html">Eingerückter Text</a></li><li><a href="typogrSatzzeichen.html">Typographie Satzzeichen</a></li><li><a href="schriftart.html">Schriftartwechsel</a></li></ul></li></ul></li><li><a href="klammerung.html">Klammerungen</a></li><li><a href="leerraum.html">Leerraum</a></li><li><a href="gapSupplied.html">Schwer- und Unleserliches</a></li></ul></li></ul></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="title topictitle1" id="ariaid-title1">Übergeschriebenes</h1>
+   <div class="body">
+     <p class="p">
+      Kombinationen aus Zeichen mit übergeschriebenen Zeichen, für die es keine 
+      Unicode-Entsprechung gibt, werden mittels <code class="ph codeph">&lt;hi @rendition="#stacked"&gt;</code> 
+      ausgezeichnet. Die betreffenden Zeichen werden entsprechend der Unicode-Empfehlung für die 
+      <a class="xref" href="http://unicode.org/notes/tn28/UTN28-PlainTextMath-v2.pdf" target="_blank" rel="external noopener">Schreibung 
+      von Binomialkoeffizienten</a> mittels einer unterbrochenen Pipe (¦ U+00A6 BROKEN BAR) 
+      voneinander getrennt. Dabei steht das Basiszeichen jeweils an erster Stelle.</p>
+      <div class="example"><h2 class="title sectiontitle">Übergeschriebene Zeichen</h2>
+         <figure class="fig fignone">
+            <img class="image" src="img/rh21LavgZb.png">
+            <pre class="pre codeblock language-xml"><code>0,28 <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#stacked<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>P<span class="ph token entity">&amp;#x0336;</span> ￤ ˙˙˙ ￤ ˙˙<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/quenstedt_mineralogie_1854/510" target="_blank" rel="external noopener">Quenstedt, Friedrich August: Handbuch der
+               Mineralogie. Tübingen, 1855. [Faksimile 510]</a></em></p>
+         </figure></div>
+     <p class="p">Folgen mehrere übergeschriebene Zeichen übereinander, so wird <code class="ph codeph">&lt;hi rendition="#stacked"&gt;</code> 
+     geschachtelt.</p>
+     <div class="example"><h2 class="title sectiontitle">Mehrfach übereinander geschriebene Zeichen</h2>
+         <figure class="fig fignone">
+            <img class="image" src="img/bachUebergeschr.png">
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#stacked<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>2 ￤ 4<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span>
+und
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>hi</span> <span class="ph token attr-name">rendition</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#stacked<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>2 ￤ 4 ￤ 6<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>hi</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p"><em class="ph i">Quelle: <a class="xref" href="http://www.deutschestextarchiv.de/bach_versuch02_1762/107" target="_blank" rel="external noopener">Bach, Carl Philipp Emanuel: Versuch über die wahre Art das Clavier zu spielen. Bd. 2. Berlin, 1762. [Faksimile 107]</a></em></p>
+         </figure></div>
+   </div>
+</article></main></body></html>

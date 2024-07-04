@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Angaben zum Aufbewahrungsort der Quelle (//fileDesc/sourceDesc/msDesc)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_vpq_vk2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a><ul><li><a href="mdSourceDescAllg.html">Source Description Grundstruktur</a></li><li><a href="mdSdBibl.html">(Short) Bibliographic Citation</a></li><li><a href="mdSdBiblFull.html">Full Bibliographic Citation</a></li><li><a href="mdSdPublicationStmt.html">Publication Statement (Source)</a></li><li><a href="mdSdSeriesStmt.html">Series Statement (Source)</a></li><li><a href="mdSdNotesStmt.html">Notes Statement (Source)</a></li><li class="active"><a href="mdSdMsDesc.html">Manuscript Description (Source)</a></li></ul></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Angaben zum Aufbewahrungsort der Quelle <code class="ph codeph">(//fileDesc/sourceDesc/msDesc)</code></h1>
+    
+  <div class="body">
+    <p class="p">Die unmittelbaren Vorlagen für die Werke im DTA sind in der Regel Bilddateien (Faksimiles), die auf der Grundlage physischer
+      Exemplare der Werkausgaben erstellt wurden. Sowohl der Standort und die Beschaffenheit der physischen Exemplare als 
+      auch der Fundort der zugehörigen Bilddateien werden in der <em class="ph i">Manuscript Description</em> (<code class="ph codeph">&lt;msDesc&gt;</code>) 
+      der <em class="ph i">Source Description</em> spezifiziert.
+    </p>
+    <p class="p">Dabei wird zunächst der Leitdruck (i.e. die Druckvorlage, der die Edition hauptsächlich folgt) näher beschrieben. 
+      Gelegentlich, z.B. im Fall fehlender Seiten im Leitdruck, muss für die Transkription einzelner Seiten jedoch auf 
+      ein weiteres Exemplar der Quellenausgabe zurückgegriffen werden. In diesem Fall wird das 
+      <code class="ph codeph">&lt;msDesc&gt;</code>-Element mehrfach verwendet, um sämtliche Textvorlagen zu beschreiben.
+    </p>
+    <p class="p">Das Element <code class="ph codeph">&lt;msIdentifier&gt;</code> enthält eine eindeutige Spezifikation des der DTA-Ausgabe
+      zugrundeliegenden Exemplars. Der Fundort wird innerhalb von <code class="ph codeph">&lt;msIdentifier&gt;</code> 
+      durch die Angabe der besitzenden Bibliothek/Institution/Person (<code class="ph codeph">&lt;repository&gt;</code>) sowie der 
+      zugehörigen Identifikationsnummer(n) (<code class="ph codeph">&lt;idno&gt;</code>) beschrieben.
+    </p>
+    <p class="p">Dabei steht für die Angabe der Identifikationsnummern innerhalb von <code class="ph codeph">&lt;msIdentifier&gt;</code> genau ein 
+      attributfreies <code class="ph codeph">&lt;idno&gt;</code>-Element. Darin werden sämtliche Identifikationsnummern zu einem 
+      Dokument in Form einzelner typisierter <code class="ph codeph">&lt;idno&gt;</code>-Elemente subsummiert. Folgende Werte kann 
+      das Attribut <code class="ph codeph">@type</code> dabei annehmen:
+    </p>
+    <ul class="ul">
+    	<li class="li"><code class="ph codeph">"shelfmark"</code>: Signatur der physischen Textquelle;</li>
+      <li class="li"><code class="ph codeph">"URLCatalogue"</code>:URL der Katalogaufnahme, in welchem das zugrundeliegende Exemplar verzeichnet ist;</li>
+    	<li class="li"><code class="ph codeph">"URLImages"</code>: URL der der Textdigitalisierung zugrundeliegenden Bilddateien;</li>
+    	<li class="li"><code class="ph codeph">"URN"</code>: URN der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    	<li class="li"><code class="ph codeph">"PPN"</code>: PPN (Pica-Produktionsnummer) der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    	<li class="li"><code class="ph codeph">"EPN"</code>: EPN (Exemplar-Produktionsnummer) der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    	<li class="li"><code class="ph codeph">"URLIIIF"</code>: URL des IIIF-Manifests der der Textdigitalisierung zugrundeliegenden Bilddateien.</li>
+    	<li class="li"><code class="ph codeph">"VD"</code>: VD-Nummer der der Textdigitalisierung zugrundeliegenden Quelle.</li>
+    </ul>
+    <div class="note attention note_attention"><span class="note__title">Achtung:</span> Als Adressen zur Identifikation der Quelle sollten Persistente Identifier (PIDs) verwendet werden, 
+      um zu gewährleisten, dass die Quelle langfristig über die angegebene Adresse erreichbar ist.
+    </div>
+    <p class="p">Weiterhin enthält die <em class="ph i">Manuscript Description</em> Angaben zu der im jeweiligen Band vorherrschenden 
+      Schriftart (<code class="ph codeph">&lt;physDesc&gt;/&lt;typeDesc&gt;</code>).
+    </p>
+    <p class="p">Über eine <code class="ph codeph">@xml:id</code> und ein <code class="ph codeph">@corresp</code>-Attribut ist jede <em class="ph i">Manuscript Description</em>
+      eindeutig mit einem <code class="ph codeph">&lt;availability&gt;</code>-Element innerhalb des <em class="ph i">Publication Statements</em> der 
+      <em class="ph i">File Description</em> verknüpft, welches die Lizenz der Bilddateien angibt, die der DTA-Textausgabe zugrundeliegen 
+      und im Rahmen der Web-Publikation mit dieser einhergehen. Ist keine Lizenz der Bilddateien bekannt, so wird dies 
+      im <code class="ph codeph">&lt;licence&gt;</code>-Element innerhalb des <code class="ph codeph">&lt;availability&gt;</code>-Elements entsprechend vermerkt 
+      (siehe dazu Kap. <a class="xref" href="mdLicense.html">Lizenzangaben</a>). Die Verknüpfung zu einer <code class="ph codeph">&lt;msDesc&gt;</code> wird 
+      dennoch hergestellt.
+    </p>
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>msDesc</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[ID]<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[ID der zugehörigen Lizenz]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- ggf. mehrfach zu verwenden --&gt;</span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>msIdentifier</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>repository</span><span class="ph token punctuation">&gt;</span></span>[besitzende Bibliothek/Institution/Person]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>repository</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>idno</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>idno</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>shelfmark<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Signatur]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>idno</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>idno</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>URLCatalogue<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[URL der Katalogaufnahme]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>idno</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>idno</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>URLImages<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[URL der Bilddateien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>idno</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>idno</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>URN<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[URN der Bilddateien]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>idno</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>idno</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>msIdentifier</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>physDesc</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>typeDesc</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[vorherrschende Schriftart, z.B. 'Fraktur']<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>typeDesc</span><span class="ph token punctuation">&gt;</span></span> 
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>physDesc</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>msDesc</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+  </div>
+</article></main></body></html>

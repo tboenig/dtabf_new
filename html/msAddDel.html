@@ -1,0 +1,75 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Hinzufügungen und Tilgungen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_vnc_jgp_yw"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a><ul><li><a href="manuskript.html">Auszeichnung von Manuskripten</a><ul><li><a href="msAllg.html">Manuskripte Allgemeines</a></li><li><a href="msKapitel.html">Kapitelstruktur</a></li><li><a href="msAenderungen.html">Textänderungen Autor</a><ul><li class="active"><a href="msAddDel.html">Hinzufügungen und Tilgungen</a></li><li><a href="msSubst.html">Substitutionen</a></li></ul></li><li><a href="msEinweisung.html">Einweisungszeichen</a></li><li><a href="msAnmerkungen.html">Anmerkungen Autor</a></li><li><a href="msPlatzhalter.html">Platzhalter</a></li><li><a href="msEditorBearbeitung.html">Editorisches Inventar</a></li><li><a href="msFoliierung.html">Seiten- und Blattnummerierung</a></li><li><a href="msStamp.html">Bibliotheksstempel</a></li><li><a href="msMetadata.html">Besonderheiten Metadaten</a></li></ul></li><li><a href="zeitung.html">Auszeichnung von Zeitungen und Periodika</a></li></ul></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Hinzufügungen und Tilgungen</h1>
+  <div class="body">
+    
+      
+      <p class="p">
+        Sekundäre Änderungen des Autors oder eines späteren Bearbeiters am Manuskript können 
+        in Form von Tilgungen oder Hinzufügungen auftreten. Hierfür werden die Elemente 
+        <code class="ph codeph">&lt;add&gt;</code> (Hinzufügung) und <code class="ph codeph">&lt;del&gt;</code> (Tilgung) verwendet.
+      </p>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>add</span><span class="ph token punctuation">&gt;</span></span>[Hinzufügung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>add</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>del</span><span class="ph token punctuation">&gt;</span></span>[Tilgung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>del</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+      
+      
+      <p class="p">
+        Im Fall einer Hinzufügung kann das <code class="ph codeph">&lt;add&gt;</code>-Element durch ein 
+        <code class="ph codeph">@place</code>-Attribut ergänzt werden, in dem der Ort der Hinzufügung angegeben
+        wird. Folgende Werte von <code class="ph codeph">@place</code> sind dabei möglich:
+      </p>
+      <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead"><tr class="row">
+          <th class="entry" id="topic_vnc_jgp_yw__entry__1">Element</th>
+          <th class="entry" id="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">@place</code>-Wert</th>
+          <th class="entry" id="topic_vnc_jgp_yw__entry__3">Bedeutung</th>
+        </tr></thead><tbody class="tbody"><tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__1" rowspan="6"><code class="ph codeph">&lt;add&gt;</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">superlinear</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__3">über der Zeile eingetragen</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">sublinear</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__3">unter der Zeile eingetragen</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">intralinear</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__3">innerhalb der Zeile eingetragen</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">across</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__3">über den ursprünglichen Text geschrieben</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">left</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__3">am linken Rand eingetragen</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__2"><code class="ph codeph">right</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__3">am rechten Rand eingetragen</td>
+        </tr></tbody></table>
+      <p class="p">Im Fall einer Tilgung wird die Art der Tilgung mit dem <code class="ph codeph">@rendition</code>-Attribut
+        des <code class="ph codeph">&lt;del&gt;</code>-Elements wiedergegeben. Dabei sind folgende Werte für <code class="ph codeph">@rendition</code>
+        möglich:</p>
+    
+      <table class="table"><caption></caption><colgroup><col><col><col></colgroup><thead class="thead">
+          <tr class="row"><th class="entry" id="topic_vnc_jgp_yw__entry__17">Element</th>
+          <th class="entry" id="topic_vnc_jgp_yw__entry__18"><code class="ph codeph">@rendition</code>-Wert</th>
+          <th class="entry" id="topic_vnc_jgp_yw__entry__19">Bedeutung</th></tr>
+        </thead><tbody class="tbody"><tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__17" rowspan="3"><code class="ph codeph">&lt;del&gt;</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__18"><code class="ph codeph">#ow</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__19">Tilgung durch Überschreibung des ursprünglichen Textes</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__18"><code class="ph codeph">#s</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__19">Tilgung durch Streichung</td>
+        </tr>
+        <tr class="row">
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__18"><code class="ph codeph">#erased</code></td>
+          <td class="entry" headers="topic_vnc_jgp_yw__entry__19">Tilgung durch Radieren, Auskratzen o. ä.</td>
+        </tr></tbody></table>
+  </div>
+</article></main></body></html>

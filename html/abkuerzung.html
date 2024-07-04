@@ -1,0 +1,39 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Auflösung von Abkürzungen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_67"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a><ul><li><a href="eeAllg.html">Editorische Eingriffe Grundstruktur</a></li><li><a href="eeDruckfehler.html">Druckfehler</a></li><li class="active"><a href="abkuerzung.html">Abkürzungen</a></li><li><a href="normalisierung.html">Normalisierungen</a></li><li><a href="sachkommentar.html">Sachkommentar</a></li></ul></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">Auflösung von Abkürzungen</h1>
+    
+         <div class="body">
+                        <p class="p">Abkürzungen werden vorlagengetreu übernommen, d.h. sie werden nicht stillschweigend aufgelöst. 
+      Für die Auflösung von Abkürzungen steht das Element <code class="ph codeph">&lt;choice&gt;</code> mit den 
+      Unterelementen <code class="ph codeph">&lt;abbr&gt;</code> und <code class="ph codeph">&lt;expan&gt;</code> zur Verfügung. Dabei
+      steht in <code class="ph codeph">&lt;abbr&gt;</code> die Abkürzung, wie sie aus der Vorlage übernommen wurde. In 
+      <code class="ph codeph">&lt;expan&gt;</code> steht die expandierte Form der Abkürzung.</p>
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>choice</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>abbr</span><span class="ph token punctuation">&gt;</span></span>[Abkürzung entsprechend der Vorlage]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>abbr</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>expan</span><span class="ph token punctuation">&gt;</span></span>[Auflösung/Expansion der Abkürzung]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>expan</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>choice</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <p class="p">Soll eine Abkürzung nur als solche markiert werden ohne Angabe der zugehörigen Expansion, so
+        wird das Element <code class="ph codeph">&lt;abbr&gt;</code> gesetzt. Die Elemente <code class="ph codeph">&lt;choice&gt;</code>
+        und <code class="ph codeph">&lt;expan&gt;</code> entfallen in diesem Fall. 
+      </p>
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>abbr</span><span class="ph token punctuation">&gt;</span></span>[Abkürzung entsprechend der Vorlage]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>abbr</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+            <div class="note caution note_caution"><span class="note__title">VORSICHT:</span> Eine Expansion kann jedoch nie ohne die zugehörige, aus der Vorlage entnommene Abkürzung
+        stehen (stillschweigende Auflösungen von Abkürzungen sind unzulässig). Das Element 
+        <code class="ph codeph">&lt;expan&gt;</code> kann somit nie ohne zugehöriges <code class="ph codeph">&lt;choice&gt;</code> und 
+        <code class="ph codeph">&lt;abbr&gt;</code> stehen. 
+      </div>
+            <p class="p">Abkürzungen werden generell mit dem im Unicode-Standard dafür vorhandenen Zeichen wiedergegeben.
+        Findet sich für eine Abkürzung kein Äquivalent im Unicode-Standard, so kann die stellvertretende
+        Unicode-Entität <code class="ph codeph">&amp;#xFFFC;</code> (OBJECT REPLACEMENT CHARACTER) gesetzt werden. In diesem Fall sollte 
+        die korrekte Auflösung der betreffenden Abkürzung im Element <code class="ph codeph">&lt;expan&gt;</code> wiedergegeben
+        werden.
+      </p>
+            <p class="p">Zur Kodierung nicht entzifferbarer bzw. nicht interpretierbarer Auflösungen vgl. Kap. 
+        <a class="xref" href="gapSupplied.html">Schwer bzw. nicht entzifferbare Zeichen und Auslassungen</a>
+      
+            </p>
+         </div>
+      </article></main></body></html>

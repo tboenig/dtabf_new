@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Lizenzangaben (//availability/licence)</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_mx5_yj2_qs"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a><ul><li><a href="mdTranskription.html">Transkriptionsrichtlinien Metadaten</a></li><li><a href="mdAuszeichnung.html">Auszeichnung der Metadaten</a><ul><li><a href="mdAllg.html">Metadaten Grundstruktur</a></li><li><a href="mdBiblAngaben.html">File Description</a><ul><li><a href="mdFileDescAllg.html">File Description Grundstruktur</a></li><li><a href="mdTitleStmt.html">Title Statement</a></li><li><a href="mdEditionStmt.html">Edition Statement</a></li><li><a href="mdExtent.html">Extent</a></li><li><a href="mdPublicationStmt.html">Publication Statement</a><ul><li><a href="mdPubStmtAllg.html">Publication Statement Grundstruktur</a></li><li class="active"><a href="mdLicense.html">Availability und Licence</a></li></ul></li><li><a href="mdNotesStmt.html">Notes Statement</a></li><li><a href="mdSourceDesc.html">Source Description</a></li></ul></li><li><a href="mdEncodingDesc.html">Encoding Description</a></li><li><a href="mdProfileDesc.html">Profile Description</a></li><li><a href="mdUeberblick.html">Überblick TEI-Header</a></li></ul></li></ul></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Lizenzangaben (//availability/licence)</h1>
+    
+  <div class="body">
+    <p class="p">Lizenzangaben stehen in einzelnen <code class="ph codeph">&lt;availability&gt;</code>-Elementen innerhalb des <em class="ph i">Publication Statements</em>, 
+      die ihrerseits jeweils genau ein Unterelement <code class="ph codeph">&lt;licence&gt;</code> erhalten. Das <code class="ph codeph">@target</code>-Attribut des 
+      <code class="ph codeph">&lt;licence&gt;</code>-Elements enthält als Wert eine URL, die zu einer Spezifikation der angegebenen Lizenz führt. 
+      In einem <code class="ph codeph">&lt;p&gt;</code>-Element innerhalb von <code class="ph codeph">&lt;licence&gt;</code> sind weitere natürlichsprachliche 
+      Angaben zur Lizenz möglich.
+    </p>
+      
+    <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>availability</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>licence</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[URL zum Lizenztext]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Beschreibungstext zur Lizenz]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>licence</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>availability</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <div class="example"><h2 class="title sectiontitle">Lizenzangaben</h2>
+        
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>availability</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>licence</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>http://creativecommons.org/licenses/by-sa/2.0/de/<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Distributed under the Creative Commons Attribution-ShareAlike 2.0 Generic (German) License.<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>licence</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>availability</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    </div>
+<section class="section"><h2 class="title sectiontitle">Mehrere Lizenzangaben im teiHeader</h2>
+    <p class="p">In den <code class="ph codeph">&lt;availability&gt;</code>-Elementen des <em class="ph i">Publication Statements</em> werden sowohl die Lizenzen sämtlicher 
+      Bild- und Textvorlagen der DTA-Publikation als auch die Lizenz der DTA-Textedition selbst angegeben.
+    </p>
+    <p class="p">Dabei erhält jedes <code class="ph codeph">&lt;availability&gt;</code>-Element eine
+                eindeutige <code class="ph codeph">@xml:id</code>. Über ein
+                <code class="ph codeph">@corresp</code>-Attribut wird es mit dem Element
+                verbunden, welches Angaben zu dem jeweiligen Lizenzträger
+                enthält. Dies kann einerseits ein <em class="ph i">Responsibility
+                Statement</em> (<code class="ph codeph">&lt;respStmt&gt;</code>) sein, welches
+                Angaben zu zugrundeliegenden Textdigitalisaten enthält, oder
+                eine <em class="ph i">Manuscript Description</em>
+                (<code class="ph codeph">&lt;msDesc&gt;</code>), welche Angaben zu
+                Bildvorlagen enthält. (Zum <em class="ph i">Responsibility Statement</em> s.
+                Kap. <a class="xref" href="mdRespStmt.html">Umgang mit externen
+                Quellen</a>; zur <em class="ph i">Manuscript Description</em> s. Kap. <a class="xref" href="mdSdMsDesc.html">Angaben zum Aufbewahrungsort der
+                Quelle</a>.) </p>
+<pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>fileDesc</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>titleStmt</span><span class="ph token punctuation">&gt;</span></span>
+      [...]
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>respStmt</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>tq-1<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#availability-tq-1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Angaben zur Textvorlage]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>respStmt</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>titleStmt</span><span class="ph token punctuation">&gt;</span></span>
+    [...]
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>publicationStmt</span><span class="ph token punctuation">&gt;</span></span>
+      [...]
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>availability</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>availability-tq-1<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#tq-1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- Lizenz einer Textquelle --&gt;</span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>licence</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[URL Lizenztext]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Beschreibungstext zur Lizenz der Textquelle]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>licence</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>availability</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>availability</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>availability-bq-1<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#bq-1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span> <span class="ph token comment">&lt;!-- Lizenz einer Bildquelle --&gt;</span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>licence</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>[URL Lizenz Bildquelle]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Beschreibungstext zur Lizenz der Bildquelle]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>licence</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>availability</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>publicationStmt</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>sourceDesc</span><span class="ph token punctuation">&gt;</span></span>
+      [...]
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>msDesc</span> <span class="ph token attr-name"><span class="ph token namespace">xml:</span>id</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>bq-1<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">corresp</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#availability-bq-1<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+        [nähere Angaben zur Bildquelle]
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>msDesc</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>sourceDesc</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>fileDesc</span><span class="ph token punctuation">&gt;</span></span>
+  [...]
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>teiHeader</span><span class="ph token punctuation">&gt;</span></span></code></pre></section>
+  </div>
+</article></main></body></html>

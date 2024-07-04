@@ -1,0 +1,135 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Formen und Kodierung von Anhängen</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_55"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a><ul><li class="active"><a href="anhAllg.html">Anhänge Grundstruktur</a></li><li><a href="anhBibliographie.html">Literaturverzeichnis</a></li><li><a href="anhRegister.html">Register</a></li></ul></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<h1 class="title topictitle1" id="ariaid-title1">Formen und Kodierung von Anhängen</h1>
+    
+         <div class="body">
+                        <p class="p">Alle Abschnitte des Buches, die auf das Textende
+            folgen (Anhänge, Register, sonstige Zusätze), werden mit dem
+            <code class="ph codeph">&lt;back&gt;</code>-Element umschlossen, das sich im
+            Anschluss an das <code class="ph codeph">&lt;body&gt;</code>-Element in
+            <code class="ph codeph">&lt;text&gt;</code> befindet. Die Grobstrukturierung
+            innerhalb des <code class="ph codeph">&lt;back&gt;</code>-Elements erfolgt mittels
+            <code class="ph codeph">&lt;div&gt;</code>-Elementen, deren
+            <code class="ph codeph">@type</code>-Attribute die Textbestandteile näher
+            spezifizieren.</p>
+        <p class="p">Folgende Werte von <code class="ph codeph">@type</code> innerhalb des
+            <code class="ph codeph">&lt;back&gt;</code>-Bereichs sind möglich:</p>
+            <table class="table"><caption></caption><colgroup><col><col></colgroup><thead class="thead">
+                     <tr class="row">
+    
+                        <th class="entry" id="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">@type</code>-Wert</th>
+    
+                        <th class="entry" id="topic_55__entry__2" rowspan="1" colspan="1">Bedeutung</th>
+  
+                     </tr>
+                  </thead><tbody class="tbody">
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">postface</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Nachwort, Schlusswort, Epilog</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">contents</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Inhaltsverzeichnis</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">imprint</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Angaben zur Druckausgabe</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">imprimatur</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Druckerlaubnis</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">index</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Register</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">corrigenda</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Druckfehlerverzeichnis</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">appendix</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Anhang (z.B. mit erläuternden Abbildungen oder Tabellen)</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">bibliography</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Literaturverzeichnis</td>
+  
+                     </tr>
+                     <tr class="row">
+    
+                        <td class="entry" headers="topic_55__entry__1" rowspan="1" colspan="1">
+                           <code class="ph codeph">advertisement</code>
+                        </td>
+    
+                        <td class="entry" headers="topic_55__entry__2" rowspan="1" colspan="1">Anzeige</td>
+  
+                     </tr>
+                  </tbody></table>
+            <p class="p">Das öffnende <code class="ph codeph">&lt;back&gt;</code>-Tag folgt direkt auf das schließende
+  <code class="ph codeph">&lt;/body&gt;</code>-Tag, steht also noch <strong class="ph b">vor</strong> jedem
+  neuen Seitenumbruch. Das hintere Vorsatzblatt (Spiegel und fliegendes Blatt)
+  sowie der hintere Einband sind immer Teil des
+  <code class="ph codeph">&lt;back&gt;</code>-Bereichs.
+</p>
+            <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>back</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>corrigenda<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>Verbesserungen:<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>Druckfehler ...<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>advertisement<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Verlagsname]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[Werbestück1]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[Werbestück2]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>imprint<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>p</span><span class="ph token punctuation">&gt;</span></span>[Impressum]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>p</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>back</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+         </div>
+      </article></main></body></html>

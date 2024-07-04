@@ -1,0 +1,40 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="de"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><title>Einfache Registerform</title><link rel="shortcut icon" href="./favicon.svg"><link rel="stylesheet" type="text/css" href="css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/dita-ot-doc.css">
+</head><body id="topic_58"><nav class="toc" role="navigation"><ul><li><a href="einfuehrung.html">Einführung</a></li><li><a href="metadaten.html">Metadaten</a></li><li><a href="transkription.html">Transkription</a></li><li><a href="texterschliessung_formal.html">Formal</a></li><li><a href="texterschliessung_inhaltlich.html">Inhaltlich</a><ul><li><a href="TEIStruktur.html">Grobstrukturierung Dokument</a></li><li><a href="div.html">Texteinteilung Kapitel</a></li><li><a href="front.html">Einleitende Informationen</a></li><li><a href="body.html">Textkörper</a></li><li><a href="anhang.html">Anhang</a><ul><li><a href="anhAllg.html">Anhänge Grundstruktur</a></li><li><a href="anhBibliographie.html">Literaturverzeichnis</a></li><li><a href="anhRegister.html">Register</a><ul><li class="active"><a href="anhRegEinfach.html">Einfache Registerform</a></li><li><a href="anhRegUntertitel.html">Register mit Untertiteln</a></li><li><a href="anhMehrereReg.html">Mehrere Register</a></li></ul></li></ul></li><li><a href="inlineAnnotation.html">Inhaltliche Inline-Auszeichnungen</a></li><li><a href="editorEingriff.html">Editorische Eingriffe</a></li></ul></li><li><a href="besondereTextsorten.html">Spezial</a></li><li><a href="uebersichten.html">Übersichten</a></li><li><a href="impressum.html">Impressum</a></li></ul></nav><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Einfache Registerform</h1>
+    <div class="body">
+        <p class="p">Register werden mittels <code class="ph codeph">&lt;div&gt;</code>-Elementen
+            umschlossen, die das Attribut-Wert-Paar
+            <code class="ph codeph">@type="index"</code> erhalten. </p>
+        <p class="p">Das eigentliche Register wird sodann in Form einer Liste
+            (<code class="ph codeph">&lt;list&gt;</code>) strukturiert, wobei jeder
+            Registereintrag in einem <code class="ph codeph">&lt;item&gt;</code>-Element
+            verzeichnet wird. </p>
+        <p class="p"> Die Seitenzahlen im Registereintrag werden innerhalb des
+            <code class="ph codeph">&lt;item&gt;</code>-Elements mit einem
+            <code class="ph codeph">&lt;ref&gt;</code>-Element umschlossen. Jede Seitenzahl
+            bekommt ein separates <code class="ph codeph">&lt;ref&gt;</code>-Element, auch
+            wenn die Seitenzahlen direkt hintereinander stehen. Eventuelle
+            Satzzeichen stehen außerhalb der
+            <code class="ph codeph">&lt;ref&gt;</code>-Elemente.</p>
+        <p class="p">Weisen Registereinträge Untereinträge auf, so werden diese als
+            geschachtelte Listen ausgezeichnet. </p>
+
+        <pre class="pre codeblock language-xml"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>back</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>div</span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>index<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>head</span><span class="ph token punctuation">&gt;</span></span>[Titel des Registers]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>head</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>list</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[Stichwort1]
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>ref</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Seitenzahl1]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Seitenzahl1]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>ref</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>ref</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[Seitenzahl2]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[Seitenzahl2]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>ref</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>item</span><span class="ph token punctuation">&gt;</span></span>[StichwortX]
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>ref</span> <span class="ph token attr-name">target</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>#[SeitenzahlX]<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>[SeitenzahlX]<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>ref</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>item</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>list</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>div</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>back</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    </div>
+</article></main></body></html>
