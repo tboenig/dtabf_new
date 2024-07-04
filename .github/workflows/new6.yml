@@ -56,28 +56,28 @@ jobs:
             project: .github/dita-ot/html.xml
 
 
-      - name: Build Bootstrap-english
-        uses: dita-ot/dita-ot-action@master
-        with:
-            install: |
-              apt-get update -q
-              export DEBIAN_FRONTEND=noninteractive
-              apt-get install -qy --no-install-recommends nodejs
-            dita-ot-version: 4.1
-            plugins : |
-              fox.jason.extend.css
-              net.infotexture.dita-bootstrap
-              fox.jason.prismjs
-              fox.jason.favicon
-            project: .github/dita-ot/html_en.xml      
+     # - name: Build Bootstrap-english
+     #   uses: dita-ot/dita-ot-action@master
+     #   with:
+     #       install: |
+     #         apt-get update -q
+     #         export DEBIAN_FRONTEND=noninteractive
+     #         apt-get install -qy --no-install-recommends nodejs
+     #       dita-ot-version: 4.1
+     #       plugins : |
+     #         fox.jason.extend.css
+     #         net.infotexture.dita-bootstrap
+     #         fox.jason.prismjs
+     #         fox.jason.favicon
+     #       project: .github/dita-ot/html_en.xml      
 
           
             
-      - name: output dir
-        run: |
-          cd out 
-          sudo mkdir rules
-          sudo mkdir schema
+     # - name: output dir
+     #   run: |
+     #     cd out 
+     #     sudo mkdir rules
+     #     sudo mkdir schema
       
       
       
