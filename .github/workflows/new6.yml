@@ -1,0 +1,140 @@
+name: DITA-OT-OCRD-FAQ_V4
+on:
+  push:
+    tags:
+      - 'v6[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      contents: write
+    steps:
+
+      
+      - name: Git checkout
+        uses: actions/checkout@v3
+      
+      
+              
+
+      - name: download DITA dtd
+        run: |
+            cd de/xsl
+            wget https://github.com/oxygenxml/oxygen-dita-translation-package-builder-addon/archive/refs/heads/master.zip
+            unzip master.zip  
+      
+      - name: Download and install saxon german
+        run: |
+           wget https://www.saxonica.com/download/SaxonEE11-1J.zip
+           unzip SaxonEE11-1J.zip
+             
+      
+           
+
+      
+      
+           
+      
+      
+
+      - name: Build Bootstrap-german
+        uses: dita-ot/dita-ot-action@master
+        with:
+            install: |
+              apt-get update -q
+              export DEBIAN_FRONTEND=noninteractive
+              apt-get install -qy --no-install-recommends nodejs
+            dita-ot-version: 4.1
+            plugins : |
+              https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+              https://github.com/infotexture/dita-bootstrap/archive/master.zip
+              fox.jason.prismjs
+              fox.jason.favicon
+            project: .github/dita-ot/html.xml
+
+
+      - name: Build Bootstrap-english
+        uses: dita-ot/dita-ot-action@master
+        with:
+            install: |
+              apt-get update -q
+              export DEBIAN_FRONTEND=noninteractive
+              apt-get install -qy --no-install-recommends nodejs
+            dita-ot-version: 4.1
+            plugins : |
+              fox.jason.extend.css
+              net.infotexture.dita-bootstrap
+              fox.jason.prismjs
+              fox.jason.favicon
+            project: .github/dita-ot/html_en.xml      
+
+          
+            
+      - name: output dir
+        run: |
+          cd out 
+          sudo mkdir rules
+          sudo mkdir schema
+      
+      
+      
+
+      
+
+      
+      - name: Add Lines to CITATION.cff
+        id: addLines
+        run: |
+            echo "commit\: ${{ github.ref_name }}" >> CITATION.cff
+            echo "version\: ${{ github.run_number }}_${{ github.ref_name }}" >> CITATION.cff
+            echo "date-released\: $(date +'%Y-%m-%d')" >> CITATION.cff
+            
+
+              
+
+
+
+      
+              
+
+
+
+      
+    
+
+            
+    
+     # - name: Build PDF
+     #   uses: dita-ot/dita-ot-action@master
+     #   with:
+     #     install: |
+     #       # Run some arbitrary installation commands
+     #       apt-get update -q
+     #       apt-get install -qy --no-install-recommends nodejs
+     #       nodejs -v
+
+            # Install plugins
+     #       dita install fox.jason.extend.css
+     #       dita install org.doctales.xmltask
+     #       dita install fox.jason.prismjs
+     #     build: |
+     #       # Use the dita command line
+     #       dita --project=.github/dita-ot/pdf.xml -o out -f pdf
+      
+      
+
+    #  - name: Upload DITA Output to a ZIP file
+    #    uses: actions/upload-artifact@v2
+    #    with:
+    #      name: OCRD-GT-Guidelines
+    #      path: 'out'
+
+      - name: Deploy DITA Output to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: $
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.

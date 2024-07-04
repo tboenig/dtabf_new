@@ -1,0 +1,60 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: OCR-D-Ground Truth Richtlinien
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Matthias
+    family-names: Boenig
+    affiliation: 
+    orcid: 'https://orcid.org/0000-0003-4615-4753'
+  - family-names: Haaf
+    given-names: Susanne
+    orcid: 'https://orcid.org/0000-0002-4809-219X'
+    affiliation: Berlin-Brandenburg Academy of Sciences and Humanities
+  - family-names: Thomas
+    given-names: Christian
+    affiliation: Berlin-Brandenburg Academy of Sciences and Humanities
+    orcid: 'https://orcid.org/0000-0002-1761-0222'
+  - family-names: Wiegand
+    given-names: Frank
+    affiliation: Berlin-Brandenburg Academy of Sciences and Humanities
+    orcid: 'https://orcid.org/0000-0002-1096-3957'
+  - family-names: Geyken
+    given-names: Alexander
+    affiliation: Berlin-Brandenburg Academy of Sciences and Humanities
+    orcid: 'https://orcid.org/0000-0002-1126-5763'  
+  - family-names: Dumont
+    given-names: Stefan
+    affiliation: Berlin-Brandenburg Academy of Sciences and Humanities
+    orcid: 'https://orcid.org/0000-0002-6923-0950'    
+  - family-names: Burckhardt
+    given-names: Daniel
+    affiliation: Moses Mendelssohn Zentrum für europäisch-jüdische Studien e. V.
+    orcid: 'https://orcid.org/0000-0001-8368-5268'
+  - family-names: Gödel
+    given-names: Martina
+    affiliation: Berlin-Brandenburg Academy of Sciences and Humanities
+    orcid: 'https://orcid.org/0009-0002-4707-0404'
+repository-code: 'https://github.com/tboenig/dtabf_new'
+url: 'https://www.deutschestextarchiv.de/doku/basisformat/'
+abstract: >-
+  The DTA Base Format (DTABf) is a TEI customization for the annotation 
+  of digitized historical texts. It is the annotation basis for all texts 
+  published on the Deutsches Textarchiv (DTA) platform.
+
+  To explore the DTABf documentation see the official website. The DTABf 
+  documentation also contains information on how to access the RNG schemas 
+  and how to use them. For elaborate information on the purpose of the format 
+  and constraints for its further development see the DTABf Guiding Principles.
+keywords:
+  - TEI
+  - DTABf
+  - Guidelines
+  - Digitization
+license: CC-BY-SA-4.0
+
