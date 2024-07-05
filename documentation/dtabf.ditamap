@@ -29,13 +29,6 @@
             <created date="January 31st, 2017"/>
         </critdates>
     </bookmeta>
-    <frontmatter>
-        <booklists>
-            <toc/>
-            <figurelist/>
-            <tablelist/>
-        </booklists>
-    </frontmatter>
     <part href="einfuehrung.dita">
       <topicref href="ziel.dita"/>
 			<topicref href="steuerungsgruppe.dita"/>
@@ -112,189 +105,189 @@
     
     <part href="transkription.dita">
      <topicref href="trDokuKonventionen.dita"/>
-     <topicref href="trGrundsaetze.dita"/>
-     <topicref href="trSchreibweisen.dita">
-       <topicref href="trSchreibungIJ.dita"/>
-       <topicref href="trSchreibungUV.dita"/>
-       <topicref href="trSchreibungS.dita"/>
-       <topicref href="trSchreibungR.dita"/>
-       <topicref href="trLigatur.dita"/>
-       <topicref href="trUmlaute.dita"/>
-       <topicref href="trNasalstrich.dita"/>
-       <topicref href="trDiakritika.dita"/>
-       <topicref href="trReservierteZeichen.dita"/>
-       <topicref href="trApostrophe.dita"/>
-       <topicref href="trSilbentrennung.dita"/>
-     </topicref>
-     <topicref href="trSonderzeichen.dita"/>
-     <topicref href="trZeichensetzung.dita">
-            <topicref href="trZeichensetzungAllg.dita"/>
-       <topicref href="trGedankenstrich.dita"/>
-       <topicref href="trAnfZeichen.dita"/>
-     </topicref>
-     <topicref href="trAnmerkung.dita"/>
-    </part>
-  
-    <part href="texterschliessung_formal.dita">
-        <chapter href="erschBildBand.dita">
-            <topicref href="seitenFacsNr.dita"/>
-            <topicref href="orientierungshilfen.dita">
-                <topicref href="ohAllg.dita"/>
-                <topicref href="kolumnentitel.dita"/>
-                <topicref href="bogensigKustode.dita"/>
+     <topicref href="trGrundsaetze.dita">
+            <topicref href="trSchreibweisen.dita">
+                <topicref href="trSchreibungIJ.dita"/>
+                <topicref href="trSchreibungUV.dita"/>
+                <topicref href="trSchreibungS.dita"/>
+                <topicref href="trSchreibungR.dita"/>
+                <topicref href="trLigatur.dita"/>
+                <topicref href="trUmlaute.dita"/>
+                <topicref href="trNasalstrich.dita"/>
+                <topicref href="trDiakritika.dita"/>
+                <topicref href="trReservierteZeichen.dita"/>
+                <topicref href="trApostrophe.dita"/>
+                <topicref href="trSilbentrennung.dita"/>
             </topicref>
-        </chapter>
-        <chapter href="erschBildText.dita">
-            <topicref href="spalte.dita"/>
-            <topicref href="absatz.dita"/>
-            <topicref href="zeilenumbruch.dita">
-                <topicref href="lbAllg.dita"/>
-                <topicref href="silbentrennung.dita"/>
-                <topicref href="zeilenVersNr.dita"/>
+            <topicref href="trSonderzeichen.dita"/>
+            <topicref href="trZeichensetzung.dita">
+                <topicref href="trZeichensetzungAllg.dita"/>
+                <topicref href="trGedankenstrich.dita"/>
+                <topicref href="trAnfZeichen.dita"/>
             </topicref>
-            <topicref href="horizontaleLinie.dita"/>
-            <topicref href="liste.dita">
-                <topicref href="liAllg.dita"/>
-                <topicref href="liVerschachtelt.dita"/>
+            <topicref href="trAnmerkung.dita"/>
+        </topicref>
+        <topicref href="texterschliessung_formal.dita">
+            <topicref href="erschBildBand.dita">
+                <topicref href="seitenFacsNr.dita"/>
+                <topicref href="orientierungshilfen.dita">
+                    <topicref href="ohAllg.dita"/>
+                    <topicref href="kolumnentitel.dita"/>
+                    <topicref href="bogensigKustode.dita"/>
+                </topicref>
             </topicref>
-            <topicref href="tabelle.dita">
-                <topicref href="tabAllg.dita"/>
-                <topicref href="labels.dita"/>
-                <topicref href="mzZellen.dita"/>
-            </topicref>
-            <topicref href="abbildung.dita">
-                <topicref href="abbKennzeichnung.dita"/>
-                <topicref href="abbTextbereich.dita"/>
-                <topicref href="abbVerschachtelt.dita"/>
-                <topicref href="noten.dita"/>
-            </topicref>
-            <topicref href="formeln.dita">
-                <topicref href="formelnAllg.dita"/>
-                <topicref href="formelnFehlerhaft.dita"/>
-            </topicref>
-            <topicref href="typographie.dita">
-                <topicref href="typogrAllg.dita"/>
-                <topicref href="typogrBspe.dita">
-                    <topicref href="fettdruck.dita"/>
-                    <topicref href="sperrdruck.dita">
-                        <topicref href="sperrdruckAllg.dita"/>
-                        <topicref href="sdMehrzeilig.dita"/>
-                        <topicref href="sdWechsel.dita"/>
+            <topicref href="erschBildText.dita">
+                <topicref href="spalte.dita"/>
+                <topicref href="absatz.dita"/>
+                <topicref href="zeilenumbruch.dita">
+                    <topicref href="lbAllg.dita"/>
+                    <topicref href="silbentrennung.dita"/>
+                    <topicref href="zeilenVersNr.dita"/>
+                </topicref>
+                <topicref href="horizontaleLinie.dita"/>
+                <topicref href="liste.dita">
+                    <topicref href="liAllg.dita"/>
+                    <topicref href="liVerschachtelt.dita"/>
+                </topicref>
+                <topicref href="tabelle.dita">
+                    <topicref href="tabAllg.dita"/>
+                    <topicref href="labels.dita"/>
+                    <topicref href="mzZellen.dita"/>
+                </topicref>
+                <topicref href="abbildung.dita">
+                    <topicref href="abbKennzeichnung.dita"/>
+                    <topicref href="abbTextbereich.dita"/>
+                    <topicref href="abbVerschachtelt.dita"/>
+                    <topicref href="noten.dita"/>
+                </topicref>
+                <topicref href="formeln.dita">
+                    <topicref href="formelnAllg.dita"/>
+                    <topicref href="formelnFehlerhaft.dita"/>
+                </topicref>
+                <topicref href="typographie.dita">
+                    <topicref href="typogrAllg.dita"/>
+                    <topicref href="typogrBspe.dita">
+                        <topicref href="fettdruck.dita"/>
+                        <topicref href="sperrdruck.dita">
+                            <topicref href="sperrdruckAllg.dita"/>
+                            <topicref href="sdMehrzeilig.dita"/>
+                            <topicref href="sdWechsel.dita"/>
+                        </topicref>
+                        <topicref href="kapitaelchen.dita"/>
+                        <topicref href="initiale.dita"/>
+                        <topicref href="uebergeschrieben.dita"/>
+                        <topicref href="einfaerbung.dita"/>
+                        <topicref href="tiefstellung.dita"/>
+                        <topicref href="hochstellung.dita"/>
+                        <topicref href="einrueckung.dita"/>
+                        <topicref href="typogrSatzzeichen.dita"/>
+                        <topicref href="schriftart.dita">
+                            <topicref href="schriftartAllg.dita"/>
+                            <topicref href="frakturwechsel.dita"/>
+                            <topicref href="wechselAntiqua.dita"/>
+                        </topicref>
                     </topicref>
-                    <topicref href="kapitaelchen.dita"/>
-                    <topicref href="initiale.dita"/>
-                    <topicref href="uebergeschrieben.dita"/>
-                    <topicref href="einfaerbung.dita"/>
-                    <topicref href="tiefstellung.dita"/>
-                    <topicref href="hochstellung.dita"/>
-                <topicref href="einrueckung.dita"/>
-                <topicref href="typogrSatzzeichen.dita"/>
-                <topicref href="schriftart.dita">
-						<topicref href="schriftartAllg.dita"/>
-                    <topicref href="frakturwechsel.dita"/>
-                    <topicref href="wechselAntiqua.dita"/>
+                </topicref>
+                <topicref href="klammerung.dita">
+                    <topicref href="klammerungAllg.dita"/>
+                    <topicref href="klListe.dita"/>
+                    <topicref href="klText.dita"/>
+                    <topicref href="klHorizontal.dita"/>
+                    <topicref href="klTabelle.dita"/>
+                </topicref>
+                <topicref href="leerraum.dita"/>
+                <topicref href="gapSupplied.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="texterschliessung_inhaltlich.dita">
+            <topicref href="TEIStruktur.dita"/>
+            <topicref href="div.dita"/>
+            <topicref href="front.dita">
+                <topicref href="frontAllg.dita"/>
+                <topicref href="titelblatt.dita">
+                    <topicref href="tbAllg.dita"/>
+                    <topicref href="haupttitel.dita"/>
+                    <topicref href="reihentitel.dita"/>
+                </topicref>
+                <topicref href="widmung.dita"/>
+                <topicref href="epigraph.dita"/>
+                <topicref href="inhaltsverzeichnis.dita"/>
+            </topicref>
+            <topicref href="body.dita">
+                <topicref href="bodyAllg.dita"/>
+                <topicref href="diskontTextpassagen.dita">
+                    <topicref href="einschub.dita"/>
+                    <topicref href="parallelePassagen.dita"/>
+                </topicref>
+                <topicref href="fussnote.dita">
+                    <topicref href="fnSeite.dita"/>
+                    <topicref href="fnFortlaufend.dita"/>
+                    <topicref href="fnMehrfachReferenziert.dita"/>
+                </topicref>
+                <topicref href="endnote.dita">
+                    <topicref href="enVerweis.dita"/>
+                    <topicref href="enKodierung.dita"/>
+                </topicref>
+                <topicref href="marginalie.dita"/>
+                <topicref href="teaser.dita"/>
+                <topicref href="bibliographie.dita"/>
+                <topicref href="nachsatz.dita"/>
+                <topicref href="zitateEpigraphe.dita">
+                    <topicref href="zeAllg.dita"/>
+                    <topicref href="zeOhneAutor.dita"/>
+                    <topicref href="zeMitAutor.dita"/>
+                    <topicref href="epigraphe.dita"/>
+                    <topicref href="zeVers.dita"/>
+                    <topicref href="zeUebersetzung.dita"/>
+                </topicref>
+                <topicref href="gedichte.dita">
+                    <topicref href="geProsa.dita"/>
+                    <topicref href="geLyrikband.dita"/>
+                    <topicref href="geDiskontVerse.dita"/>
+                </topicref>
+                <topicref href="drama.dita">
+                    <topicref href="drFiguren.dita"/>
+                    <topicref href="drAktSzene.dita"/>
+                    <topicref href="drBuehnenanweisung.dita"/>
+                    <topicref href="drSprechakt.dita">
+                        <topicref href="drSprechaktRede.dita"/>
+                        <topicref href="drVers.dita"/>
+                        <topicref href="drSprechaktSynchron.dita"/>
+                        <topicref href="drSprechaktGem.dita"/>
+                        <topicref href="drSprechaktGruppe.dita"/>
+                    </topicref>
+                </topicref>
+                <topicref href="brief.dita">
+                    <topicref href="brAllg.dita"/>
+                    <topicref href="brMehrereTage.dita"/>
+                    <topicref href="brPostscriptum.dita"/>
+                    <topicref href="brUnterbrCloser.dita"/>
+                    <topicref href="brBericht.dita"/>
+                    <topicref href="brEinschub.dita"/>
                 </topicref>
             </topicref>
-            </topicref>
-            <topicref href="klammerung.dita">
-                <topicref href="klammerungAllg.dita"/>
-                <topicref href="klListe.dita"/>
-                <topicref href="klText.dita"/>
-                <topicref href="klHorizontal.dita"/>
-                <topicref href="klTabelle.dita"/>
-            </topicref>
-      <topicref href="leerraum.dita"/>
-            <topicref href="gapSupplied.dita"/>
-        </chapter>
-    </part>
-    <part href="texterschliessung_inhaltlich.dita">
-        <chapter href="TEIStruktur.dita"/>
-        <chapter href="div.dita"/>
-        <chapter href="front.dita">
-            <topicref href="frontAllg.dita"/>
-            <topicref href="titelblatt.dita">
-                <topicref href="tbAllg.dita"/>
-                <topicref href="haupttitel.dita"/>
-                <topicref href="reihentitel.dita"/>
-            </topicref>
-            <topicref href="widmung.dita"/>
-            <topicref href="epigraph.dita"/>
-            <topicref href="inhaltsverzeichnis.dita"/>
-        </chapter>
-        <chapter href="body.dita">
-            <topicref href="bodyAllg.dita"/>
-            <topicref href="diskontTextpassagen.dita">
-                <topicref href="einschub.dita"/>
-                <topicref href="parallelePassagen.dita"/>
-            </topicref>
-            <topicref href="fussnote.dita">
-                <topicref href="fnSeite.dita"/>
-                <topicref href="fnFortlaufend.dita"/>
-                <topicref href="fnMehrfachReferenziert.dita"/>
-            </topicref>
-            <topicref href="endnote.dita">
-                <topicref href="enVerweis.dita"/>
-                <topicref href="enKodierung.dita"/>
-            </topicref>
-            <topicref href="marginalie.dita"/>
-            <topicref href="teaser.dita"/>
-            <topicref href="bibliographie.dita"/>
-            <topicref href="nachsatz.dita"/>
-            <topicref href="zitateEpigraphe.dita">
-                <topicref href="zeAllg.dita"/>
-                <topicref href="zeOhneAutor.dita"/>
-                <topicref href="zeMitAutor.dita"/>
-                <topicref href="epigraphe.dita"/>
-                <topicref href="zeVers.dita"/>
-                <topicref href="zeUebersetzung.dita"/>
-            </topicref>
-            <topicref href="gedichte.dita">
-                <topicref href="geProsa.dita"/>
-                <topicref href="geLyrikband.dita"/>
-                <topicref href="geDiskontVerse.dita"/>
-            </topicref>
-            <topicref href="drama.dita">
-                <topicref href="drFiguren.dita"/>
-                <topicref href="drAktSzene.dita"/>
-                <topicref href="drBuehnenanweisung.dita"/>
-                <topicref href="drSprechakt.dita">
-                    <topicref href="drSprechaktRede.dita"/>
-                    <topicref href="drVers.dita"/>
-                    <topicref href="drSprechaktSynchron.dita"/>
-                    <topicref href="drSprechaktGem.dita"/>
-                    <topicref href="drSprechaktGruppe.dita"/>
+            <topicref href="anhang.dita">
+                <topicref href="anhAllg.dita"/>
+                <topicref href="anhBibliographie.dita"/>
+                <topicref href="anhRegister.dita">
+                    <topicref href="anhRegEinfach.dita"/>
+                    <topicref href="anhRegUntertitel.dita"/>
+                    <topicref href="anhMehrereReg.dita"/>
                 </topicref>
             </topicref>
-            <topicref href="brief.dita">
-                <topicref href="brAllg.dita"/>
-                <topicref href="brMehrereTage.dita"/>
-                <topicref href="brPostscriptum.dita"/>
-                <topicref href="brUnterbrCloser.dita"/>
-                <topicref href="brBericht.dita"/>
-                <topicref href="brEinschub.dita"/>
+            <topicref href="inlineAnnotation.dita">
+                <topicref href="fremdsprachlMaterial.dita"/>
+                <topicref href="eigenname.dita"/>
+                <topicref href="datum.dita"/>
             </topicref>
-        </chapter>
-        <chapter href="anhang.dita">
-            <topicref href="anhAllg.dita"/>
-            <topicref href="anhBibliographie.dita"/>
-            <topicref href="anhRegister.dita">
-                <topicref href="anhRegEinfach.dita"/>
-                <topicref href="anhRegUntertitel.dita"/>
-                <topicref href="anhMehrereReg.dita"/>
+            <topicref href="editorEingriff.dita">
+                <topicref href="eeAllg.dita"/>
+                <topicref href="eeDruckfehler.dita"/>
+                <topicref href="abkuerzung.dita"/>
+                <topicref href="normalisierung.dita"/>
+                <topicref href="sachkommentar.dita"/>
             </topicref>
-        </chapter>
-        <chapter href="inlineAnnotation.dita">
-            <topicref href="fremdsprachlMaterial.dita"/>
-            <topicref href="eigenname.dita"/>
-            <topicref href="datum.dita"/>
-        </chapter>
-        <chapter href="editorEingriff.dita">
-            <topicref href="eeAllg.dita"/>
-            <topicref href="eeDruckfehler.dita"/>
-            <topicref href="abkuerzung.dita"/>
-            <topicref href="normalisierung.dita"/>
-            <topicref href="sachkommentar.dita"/>
-        </chapter>
+        </topicref>
     </part>
     <part href="besondereTextsorten.dita">
         <chapter href="manuskript.dita">

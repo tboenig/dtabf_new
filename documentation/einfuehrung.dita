@@ -4,14 +4,26 @@
   <title>Einführung</title>
     <abstract><shortdesc>Zielsetzung des DTA-Basisformats, zugehörige Publikationen, Nutzung und erste Schritte</shortdesc></abstract>
   <body>
-    <p>Auf den folgenden Seiten wird das TEI/XML-Basisformat des DTA (DTABf) bereitgestellt, welches die 
-      Grundlage für die Annotation sämtlicher Volltexte des DTA-Korpus bildet. 
-      Es soll im Rahmen der DTA-Richtlinien, die daneben auch die allgemeinen 
-      <xref href="http://www.deutschestextarchiv.de/doku/leitlinien" format="html" scope="external">Leitlinien des DTA</xref> sowie die 
-      <xref href="http://www.deutschestextarchiv.de/doku/richtlinien" format="html" scope="external">Transkriptionsrichtlinien</xref> beinhalten, 
-        eine möglichst umfassende Textaufbereitung erlauben und dabei gleichzeitig Variationsspielräume bei der Annotation 
-      so einschränken, dass die Kohärenz der DTA-Texte untereinander gewährleistet wird.</p>
-      <p>Das DTA-Basisformat folgt den P5-Richtlinien der <xref href="http://www.tei-c.org/" scope="external" format="html">Text Encoding Initiative</xref> 
-      (TEI), welche für die Annotation historischer gedruckter Werke in einem Korpus spezifiziert, dabei aber nicht erweitert werden.</p>
+    <p>Das DTA-Basisformat ist ein Annotationsformat und Volltextdigitalisierungsformat für
+      historische Texte. Es folgt den P5-Richtlinien der <xref href="http://www.tei-c.org/"
+        scope="external" format="html">Text Encoding Initiative</xref> (TEI) und ermöglicht eine
+      umfassende Textaufbereitung. </p>
+    <p>Die DTA-Basisformat-Guidelines bieten: <ul id="ul_zdf_vtp_ybc">
+        <li>grundlegende Beschreibungen sowie Handlungsanweisungen für die Transkription und
+          Annotation von historischen Texten.</li>
+        <li>eine ergänzende Formatdokumentation zu den P5-Richtlinien der Text Encoding Initiative
+          (TEI)</li>
+      </ul>Das DTA-Basisformat wird von der DFG und CLARIN-D empfohlen.</p>
   </body>
+  
+  <related-links><linklist outputclass="linklist_index"><title>Die Guidelines gliedern sich in folgende Bereiche:</title>
+    <link href="einfuehrung.dita"/>
+    <link href="metadaten.dita"/>
+    <link href="transkription.dita"/>
+    <link href="besondereTextsorten.dita"/>
+    <link href="uebersichten.dita"></link>
+  </linklist>
+    
+  </related-links>
+  
 </topic>
