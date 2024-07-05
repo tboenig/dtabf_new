@@ -17,11 +17,11 @@
   </body>
   
   <related-links><linklist outputclass="linklist_index"><title>Die Guidelines gliedern sich in folgende Bereiche:</title>
-    <link href="einfuehrung.dita"><linktext>Einführung</linktext></link>
-    <link href="metadaten.dita"><linktext>Metadaten</linktext></link>
-    <link href="transkription.dita"><linktext>Transkription und Annotation</linktext></link>
-    <link href="besondereTextsorten.dita"><linktext>Textarten und Textsorten</linktext></link>
-    <link href="uebersichten.dita"><linktext>Übersichten</linktext></link>
+    <link href="einfuehrung.dita"><linktext>💡 Einführung</linktext></link>
+    <link href="metadaten.dita"><linktext>📝 Metadaten</linktext></link>
+    <link href="transkription.dita"><linktext>💻 Transkription und Annotation</linktext></link>
+    <link href="besondereTextsorten.dita"><linktext>📖 Textarten und Textsorten</linktext></link>
+    <link href="uebersichten.dita"><linktext>🔠 Übersichten</linktext></link>
   </linklist>
     
   </related-links>
