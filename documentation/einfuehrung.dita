@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_dhd_tsd_qs">
   <title>Einführung</title>
-    <abstract><shortdesc>Zielsetzung des DTA-Basisformats, zugehörige Publikationen, Nutzung und erste Schritte</shortdesc></abstract>
+    
   <body>
     <p>Das DTA-Basisformat ist ein Annotationsformat und Volltextdigitalisierungsformat für
       historische Texte. Es folgt den P5-Richtlinien der <xref href="http://www.tei-c.org/"
