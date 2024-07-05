@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="Unbenannt12">
   <title>Das DTABf im Überblick</title>
-    <titlealts><navtitle>Übersichten</navtitle></titlealts>
+  <titlealts><navtitle>🔠 Übersichten</navtitle></titlealts>
     <abstract><shortdesc>Das Tagset im Überblick</shortdesc></abstract>
   <body>
     <p>Die folgenden Tabellen bieten einen Überblick über alle Elemente, die das DTA-Basisformat für den <xref href="uebersichtHeader.dita">&lt;teiHeader></xref>- bzw. den <xref href="uebersichtText.dita">&lt;text></xref>-Bereich vorsieht.</p>
