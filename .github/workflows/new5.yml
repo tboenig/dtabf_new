@@ -27,9 +27,9 @@ jobs:
             LANGUAGE="de_DE:de"
             LC_ALL="de_DE.UTF-8"
           plugins: |
-            fox.jason.extend.css
+            dita install fox.jason.extend.css
             dita install net.infotexture.dita-bootstrap
-            dita-bootstrap.lunr
+            dita install dita-bootstrap.lunr
           project: .github/dita-ot/html.xml
       - name: 'Deploy Documentation to GitHub Pages'
         uses: JamesIves/github-pages-deploy-action@v4.4.3
