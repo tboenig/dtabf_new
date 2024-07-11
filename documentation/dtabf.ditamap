@@ -30,18 +30,13 @@
         </critdates>
     </bookmeta>
     <part href="einfuehrung.dita">
+        <topicref href="trDokuKonventionen.dita"/>
       <topicref href="ziel.dita"/>
-			<topicref href="steuerungsgruppe.dita"/>
-			<topicref href="leitlinien.dita"/>
+			<topicref href="steuerungsgruppe.dita">
+            <topicref href="leitlinien.dita"/>
+        </topicref>
 	    <topicref href="schema.dita"/>
 	    <topicref href="publikationen.dita"/>
-	      <topicref href="howto.dita">
-	      <topicref href="benutzungDTABfSchema.dita"/>
-	        <topicref href="zurDokumentation.dita"/>
-	        <topicref href="hilfreicheTools.dita"/>
-	        <topicref href="grundstrukturDokument.dita"/>
-	    </topicref>
-        <topicref href="introduction_en.dita"/>
     </part>
   
     <part href="metadaten.dita">
@@ -104,7 +99,6 @@
     </part>
     
     <part href="transkription.dita">
-     <topicref href="trDokuKonventionen.dita"/>
      <topicref href="trGrundsaetze.dita">
             <topicref href="trSchreibweisen.dita">
                 <topicref href="trSchreibungIJ.dita"/>

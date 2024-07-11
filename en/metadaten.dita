@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_rcc_dg2_qs">
+  <title>DTA-Basisformat – Erschließung der Metadaten</title>
+  <titlealts><navtitle>📝 Metadaten</navtitle></titlealts>
+    <abstract><shortdesc>Erfassung (Transkription) und Auszeichnung von Metadaten</shortdesc></abstract>
+  <body>
+      <p>Das DTA-Basisformat sieht ausführliche Metadaten für alle Dokumente vor. 
+      Diese Metadaten umfassen eine Beschreibung der digitalen Ausgabe inklusive ihrer 
+      verantwortlichen Personen und Institutionen, sowie ausführliche Hiinweise auf 
+      die zugrundeliegende physische Quelle.</p>
+      <p>Um die Einheitlichkeit der erfassten Metadaten zu gewährleisten, werden neben den
+      Richtlinien für die Auszeichnung der Metadaten im Folgenden auch Transkriptionsrichtlinien
+      für Metadaten bereitgestellt.</p>
+  </body>
+</topic>
