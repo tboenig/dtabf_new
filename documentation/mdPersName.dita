@@ -7,7 +7,7 @@
     <p>Der Name einer Person wird in einem <codeph>&lt;persName&gt;</codeph>-Element festgehalten. Das <codeph>@ref</codeph>-Attribut 
       in <codeph>&lt;persName&gt;</codeph> ermöglicht den Verweis (qua URL) auf eine Ressource, die zusätzliche Angaben zu 
       der betreffenden Person enthält, etwa auf den Datensatz zu dieser Person in der 
-      <xref href="http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html" scope="external" format="html">Gemeinsamen Normdatei (GND)</xref>. Konnte ein Name 
+      <xref href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html" scope="external" format="html">Gemeinsamen Normdatei (GND)</xref>. Konnte ein Name 
       in der GND nicht nachgewiesen werden, so erhält das <codeph>@ref</codeph>-Attribut des <codeph>&lt;persName&gt;</codeph>-Elements 
         den Wert <codeph>"nognd"</codeph>. 
     </p>
