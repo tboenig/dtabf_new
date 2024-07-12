@@ -3,16 +3,14 @@
 <topic id="trGrunds">
  <title>Grundsätzliches zur Transkription</title>
 <body>
-<p>Die Texterfassung erfolgt grundsätzlich vorlagengetreu im Unicode-Format
-            (Kodierung in UTF-8) des zum Zeitpunkt der Erfassung gültigen
-            Unicode-Standards. Dabei werden die Zeichen, wenn möglich,
-            hinsichtlich ihrer Semantik abgebildet. </p>
+<p>Die Texterfassung erfolgt grundsätzlich vorlagengetreu  im Unicode-Format (Kodierung in UTF-8)
+   des zum Zeitpunkt der Erfassung gültigen Unicode-Standards. Dabei werden die Zeichen, wenn
+   möglich, hinsichtlich ihrer Semantik abgebildet. </p>
 
-<p>Auf modernisierende Veränderungen des lexikalischen Materials wird in der
-            Regel verzichtet, z.&#x202f;B. auch in Bezug auf die Schreibung von
-            Eigennamen. Auch Druckfehler werden übernommen (zum Verfahren der
-            Druckfehlerannotation siehe das entsprechende <xref
-            href="eeDruckfehler.dita">Kapitel im DTA-Basisformat</xref>). </p>
+<p>Modernisierende Veränderungen des zu erfassenden Textes oder lexikalischen Materials werden in
+   der Regel vermieden, einschließlich der Schreibung von Eigennamen. Auch Druckfehler werden
+   übernommen (zum Verfahren der Druckfehlerannotation siehe das entsprechende <xref
+    href="eeDruckfehler.dita">Kapitel im DTA-Basisformat</xref>). </p>
 
 <p>Zur Behandlung von unleserlichen bzw. schwer entzifferbaren Zeichen siehe das
             entsprechende <xref href="gapSupplied.dita">Kapitel im

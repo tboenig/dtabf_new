@@ -7,7 +7,7 @@
       wie folgt wiedergegeben:</p>
     <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[Seitenzahl]"/&gt;</codeblock>
     <p>Die Seitenzahlen werden jeweils zu Beginn einer Seite eingefügt, auch wenn die Seitenzahl
-      unter dem Text steht. Fehlt die Seitenzahl im Original (z.B. unpaginierte Abbildungsseiten
+      unter dem Text steht. Fehlt die Seitenzahl im Original (z. B. unpaginierte Abbildungsseiten
       oder vor neuen Kapiteln), wird entsprechend der Zählung im Buch die Seitenzahl in eckigen
       Klammern ergänzt:</p>
     <codeblock outputclass="language-xml">&lt;pb facs="#f[Bildnummer]" n="[[Seitenzahl]]"/&gt;</codeblock>
@@ -42,7 +42,7 @@
     </example>
 
     <p>Um eine im DTA herausgegebene Textseite mit einem externen Äquivalent zu verknüpfen
-      (z.B. mit der entsprechenden Seite der Quelle in einer anderen digitalen Edition) wird das
+      (z. B. mit der entsprechenden Seite der Quelle in einer anderen digitalen Edition) wird das
         <codeph>@corresp</codeph>-Attribut innerhalb des <codeph>&lt;pb&gt;</codeph>-Elements
       verwendet. Als Wert in <codeph>@corresp</codeph> steht eine eindeutige URI, welche zu dem
       verlinkten Dokument führt. </p>

@@ -3,7 +3,7 @@
   <title>Grundstruktur der Kodierung von Abbildungen</title>
   <titlealts><navtitle>Abbildungen Grundstruktur</navtitle></titlealts>
   <body>
-    <p>Es gibt diverse Formen von Abbildungen, z.B. den Text illustrierende Abbildungen, Tafeln,
+    <p>Es gibt diverse Formen von Abbildungen, z. B. den Text illustrierende Abbildungen, Tafeln,
       Karten, Notenbeispiele, Graphen, spezielle Sonderzeichen. </p>
     <p>Abbildungen können jeweils einen Titel (<codeph>&lt;head&gt;</codeph>) und nähere
       Bilderläuterungen (wiedergegeben als normaler Text in Absätzen: <codeph>&lt;p&gt;</codeph>)

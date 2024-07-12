@@ -5,14 +5,14 @@
     <titlealts><navtitle>Edition Statement (Source)</navtitle></titlealts>
   <body>
     <p>Die Hinweise zur Nummer und Art der Auflage, welche der DTA-Ausgabe zugrunde liegt 
-      (z.B. Erstausgabe, zweite verbesserte Neuauflage u.ä.) werden im 
+      (z. B. Erstausgabe, zweite verbesserte Neuauflage u.ä.) werden im 
       <codeph>&lt;editionStmt&gt;</codeph> innerhalb des <codeph>&lt;biblFull&gt;</codeph>-Elements der 
       <i>Source Description</i> angegeben. Das <codeph>&lt;editionStmt&gt;</codeph> erhält hierfür 
       das Unterelement <codeph>&lt;edition&gt;</codeph>.
     </p>
     <p>
       Im <codeph>@n</codeph>-Attribut des <codeph>&lt;edition&gt;</codeph>-Elements steht die 
-      normalisierte Auflagennummer, z.B. <codeph>"2"</codeph> für <codeph>"zweite, vermehrte Auflage"</codeph>. 
+      normalisierte Auflagennummer, z. B. <codeph>"2"</codeph> für <codeph>"zweite, vermehrte Auflage"</codeph>. 
     </p>
     <codeblock outputclass="language-xml">&lt;editionStmt&gt;
   &lt;edition n="[Auflagennummer]"&gt;[Art der zugrundeliegenden Textausgabe]&lt;/edition&gt;

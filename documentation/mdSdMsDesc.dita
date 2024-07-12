@@ -10,7 +10,7 @@
       der <i>Source Description</i> spezifiziert.
     </p>
     <p>Dabei wird zunächst der Leitdruck (i.e. die Druckvorlage, der die Edition hauptsächlich folgt) näher beschrieben. 
-      Gelegentlich, z.B. im Fall fehlender Seiten im Leitdruck, muss für die Transkription einzelner Seiten jedoch auf 
+      Gelegentlich, z. B. im Fall fehlender Seiten im Leitdruck, muss für die Transkription einzelner Seiten jedoch auf 
       ein weiteres Exemplar der Quellenausgabe zurückgegriffen werden. In diesem Fall wird das 
       <codeph>&lt;msDesc&gt;</codeph>-Element mehrfach verwendet, um sämtliche Textvorlagen zu beschreiben.
     </p>
@@ -60,7 +60,7 @@
   &lt;/msIdentifier&gt;
   &lt;physDesc&gt;
     &lt;typeDesc&gt;
-      &lt;p&gt;[vorherrschende Schriftart, z.B. 'Fraktur']&lt;/p&gt;
+      &lt;p&gt;[vorherrschende Schriftart, z. B. 'Fraktur']&lt;/p&gt;
     &lt;/typeDesc&gt; 
   &lt;/physDesc&gt;
 &lt;/msDesc&gt;</codeblock>

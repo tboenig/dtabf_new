@@ -64,20 +64,20 @@
 &lt;/body&gt;</codeblock>
 
 <p>
-  Sind die Artikel innerhalb einer Rubrik wiederum gruppiert (z.B. Gruppierung der Artikel nach
+  Sind die Artikel innerhalb einer Rubrik wiederum gruppiert (z. B. Gruppierung der Artikel nach
   Nationalstaaten innerhalb der Politischen Nachrichten, i.e. "Deutschland", "Frankreich", etc.),
   so können die Rubriken (<codeph>"jPoliticalNews"</codeph>, <codeph>"jFinancialNews"</codeph>, etc.) 
   in sich geschachtelt werden. 
 </p>
 
 <codeblock outputclass="language-xml">&lt;div type="jPoliticalNews"&gt; &lt;!-- Rubrik politische Nachrichten --&gt;
-  &lt;div type="jPoliticalNews"&gt; &lt;!-- Spezialgruppe politischer Nachrichten, z.B. "Deutschland" --&gt;
-    &lt;head&gt;[Subtitel, z.B. "Deutschland"]&lt;/head&gt;
+  &lt;div type="jPoliticalNews"&gt; &lt;!-- Spezialgruppe politischer Nachrichten, z. B. "Deutschland" --&gt;
+    &lt;head&gt;[Subtitel, z. B. "Deutschland"]&lt;/head&gt;
     &lt;div type="jArticle"&gt;[Politische Nachricht aus Deutschland]&lt;/div&gt;
     &lt;div type="jArticle"&gt;[Weitere politische Nachricht aus Deutschland]&lt;/div&gt;
   &lt;/div&gt;
-  &lt;div type="jPoliticalNews"&gt; &lt;!-- Spezialgruppe politischer Nachrichten, z.B. "Frankreich" --&gt;
-    &lt;head&gt;[Subtitel, z.B. "Frankreich"]&lt;/head&gt;
+  &lt;div type="jPoliticalNews"&gt; &lt;!-- Spezialgruppe politischer Nachrichten, z. B. "Frankreich" --&gt;
+    &lt;head&gt;[Subtitel, z. B. "Frankreich"]&lt;/head&gt;
     &lt;div type="jArticle"&gt;[Politische Nachricht aus Frankreich]&lt;/div&gt;
     &lt;div type="jArticle"&gt;[Weitere politische Nachricht aus Frankreich]&lt;/div&gt;
   &lt;/div&gt;

@@ -11,12 +11,12 @@
     <p>Für die Klassifizierung nach Textsorten und Themen sind Mehrfachklassifizierungen möglich. 
       Die jeweils verwendeten Deskriptoren werden im Element <codeph>&lt;classCode&gt;</codeph> wiedergegeben. 
       Das Attribut <codeph>@scheme</codeph> in <codeph>&lt;classCode&gt;</codeph> enthält einen Verweis auf das 
-      zugrundeliegende Klassifikationsschema, z.B. das 
+      zugrundeliegende Klassifikationsschema, z. B. das 
       <xref href="http://www.deutschestextarchiv.de/doku/klassifikation" scope="external" format="html">Klassifikationsschema der DTA-Kernkorpus-Texte</xref>. 
     </p>
     <p>Um die im DTA publizierten digitalisierten Volltextausgaben entsprechend ihrer Herkunft in Subkorpora zu
       gruppieren, enthalten die Metadaten Angaben über den Kontext, in welchem der Volltext entstanden ist, sowie, 
-      damit einhergehend, zur Erfassungsmethode (z.B. <codeph>china</codeph>, <codeph>ocr</codeph>, <codeph>mts</codeph>, 
+      damit einhergehend, zur Erfassungsmethode (z. B. <codeph>china</codeph>, <codeph>ocr</codeph>, <codeph>mts</codeph>, 
       <codeph>aedit</codeph>, <codeph>gutenberg</codeph>, <codeph>wikisource</codeph>). Die entsprechende Angabe erfolgt jeweils in einem 
       <codeph>&lt;classCode&gt;</codeph>-Element, wiederum mit einem Verweis auf das zugrundeliegende Klassifikationsschema 
       (hier: das <xref href="http://www.deutschestextarchiv.de/doku/klassifikation" scope="external" format="html">Klassifikationsschema der DTA-Kernkorpus-Texte</xref>) 
@@ -24,7 +24,7 @@
     </p>
     <codeblock outputclass="language-xml">&lt;profileDesc&gt;
   &lt;langUsage&gt;
-    &lt;language ident="[Code nach ISO 639-3, z.B. deu]"&gt;[Sprache, z.B. German]&lt;/language&gt;
+    &lt;language ident="[Code nach ISO 639-3, z. B. deu]"&gt;[Sprache, z. B. German]&lt;/language&gt;
   &lt;/langUsage&gt;
   &lt;textClass&gt;
     &lt;classCode scheme="[URL DTA-Hauptklassifikation]"&gt;[Textsorte lt. DTA-Hauptklassifikation]&lt;/classCode&gt;

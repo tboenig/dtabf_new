@@ -2,7 +2,7 @@
 <topic id="topic_47">
     <title>Gruppen von Sprechakten</title>
     <body>
-        <p>Werden im Drama mehrere Sprechakte gruppiert (z.B. durch
+        <p>Werden im Drama mehrere Sprechakte gruppiert (z. B. durch
             Klammerungen), um ihnen dieselbe Bühnenanweisung zuzuordnen, so
             werden die Sprechakte im Element <codeph>&lt;spGrp&gt;</codeph>
             (speech group) zusammengefasst.</p>

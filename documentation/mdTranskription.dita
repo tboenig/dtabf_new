@@ -2,18 +2,23 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_onq_jg2_qs">
   <title>Transkriptionsrichtlinien für die Aufnahme von Metadaten</title>
-    <titlealts><navtitle>Transkriptionsrichtlinien Metadaten</navtitle></titlealts>
+  <titlealts>
+    <navtitle>Transkriptionsrichtlinien Metadaten</navtitle>
+  </titlealts>
   <body>
-  	<p>Um die Einheitlichkeit der erfassten Metadaten zu gewährleisten, werden im 
-  		Folgenden ausführliche Richtlinien für die Erfassung (Transkription) von 
-  		Metadaten entsprechend dem DTA-Basisformat bereitgestellt.</p>
-      <section>
-      	<title>Themen</title>
-      	<ul>
-      		<li><xref href="mdVorlagentreue.dita">Vorlagentreue</xref></li>
-      		<li><xref href="mdNormalisierungen.dita">Normalisierungen</xref></li>
-      		<li><xref href="mdBesonderheitenErfassung.dita">Besonderheiten der Metadatenerfassung</xref></li>
-      	</ul>
-      </section>
+    <p>Um die Einheitlichkeit der erfassten Metadaten zu gewährleisten, werden im Folgenden
+      detaillierte Richtlinien für die Erfassung (Transkription) von Metadaten bereitgestellt. Die
+      Erfassung der Metadaten erfolgt gemäß den Grundprinzipien der Vorlagentreue und graduellen
+      Normalisierung. Diese Methode der Erfassung steht im Gegensatz zu bibliothekarischen
+      Metadatenerfassungen, die eine umfassende Normalisierung oder Kürzung der Daten vorsehen.</p>
+    <section>
+      <title>Themen</title>
+      <ul>
+        <li><xref href="mdVorlagentreue.dita">Vorlagentreue</xref></li>
+        <li><xref href="mdNormalisierungen.dita">Normalisierungen</xref></li>
+        <li><xref href="mdBesonderheitenErfassung.dita">Besonderheiten der
+          Metadatenerfassung</xref></li>
+      </ul>
+    </section>
   </body>
 </topic>

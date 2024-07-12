@@ -19,7 +19,7 @@
         <p>Alle genannten Eigennamen-Elemente können ein Attribut
             <codeph>@ref</codeph> enthalten. Dieses erhält als Wert eine
             eindeutige URI, welche auf eine externe Ressource verweist, die den
-            betreffenden Eigennamen näher spezifiziert (z.B. Verweise auf die
+            betreffenden Eigennamen näher spezifiziert (z. B. Verweise auf die
             Gemeinsame Normdatei GND, den Getty-Thesaurus oder eine eigens
             zusammengestellte Eigennamen-Datenbank). </p>
         <example> <title>Eigennamen I</title> 
@@ -41,7 +41,7 @@
                 Expedition nach Ost-Asien. Bd. 3. Berlin, 1873. [Faksimile
                 15]</xref></i></p>
             </fig> </example>
-        <p><b>Trunkierte Eigennamen</b> (z.B. Nord- und Ostsee) werden als
+        <p><b>Trunkierte Eigennamen</b> (z. B. Nord- und Ostsee) werden als
             solche markiert, indem ein Attribut-Wert-Paar
             <codeph>@full="abb"</codeph> (für "Abkürzung") in das jeweils
             umschließende Eigennamen-Element aufgenommen wird. </p>

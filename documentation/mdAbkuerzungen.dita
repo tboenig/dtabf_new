@@ -4,7 +4,7 @@
   <title>Umgang mit Abkürzungen</title>
   <body>
     <p>Abkürzungen im Titel werden grundsätzlich nicht aufgelöst. Eine Ausnahme bildet
-      der Kürzungsstrich, z.B. über Nasal. Dieser wird stillschweigend expandiert.
+      der Kürzungsstrich, z. B. über Nasal. Dieser wird stillschweigend expandiert.
     </p>
   </body>
 </topic>

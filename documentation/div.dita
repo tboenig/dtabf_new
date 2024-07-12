@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_3">
    <title>Texteinteilung auf Kapitelebene</title>
-    <titlealts><navtitle>Texteinteilung Kapitel</navtitle></titlealts>
    <body>
-      <p>Die Texteinteilung (z.B. Kapitel, Abschnitte, Teile ...) eines Buches
+      <p>Die Texteinteilung (z. B. Kapitel, Abschnitte, Teile ...) eines Buches
          wird mittels verschachtelter <codeph>&lt;div&gt;</codeph>-Elemente
          dargestellt. Diese enthalten in der Regel ein Attribut
             <codeph>@n</codeph>, welches die Strukturebene angibt. </p>
@@ -174,7 +173,7 @@
       <p>Die Titel der (Unter-)Kapitel werden mit dem <codeph>&lt;head&gt;</codeph>-Element umschlossen. 
          Dabei ist es unerheblich, ob der jeweilige Titel als Überschrift auf einer eigenen Zeile steht, 
          oder am Beginn der ersten Kapitelzeile erscheint. Die Abstände zwischen Überschriften verschiedener 
-         Ebenen, die Ausrichtung der Überschriften (z.B. zentriert) sowie eventueller Frakturwechsel
+         Ebenen, die Ausrichtung der Überschriften (z. B. zentriert) sowie eventueller Frakturwechsel
          werden nicht gesondert ausgezeichnet. Hingegen werden Zeilenumbrüche, alle typographischen 
          Besonderheiten (fett, kursiv, gesperrt etc.) sowie ein Wechsel zur Antiqua-Schrift ausgezeichnet.</p>
       <example>

@@ -6,7 +6,7 @@
   <body>
     <p>
   Wird ein Artikel unterbrochen, entweder, weil er in einer späteren Ausgabe fortgesetzt wird, oder,
-  weil innerhalb der Ausgabe Beiträge einer anderen Kategorie (z.B. des Feuilletons) eingeschoben
+  weil innerhalb der Ausgabe Beiträge einer anderen Kategorie (z. B. des Feuilletons) eingeschoben
   werden, so werden die Teile des betreffenden Artikels miteinander verknüpft. 
 </p>
 <p>
@@ -31,7 +31,7 @@
     &lt;p>[Beginn des Artikels]&lt;/p>
     &lt;p>[weiterer Artikeltext]&lt;/p>
     &lt;p>
-      &lt;ref target="[URI-Ausgabe-2/xml:id-Teil-2]">[Hinweis auf Fortsetzung, z.B. "Forts. folgt"]&lt;/ref>
+      &lt;ref target="[URI-Ausgabe-2/xml:id-Teil-2]">[Hinweis auf Fortsetzung, z. B. "Forts. folgt"]&lt;/ref>
     &lt;/p>
   &lt;/div>
   &lt;!-- [...] -->
@@ -43,7 +43,7 @@
     &lt;p>[Artikeltext]&lt;/p>
     &lt;p>[weiterer Artikeltext]&lt;/p>
     &lt;p>
-      &lt;ref target="[URI-Ausgabe-3/xml:id-Teil-3]">[Hinweis auf Fortsetzung, z.B. "Forts. folgt"]&lt;/ref>
+      &lt;ref target="[URI-Ausgabe-3/xml:id-Teil-3]">[Hinweis auf Fortsetzung, z. B. "Forts. folgt"]&lt;/ref>
     &lt;/p>
   &lt;/div>
   &lt;!-- [...] -->

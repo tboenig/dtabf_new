@@ -3,7 +3,7 @@
     <titlealts><navtitle>Korrespondierende Textpassagen</navtitle></titlealts>
          <body>
                         <p>Bei eigenständigen Textpassagen, die inhaltlich miteinander korrespondieren, jedoch nicht 
-  in linearer Reihenfolge angeordnet sind (z.B. fremdsprachliche Texte und deren Übersetzung),
+  in linearer Reihenfolge angeordnet sind (z. B. fremdsprachliche Texte und deren Übersetzung),
   erfolgt die Verknüpfung durch das Attribut <codeph>@corresp</codeph> unter Zuhilfenahme von <codeph>@xml:id</codeph>'s.</p>
             <codeblock outputclass="language-xml">&lt;div xml:id="[ID text01_teil01]" corresp="#[ID text01_teil02]"&gt;[...]&lt;/div&gt;
 &lt;pb facs="#f[Faksimilenummer]"/&gt;

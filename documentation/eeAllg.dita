@@ -22,7 +22,7 @@
       erstrecken.</p>
              <p>Außer dem <codeph>&lt;lb&gt;</codeph>-Element steht jedoch
       kein zusätzliches Material im <codeph>&lt;choice&gt;</codeph>-Element,
-      d.h. es erstreckt sich z.B. <b>nicht</b> über den Seitenrand, über
+      d.h. es erstreckt sich z. B. <b>nicht</b> über den Seitenrand, über
       Anmerkungen, Abbildungen etc.</p>
              <p>Bezieht sich eine Korrektur auf Wörter, die
       durch "unbeteiligtes" Material auf der Seite unterbrochen werden, so wird

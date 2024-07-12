@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_ezj_ng2_qs">
-  <title>Normalisierungen</title>
+  <title>Normalisierungen bei der Aufnahme von Metadaten</title>
     
   <body>
-  	<p>Bei der Aufnahme von Titeldaten entsprechend der Vorlage sind ausgewählte 
-  		Normalisierungen möglich.</p>
+  	<p>Bei der Aufnahme vor allem von Titeldaten entsprechend der Vorlage sind ausgewählte
+      Normalisierungen möglich.</p>
     <section>
     	<title>Themen</title>
     	<ul>

@@ -75,13 +75,13 @@
         <p>Diese Angabe, um welche Art der Korrektur es sich handelt, ist
             fakultativ (Level 3). </p>
         <p>Infolge von Druckfehlern können neue Zeichen entstehen, die keine
-            Entsprechung im zugehörigen Alphabet haben (z.B. umgedrehtes "e").
+            Entsprechung im zugehörigen Alphabet haben (z. B. umgedrehtes "e").
             Diese Zeichen werden, auch wenn ein entsprechendes oder ähnliches
             Zeichen im Unicode-Zeichensatz vorhanden ist, nicht wiedergegeben.
             Statt dessen steht die Unicode-Entität U+FFFC (<i>placeholder in
             text for an otherwise unspecified object</i>). Auf diese Weise wird
             das Vorhandensein des Druckfehlers dokumentiert, wobei dieser jedoch
-            nicht mit ggf. abweichender Semantik (z.B. e-Schwa für umgedrehtes
+            nicht mit ggf. abweichender Semantik (z. B. e-Schwa für umgedrehtes
             e) reproduziert wird. </p>
        <example>
     <title>Korrektur von Druckfehlern III</title>

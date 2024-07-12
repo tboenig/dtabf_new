@@ -34,7 +34,7 @@
       
       <li>
         <codeph>&lt;date type="importDTA"&gt;</codeph>: Zeitpunkt, zu welchem die externe Ressource in ihrem gegebenen Bearbeitungsstand 
-        in das DTA integriert wurde. Das Datum sollte das folgende Format haben: yyyy-mm-dd"T"hh:mm:ss"Z", z.B.: 2014-04-08T13:09:00Z.</li>
+        in das DTA integriert wurde. Das Datum sollte das folgende Format haben: yyyy-mm-dd"T"hh:mm:ss"Z", z. B.: 2014-04-08T13:09:00Z.</li>
       
       <li>
         <codeph>&lt;ref target="[URL]"/&gt;</codeph>: Verweis auf den Ursprungsort der integrierten Ressource (als URL). Dieses Element
@@ -50,9 +50,9 @@
       dennoch hergestellt.
     </p>
     <codeblock outputclass="language-xml">&lt;respStmt&gt; &lt;!-- ggf. mit @xml:id="[ID]" und @corresp="[ID der zugehörigen Lizenzangabe]" --&gt;
-  &lt;persName ref="[URL, z.B. Link zum GND-Datensatz]"&gt;[Urheber des zugrundeliegenden Volltextes (Person)]&lt;/persName&gt; &lt;!-- ggf. mehrfach zu verwenden; 
+  &lt;persName ref="[URL, z. B. Link zum GND-Datensatz]"&gt;[Urheber des zugrundeliegenden Volltextes (Person)]&lt;/persName&gt; &lt;!-- ggf. mehrfach zu verwenden; 
     zur weiteren Unterstrukturierung siehe <xref href="mdPersName.dita">oben</xref> --&gt;
-  &lt;orgName ref="[URL, z.B. Link zum GND-Datensatz]"&gt;[Anbieter des zugrundeliegenden Volltextes (Organisation/Institution/Projektgruppe)]&lt;/orgName&gt; 
+  &lt;orgName ref="[URL, z. B. Link zum GND-Datensatz]"&gt;[Anbieter des zugrundeliegenden Volltextes (Organisation/Institution/Projektgruppe)]&lt;/orgName&gt; 
   &lt;!-- Angabe von @ref fakultativ--&gt;
   &lt;resp&gt;
     &lt;note type="remarkResponsibility"&gt;[Art der Verantwortlichkeit]&lt;/note&gt;

@@ -4,7 +4,7 @@
   <title>Umgang mit Diakritika</title>
   <body>
     <p>Diakritika, die sich auf eine eindeutige moderne Entsprechung abbilden lassen,
-      werden entsprechend normalisiert. Dies betrifft z.B. die folgenden Zeichen:
+      werden entsprechend normalisiert. Dies betrifft z. B. die folgenden Zeichen:
     </p>
     <table>
       <tgroup cols="2">
@@ -36,7 +36,7 @@
         </tbody>
       </tgroup>
     </table>
-    <p>Diakritika, für die keine eindeutige Entsprechung gefunden werden kann (z.B. 
+    <p>Diakritika, für die keine eindeutige Entsprechung gefunden werden kann (z. B. 
       kontextbezogen ů) werden nicht normalisiert. In diesem Fall wird das 
       entsprechende Unicode-Zeichen gesetzt.
     </p>

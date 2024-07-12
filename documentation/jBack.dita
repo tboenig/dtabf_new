@@ -4,7 +4,7 @@
   <title>Abschließende Textstücke</title>
   <body>
     <p>
-  Abschließende Teile, z.B. das Impressum, am Schluss der Ausgabe werden im Element <codeph>&lt;back&gt;</codeph>
+  Abschließende Teile, z. B. das Impressum, am Schluss der Ausgabe werden im Element <codeph>&lt;back&gt;</codeph>
   wiedergegeben. Darin steht ein Nachsatz im Element <codeph>&lt;trailer&gt;</codeph>, ein mögliches Impressum 
   im Element <codeph>&lt;div type="imprint"&gt;</codeph> (s. Kap. <xref href="jFront.dita">Einleitende Textstücke</xref>; vgl. außerdem 
   <xref href="anhang.dita">Kapitel: Anhang</xref>).

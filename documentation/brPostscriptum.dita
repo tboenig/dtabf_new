@@ -12,7 +12,7 @@
             <codeph>&lt;postscript&gt;</codeph>-Element mehrfach in Folge
             verwendet werden. Der Text des Postscriptums wird in
             <codeph>&lt;p&gt;</codeph>-Elementen wiedergegeben. Die mögliche
-            Kennzeichnung des Postscriptums im Text z.B. durch die Abkürzung
+            Kennzeichnung des Postscriptums im Text z. B. durch die Abkürzung
             'PS' wird nicht gesondert ausgezeichnet: </p>
         <codeblock outputclass="language-xml">&lt;postscript&gt;
   &lt;p&gt;[Text des Postscriptums]&lt;/p&gt;

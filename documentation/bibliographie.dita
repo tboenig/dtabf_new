@@ -2,7 +2,7 @@
 <topic id="topic_26">
     <title>Bibliographie</title>
     <body>
-        <p>Eine Bibliographie innerhalb des Textbereichs (z.B. am
+        <p>Eine Bibliographie innerhalb des Textbereichs (z. B. am
             Kapitelbeginn), kann mittels des Elements
             <codeph>&lt;listBibl&gt;</codeph> ausgezeichnet werden. Jede
             bibliographische Angabe wird innerhalb von

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_rxh_wkl_qs">
-  <title>Inhaltliche Grobstrukturierung von Dokumenten</title>
-    <titlealts><navtitle>Grobstrukturierung Dokument</navtitle></titlealts>
+  <title>Grobstrukturierung von Dokumenten</title>
   <body>
     <p>Für jedes Dokument wird innerhalb des <codeph>&lt;text&gt;</codeph>-Bereichs eine Grobstrukturierung, bestehend aus drei Bereichen, angebracht: einem
       <codeph>&lt;front&gt;</codeph>-Bereich, der die <xref href="front.dita">Titelei</xref> enthält, einen <codeph>&lt;body&gt;</codeph>-Bereich, in welchem der <xref href="body.dita">Textkörper</xref> steht, und ggf. einem <codeph>&lt;back&gt;</codeph>-Bereich, in welchem sämtliche <xref href="anhang.dita">Anhänge</xref> zusammengefasst sind. </p>

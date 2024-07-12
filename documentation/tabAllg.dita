@@ -17,7 +17,7 @@
   &lt;/row&gt;
   ...
 &lt;/table&gt;</codeblock>
-       <p>Übersichten in Tabellenform, die keinen oder nur wenig reinen Text enthalten (z.B.
+       <p>Übersichten in Tabellenform, die keinen oder nur wenig reinen Text enthalten (z. B.
       vornehmlich aus Zahlen und Sonderzeichen bestehen), werden nicht erfasst. Statt dessen wird
       durch eine leere Tabelle auf die jeweilige Übersicht hingewiesen: </p>
     <codeblock outputclass="language-xml">&lt;table&gt;&lt;row&gt;&lt;cell/&gt;&lt;/row&gt;&lt;/table&gt;</codeblock>

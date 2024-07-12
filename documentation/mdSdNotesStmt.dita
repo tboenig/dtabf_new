@@ -13,7 +13,7 @@
     <codeblock outputclass="language-xml">&lt;notesStmt&gt;
   &lt;note type="remarkSource"&gt;[Kommentar zur zugrundeliegenden Ausgabe]&lt;/note&gt;
 &lt;/notesStmt&gt;</codeblock>
-    <p>Die Hinweise im <codeph>&lt;notesStmt&gt;</codeph> umfassen z.B. die Begründung 
+    <p>Die Hinweise im <codeph>&lt;notesStmt&gt;</codeph> umfassen z. B. die Begründung 
       der Auswahl der Ausgabe, falls diese nicht der Erstausgabe 
       des Werks entspricht. Weiterhin werden hier fehlerhafte bzw. unvollständige 
       Angaben des Titelblattes, welche in den Metadaten des TEI-Headers durch die 

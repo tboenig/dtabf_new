@@ -12,7 +12,7 @@
             Diese Bühnenanweisungen treffen Festlegungen für den folgenden
             Abschnitt. Sie stehen in der Regel im Anschluss an die jeweilige
             Abschnittsüberschrift. </p>
-        <codeblock outputclass="language-xml">&lt;div type="[z.B. scene]"&gt;
+        <codeblock outputclass="language-xml">&lt;div type="[z. B. scene]"&gt;
   &lt;head&gt;[Titel des Auftritts]&lt;/head&gt;
   &lt;stage&gt;[Bühnenanweisung]&lt;/stage&gt;
   &lt;sp&gt;[Sprechakt]&lt;/sp&gt;
@@ -48,7 +48,7 @@
             <codeph>&lt;sp&gt;</codeph>-Elemente in einem
             <codeph>&lt;stage&gt;</codeph>-Element wiedergegeben. </p>
         
-        <codeblock outputclass="language-xml">&lt;div type="[z.B. scene]"&gt;
+        <codeblock outputclass="language-xml">&lt;div type="[z. B. scene]"&gt;
   &lt;head&gt;[Titel des Auftritts]&lt;/head&gt;
   &lt;sp&gt;[Sprechakt]&lt;/sp&gt;
   &lt;stage&gt;[Bühnenanweiung]&lt;/stage&gt;
@@ -95,7 +95,7 @@ Rouletten herunter.)&lt;/stage&gt;&lt;lb/&gt;
             <codeph>&lt;stage&gt;</codeph>-Element in das
             <codeph>&lt;p&gt;</codeph>-Element integriert.</p>
         
-        <codeblock outputclass="language-xml">&lt;div type="[z.B. scene]"&gt;
+        <codeblock outputclass="language-xml">&lt;div type="[z. B. scene]"&gt;
   &lt;head&gt;[Titel des Auftritts]&lt;/head&gt;
   &lt;sp&gt;
     &lt;speaker&gt;[Sprecher]&lt;/speaker&gt;

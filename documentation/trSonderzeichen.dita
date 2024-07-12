@@ -6,15 +6,15 @@
 
 <p>
   Sind große <b>Zahlen in Blöcken</b> gedruckt, werden keine Leerzeichen innerhalb des
-  Zahlenblocks gesetzt, z.&#x202f;B. <codeph>1000000</codeph> (es wird also von der Vorlage abgewichen).
+  Zahlenblocks gesetzt, z. B. <codeph>1000000</codeph> (es wird also von der Vorlage abgewichen).
 </p>
 
 <p>
-  Bei <b>Prozentangaben</b> steht: Zahl Leerzeichen %-Zeichen; z.&#x202f;B. <codeph>50 %</codeph>.
+  Bei <b>Prozentangaben</b> steht: Zahl Leerzeichen %-Zeichen; z. B. <codeph>50 %</codeph>.
 </p>
 
 <p>
-  Bei <b>Temperaturangaben</b> steht vor der Einheit ein Leerzeichen; z.&#x202f;B. <codeph>360 °C</codeph>.
+  Bei <b>Temperaturangaben</b> steht vor der Einheit ein Leerzeichen; z. B. <codeph>360 °C</codeph>.
 </p>
 
 <p>

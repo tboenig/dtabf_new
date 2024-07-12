@@ -57,7 +57,7 @@
           </i></p>
         </fig></example>
       <p>Besteht eine Liste aus Einträgen mit zugehörigen Werten,
-            die durch einen Abstandhalter (z.B. einen Leerraum oder eine
+            die durch einen Abstandhalter (z. B. einen Leerraum oder eine
             gepunktete Linie) voneinander getrennt sind, so wird der Abstand
             mittels <codeph>&lt;space dim="horizontal"/&gt;</codeph> angezeigt. </p>
       <example>

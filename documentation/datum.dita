@@ -7,7 +7,7 @@
       <codeph>&lt;date&gt;</codeph> und <codeph>&lt;dateline&gt;</codeph>
       ausgezeichnet werden (Level 3).</p>
       <p>Dabei repräsentiert <codeph>&lt;date&gt;</codeph> ein Datum. Mit <codeph>&lt;dateline&gt;</codeph> kann 
-      eine Datumszeile ausgezeichnet werden, die z.B. auch eine Ortsangabe enthalten kann.</p>
+      eine Datumszeile ausgezeichnet werden, die z. B. auch eine Ortsangabe enthalten kann.</p>
       <example>
           <title><codeph>&lt;date&gt;</codeph></title>
           <fig>

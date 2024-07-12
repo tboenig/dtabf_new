@@ -36,7 +36,7 @@
           <entry><codeph>addName</codeph>
               <p outputclass="sg">Doku: <xref href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-addName.html" format="html" scope="external">TEI</xref>,
                 <xref href="mdPersName.dita">DTABf</xref></p></entry>
-          <entry>zusätzlicher Name, z.B. Pseudonym</entry>
+          <entry>zusätzlicher Name, z. B. Pseudonym</entry>
           <entry namest="col3" nameend="col4"/>
           <entry><xref href="legende.dita#legende/fkh04">names</xref></entry>
       </row>

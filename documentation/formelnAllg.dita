@@ -22,7 +22,7 @@
     <p>Formeln können sowohl innerhalb einer Zeile (inline) als auch abgesetzt vom Fließtext
       stehen. In letzterem Fall wird der Zeilenumbruch vor und nach der Formel mittels
         <codeph>&lt;lb/&gt;</codeph> angegeben. Steht unmittelbar nach einer Formel ein Satzzeichen,
-      wird dieses mit erfasst. Layout-Informationen (z.B. Zentrierung) bleiben unberücksichtigt. </p>
+      wird dieses mit erfasst. Layout-Informationen (z. B. Zentrierung) bleiben unberücksichtigt. </p>
     <example>
       <title>Kodierung von Formeln (1)</title><fig>
         <image href="img/S_y8v_2j1c.png"/>

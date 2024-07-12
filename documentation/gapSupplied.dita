@@ -3,7 +3,7 @@
    <title>Schwer bzw. nicht entzifferbare Zeichen und Auslassungen</title>
     <titlealts><navtitle>Schwer- und Unleserliches</navtitle></titlealts>
    <body>
-      <p><b>Schwer leserliche Zeichen oder Zeichenketten</b> (z.B. durch
+      <p><b>Schwer leserliche Zeichen oder Zeichenketten</b> (z. B. durch
          physische Mängel der Vorlage, schwachen Druck) werden mit dem Tag
             <codeph>&lt;supplied&gt;</codeph> umschlossen:</p>
       <codeblock outputclass="language-xml">&lt;supplied&gt;[Zeichen oder Zeichenkette]&lt;/supplied&gt;</codeblock>
@@ -26,7 +26,7 @@
                   <entry namest="col1" nameend="col1">
                      <codeph>&lt;supplied&gt;</codeph>
                   </entry>
-                  <entry namest="col2" nameend="col2">Gewissheit/sichere Lesart (z.B.
+                  <entry namest="col2" nameend="col2">Gewissheit/sichere Lesart (z. B.
                      das Zeichen/die Zeichenkette ist noch schwach gedruckt, die Lesung somit
                      gesichert)</entry>
                </row>
@@ -35,7 +35,7 @@
                      <codeph>&lt;supplied cert="high"&gt;</codeph>
                   </entry>
                   <entry namest="col2" nameend="col2">hohe Sicherheit der Ergänzung
-                     (z.B. das Zeichen/die Zeichenkette ist nicht mehr erkennbar, aber die Lesung
+                     (z. B. das Zeichen/die Zeichenkette ist nicht mehr erkennbar, aber die Lesung
                      ergibt sich aus dem Kontext und ist somit gesichert)</entry>
                </row>
                <row>
@@ -43,7 +43,7 @@
                      <codeph>&lt;supplied cert="low"&gt;</codeph>
                   </entry>
                   <entry namest="col2" nameend="col2">niedrige Sicherheit der
-                     Ergänzung/unsichere Lesart (z.B. das Zeichen/die Zeichenkette ist nicht mehr
+                     Ergänzung/unsichere Lesart (z. B. das Zeichen/die Zeichenkette ist nicht mehr
                      erkennbar und wurde rekonstruiert; andere Rekonstruktionen sind daneben
                      denkbar)</entry>
                </row>
