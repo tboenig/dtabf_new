@@ -1,5 +1,6 @@
-![DTA Base Format (DTABf)](documentation/resources/logos/dtabf.png)
-    
+![DTA Base Format (DTABf)](documentation/resources/dtabf.png)
+
+   
 # DTA Base Format – Schema and Documentation
 
 
